@@ -3,7 +3,7 @@ package grpcClient
 import (
 	"fmt"
 
-	"github.com/foax-x/tron-wallet/grpcClient/proto/api"
+	"github.com/ranjbar-dev/tron-wallet/grpcClient/proto/api"
 )
 
 func (g *GrpcClient) GetNowBlock() (*api.BlockExtention, error) {

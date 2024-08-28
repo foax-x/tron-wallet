@@ -3,9 +3,9 @@ package grpcClient
 import (
 	"fmt"
 
-	"github.com/foax-x/tron-wallet/grpcClient/proto/api"
-	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
-	"github.com/foax-x/tron-wallet/util"
+	"github.com/ranjbar-dev/tron-wallet/grpcClient/proto/api"
+	"github.com/ranjbar-dev/tron-wallet/grpcClient/proto/core"
+	"github.com/ranjbar-dev/tron-wallet/util"
 	"google.golang.org/protobuf/proto"
 )
 

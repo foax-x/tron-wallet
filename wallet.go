@@ -11,9 +11,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/foax-x/tron-wallet/enums"
-	"github.com/foax-x/tron-wallet/grpcClient"
-	"github.com/foax-x/tron-wallet/util"
+	"github.com/ranjbar-dev/tron-wallet/enums"
+	"github.com/ranjbar-dev/tron-wallet/grpcClient"
+	"github.com/ranjbar-dev/tron-wallet/util"
 	"github.com/tyler-smith/go-bip32"
 	"github.com/tyler-smith/go-bip39"
 )
