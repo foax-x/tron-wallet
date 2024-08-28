@@ -6,7 +6,7 @@ tron wallet package for creating and generating wallet, transferring TRX, gettin
 
 ### Installation 
 ```
-go get github.com/foax-x/tron-wallet@v1.0.6
+go get github.com/foax-x/tron-wallet@v1.0.0
 ```
 
 ### Test
