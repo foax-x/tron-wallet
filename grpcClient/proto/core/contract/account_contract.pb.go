@@ -21,11 +21,13 @@
 package core
 
 import (
+	reflect "reflect"
+	sync "sync"
+
+	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	proto "github.com/golang/protobuf/proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -46,7 +48,7 @@ type AccountCreateContract struct {
 
 	OwnerAddress   []byte      `protobuf:"bytes,1,opt,name=owner_address,json=ownerAddress,proto3" json:"owner_address,omitempty"`
 	AccountAddress []byte      `protobuf:"bytes,2,opt,name=account_address,json=accountAddress,proto3" json:"account_address,omitempty"`
-	Type           AccountType `protobuf:"varint,3,opt,name=type,proto3,enum=protocol.AccountType" json:"type,omitempty"`
+	Type           core.AccountType `protobuf:"varint,3,opt,name=type,proto3,enum=protocol.AccountType" json:"type,omitempty"`
 }
 
 func (x *AccountCreateContract) Reset() {
@@ -95,11 +97,11 @@ func (x *AccountCreateContract) GetAccountAddress() []byte {
 	return nil
 }
 
-func (x *AccountCreateContract) GetType() AccountType {
+func (x *AccountCreateContract) GetType() core.AccountType {
 	if x != nil {
 		return x.Type
 	}
-	return AccountType_Normal
+	return core.AccountType_Normal
 }
 
 // Update account name. Account name is not unique now.
@@ -220,9 +222,9 @@ type AccountPermissionUpdateContract struct {
 	unknownFields protoimpl.UnknownFields
 
 	OwnerAddress []byte        `protobuf:"bytes,1,opt,name=owner_address,json=ownerAddress,proto3" json:"owner_address,omitempty"`
-	Owner        *Permission   `protobuf:"bytes,2,opt,name=owner,proto3" json:"owner,omitempty"`     //Empty is invalidate
-	Witness      *Permission   `protobuf:"bytes,3,opt,name=witness,proto3" json:"witness,omitempty"` //Can be empty
-	Actives      []*Permission `protobuf:"bytes,4,rep,name=actives,proto3" json:"actives,omitempty"` //Empty is invalidate
+	Owner        *core.Permission   `protobuf:"bytes,2,opt,name=owner,proto3" json:"owner,omitempty"`     //Empty is invalidate
+	Witness      *core.Permission   `protobuf:"bytes,3,opt,name=witness,proto3" json:"witness,omitempty"` //Can be empty
+	Actives      []*core.Permission `protobuf:"bytes,4,rep,name=actives,proto3" json:"actives,omitempty"` //Empty is invalidate
 }
 
 func (x *AccountPermissionUpdateContract) Reset() {
@@ -264,21 +266,21 @@ func (x *AccountPermissionUpdateContract) GetOwnerAddress() []byte {
 	return nil
 }
 
-func (x *AccountPermissionUpdateContract) GetOwner() *Permission {
+func (x *AccountPermissionUpdateContract) GetOwner() *core.Permission {
 	if x != nil {
 		return x.Owner
 	}
 	return nil
 }
 
-func (x *AccountPermissionUpdateContract) GetWitness() *Permission {
+func (x *AccountPermissionUpdateContract) GetWitness() *core.Permission {
 	if x != nil {
 		return x.Witness
 	}
 	return nil
 }
 
-func (x *AccountPermissionUpdateContract) GetActives() []*Permission {
+func (x *AccountPermissionUpdateContract) GetActives() []*core.Permission {
 	if x != nil {
 		return x.Actives
 	}
@@ -352,8 +354,8 @@ var file_core_contract_account_contract_proto_goTypes = []interface{}{
 	(*AccountUpdateContract)(nil),           // 1: protocol.AccountUpdateContract
 	(*SetAccountIdContract)(nil),            // 2: protocol.SetAccountIdContract
 	(*AccountPermissionUpdateContract)(nil), // 3: protocol.AccountPermissionUpdateContract
-	(AccountType)(0),                        // 4: protocol.AccountType
-	(*Permission)(nil),                      // 5: protocol.Permission
+	(core.AccountType)(0),                        // 4: protocol.AccountType
+	(*core.Permission)(nil),                      // 5: protocol.Permission
 }
 var file_core_contract_account_contract_proto_depIdxs = []int32{
 	4, // 0: protocol.AccountCreateContract.type:type_name -> protocol.AccountType
@@ -372,7 +374,7 @@ func file_core_contract_account_contract_proto_init() {
 	if File_core_contract_account_contract_proto != nil {
 		return
 	}
-	file_core_Tron_proto_init()
+	core.File_core_Tron_proto_init()
 	if !protoimpl.UnsafeEnabled {
 		file_core_contract_account_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AccountCreateContract); i {

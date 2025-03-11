@@ -7,11 +7,13 @@
 package core
 
 import (
+	reflect "reflect"
+	sync "sync"
+
+	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	proto "github.com/golang/protobuf/proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -992,7 +994,7 @@ func file_core_contract_smart_contract_proto_init() {
 	if File_core_contract_smart_contract_proto != nil {
 		return
 	}
-	file_core_Tron_proto_init()
+	core.File_core_Tron_proto_init()
 	if !protoimpl.UnsafeEnabled {
 		file_core_contract_smart_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SmartContract); i {
