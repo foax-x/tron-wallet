@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/contract/balance_contract.proto
+// source: corev2/contract/balance_contract.proto
 
-package core
+package corev2
 
 import (
 	proto "github.com/golang/protobuf/proto"
@@ -40,7 +40,7 @@ type FreezeBalanceContract struct {
 func (x *FreezeBalanceContract) Reset() {
 	*x = FreezeBalanceContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_balance_contract_proto_msgTypes[0]
+		mi := &file_corev2_contract_balance_contract_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -53,7 +53,7 @@ func (x *FreezeBalanceContract) String() string {
 func (*FreezeBalanceContract) ProtoMessage() {}
 
 func (x *FreezeBalanceContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_balance_contract_proto_msgTypes[0]
+	mi := &file_corev2_contract_balance_contract_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -66,7 +66,7 @@ func (x *FreezeBalanceContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FreezeBalanceContract.ProtoReflect.Descriptor instead.
 func (*FreezeBalanceContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_balance_contract_proto_rawDescGZIP(), []int{0}
+	return file_corev2_contract_balance_contract_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *FreezeBalanceContract) GetOwnerAddress() []byte {
@@ -117,7 +117,7 @@ type UnfreezeBalanceContract struct {
 func (x *UnfreezeBalanceContract) Reset() {
 	*x = UnfreezeBalanceContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_balance_contract_proto_msgTypes[1]
+		mi := &file_corev2_contract_balance_contract_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -130,7 +130,7 @@ func (x *UnfreezeBalanceContract) String() string {
 func (*UnfreezeBalanceContract) ProtoMessage() {}
 
 func (x *UnfreezeBalanceContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_balance_contract_proto_msgTypes[1]
+	mi := &file_corev2_contract_balance_contract_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -143,7 +143,7 @@ func (x *UnfreezeBalanceContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UnfreezeBalanceContract.ProtoReflect.Descriptor instead.
 func (*UnfreezeBalanceContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_balance_contract_proto_rawDescGZIP(), []int{1}
+	return file_corev2_contract_balance_contract_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *UnfreezeBalanceContract) GetOwnerAddress() []byte {
@@ -178,7 +178,7 @@ type WithdrawBalanceContract struct {
 func (x *WithdrawBalanceContract) Reset() {
 	*x = WithdrawBalanceContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_balance_contract_proto_msgTypes[2]
+		mi := &file_corev2_contract_balance_contract_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -191,7 +191,7 @@ func (x *WithdrawBalanceContract) String() string {
 func (*WithdrawBalanceContract) ProtoMessage() {}
 
 func (x *WithdrawBalanceContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_balance_contract_proto_msgTypes[2]
+	mi := &file_corev2_contract_balance_contract_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -204,7 +204,7 @@ func (x *WithdrawBalanceContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use WithdrawBalanceContract.ProtoReflect.Descriptor instead.
 func (*WithdrawBalanceContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_balance_contract_proto_rawDescGZIP(), []int{2}
+	return file_corev2_contract_balance_contract_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *WithdrawBalanceContract) GetOwnerAddress() []byte {
@@ -227,7 +227,7 @@ type TransferContract struct {
 func (x *TransferContract) Reset() {
 	*x = TransferContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_balance_contract_proto_msgTypes[3]
+		mi := &file_corev2_contract_balance_contract_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -240,7 +240,7 @@ func (x *TransferContract) String() string {
 func (*TransferContract) ProtoMessage() {}
 
 func (x *TransferContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_balance_contract_proto_msgTypes[3]
+	mi := &file_corev2_contract_balance_contract_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -253,7 +253,7 @@ func (x *TransferContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransferContract.ProtoReflect.Descriptor instead.
 func (*TransferContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_balance_contract_proto_rawDescGZIP(), []int{3}
+	return file_corev2_contract_balance_contract_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *TransferContract) GetOwnerAddress() []byte {
@@ -277,9 +277,9 @@ func (x *TransferContract) GetAmount() int64 {
 	return 0
 }
 
-var File_core_contract_balance_contract_proto protoreflect.FileDescriptor
+var File_corev2_contract_balance_contract_proto protoreflect.FileDescriptor
 
-var file_core_contract_balance_contract_proto_rawDesc = []byte{
+var file_corev2_contract_balance_contract_proto_rawDesc = []byte{
 	0x0a, 0x24, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74, 0x2f,
 	0x62, 0x61, 0x6c, 0x61, 0x6e, 0x63, 0x65, 0x5f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74,
 	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c,
@@ -329,26 +329,26 @@ var file_core_contract_balance_contract_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_contract_balance_contract_proto_rawDescOnce sync.Once
-	file_core_contract_balance_contract_proto_rawDescData = file_core_contract_balance_contract_proto_rawDesc
+	file_corev2_contract_balance_contract_proto_rawDescOnce sync.Once
+	file_corev2_contract_balance_contract_proto_rawDescData = file_corev2_contract_balance_contract_proto_rawDesc
 )
 
-func file_core_contract_balance_contract_proto_rawDescGZIP() []byte {
-	file_core_contract_balance_contract_proto_rawDescOnce.Do(func() {
-		file_core_contract_balance_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_contract_balance_contract_proto_rawDescData)
+func file_corev2_contract_balance_contract_proto_rawDescGZIP() []byte {
+	file_corev2_contract_balance_contract_proto_rawDescOnce.Do(func() {
+		file_corev2_contract_balance_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_contract_balance_contract_proto_rawDescData)
 	})
-	return file_core_contract_balance_contract_proto_rawDescData
+	return file_corev2_contract_balance_contract_proto_rawDescData
 }
 
-var file_core_contract_balance_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_core_contract_balance_contract_proto_goTypes = []interface{}{
+var file_corev2_contract_balance_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_corev2_contract_balance_contract_proto_goTypes = []interface{}{
 	(*FreezeBalanceContract)(nil),   // 0: protocol.FreezeBalanceContract
 	(*UnfreezeBalanceContract)(nil), // 1: protocol.UnfreezeBalanceContract
 	(*WithdrawBalanceContract)(nil), // 2: protocol.WithdrawBalanceContract
 	(*TransferContract)(nil),        // 3: protocol.TransferContract
 	(ResourceCode)(0),               // 4: protocol.ResourceCode
 }
-var file_core_contract_balance_contract_proto_depIdxs = []int32{
+var file_corev2_contract_balance_contract_proto_depIdxs = []int32{
 	4, // 0: protocol.FreezeBalanceContract.resource:type_name -> protocol.ResourceCode
 	4, // 1: protocol.UnfreezeBalanceContract.resource:type_name -> protocol.ResourceCode
 	2, // [2:2] is the sub-list for method output_type
@@ -358,14 +358,14 @@ var file_core_contract_balance_contract_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_core_contract_balance_contract_proto_init() }
-func file_core_contract_balance_contract_proto_init() {
-	if File_core_contract_balance_contract_proto != nil {
+func init() { file_corev2_contract_balance_contract_proto_init() }
+func file_corev2_contract_balance_contract_proto_init() {
+	if File_corev2_contract_balance_contract_proto != nil {
 		return
 	}
-	file_core_contract_common_proto_init()
+	file_corev2_contract_common_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_core_contract_balance_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_balance_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FreezeBalanceContract); i {
 			case 0:
 				return &v.state
@@ -377,7 +377,7 @@ func file_core_contract_balance_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_balance_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_balance_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UnfreezeBalanceContract); i {
 			case 0:
 				return &v.state
@@ -389,7 +389,7 @@ func file_core_contract_balance_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_balance_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_balance_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*WithdrawBalanceContract); i {
 			case 0:
 				return &v.state
@@ -401,7 +401,7 @@ func file_core_contract_balance_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_balance_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_balance_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TransferContract); i {
 			case 0:
 				return &v.state
@@ -418,18 +418,18 @@ func file_core_contract_balance_contract_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_contract_balance_contract_proto_rawDesc,
+			RawDescriptor: file_corev2_contract_balance_contract_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_contract_balance_contract_proto_goTypes,
-		DependencyIndexes: file_core_contract_balance_contract_proto_depIdxs,
-		MessageInfos:      file_core_contract_balance_contract_proto_msgTypes,
+		GoTypes:           file_corev2_contract_balance_contract_proto_goTypes,
+		DependencyIndexes: file_corev2_contract_balance_contract_proto_depIdxs,
+		MessageInfos:      file_corev2_contract_balance_contract_proto_msgTypes,
 	}.Build()
-	File_core_contract_balance_contract_proto = out.File
-	file_core_contract_balance_contract_proto_rawDesc = nil
-	file_core_contract_balance_contract_proto_goTypes = nil
-	file_core_contract_balance_contract_proto_depIdxs = nil
+	File_corev2_contract_balance_contract_proto = out.File
+	file_corev2_contract_balance_contract_proto_rawDesc = nil
+	file_corev2_contract_balance_contract_proto_goTypes = nil
+	file_corev2_contract_balance_contract_proto_depIdxs = nil
 }

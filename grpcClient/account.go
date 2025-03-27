@@ -5,12 +5,12 @@ import (
 	"fmt"
 
 	"github.com/foax-x/tron-wallet/grpcClient/proto/api"
-	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	"github.com/foax-x/tron-wallet/util"
 )
 
-func (g *GrpcClient) GetAccount(addr string) (*core.Account, error) {
-	account := new(core.Account)
+func (g *GrpcClient) GetAccount(addr string) (*corev2.Account, error) {
+	account := new(corev2.Account)
 	var err error
 
 	account.Address, err = util.DecodeCheck(addr)
@@ -32,7 +32,7 @@ func (g *GrpcClient) GetAccount(addr string) (*core.Account, error) {
 }
 
 func (g *GrpcClient) GetAccountResource(addr string) (*api.AccountResourceMessage, error) {
-	account := new(core.Account)
+	account := new(corev2.Account)
 	var err error
 
 	account.Address, err = util.DecodeCheck(addr)

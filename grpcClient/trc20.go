@@ -9,7 +9,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/foax-x/tron-wallet/grpcClient/proto/api"
-	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	"github.com/foax-x/tron-wallet/util"
 	"google.golang.org/protobuf/proto"
 )
@@ -36,7 +36,7 @@ func (g *GrpcClient) TRC20Call(fromAddressBase58 string, contractAddressBase58 s
 		return nil, err
 	}
 
-	ct := &core.TriggerSmartContract{
+	ct := &corev2.TriggerSmartContract{
 		OwnerAddress:    fromAddress.Bytes(),
 		ContractAddress: contractAddress.Bytes(),
 		Data:            dataBytes,
@@ -59,7 +59,7 @@ func (g *GrpcClient) TRC20Call(fromAddressBase58 string, contractAddressBase58 s
 }
 
 // triggerConstantContract and return tx result
-func (g *GrpcClient) triggerConstantContract(ct *core.TriggerSmartContract) (*api.TransactionExtention, error) {
+func (g *GrpcClient) triggerConstantContract(ct *corev2.TriggerSmartContract) (*api.TransactionExtention, error) {
 	ctx, cancel := g.getContext()
 	defer cancel()
 
@@ -67,7 +67,7 @@ func (g *GrpcClient) triggerConstantContract(ct *core.TriggerSmartContract) (*ap
 }
 
 // triggerContract and return tx result
-func (g *GrpcClient) triggerContract(ct *core.TriggerSmartContract, feeLimit int64) (*api.TransactionExtention, error) {
+func (g *GrpcClient) triggerContract(ct *corev2.TriggerSmartContract, feeLimit int64) (*api.TransactionExtention, error) {
 	ctx, cancel := g.getContext()
 	defer cancel()
 

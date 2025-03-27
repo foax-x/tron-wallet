@@ -11,7 +11,7 @@ import (
 	"github.com/foax-x/tron-wallet/enums"
 	"github.com/foax-x/tron-wallet/grpcClient"
 	"github.com/foax-x/tron-wallet/grpcClient/proto/api"
-	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	"github.com/foax-x/tron-wallet/util"
 	"github.com/golang/protobuf/proto"
 )
@@ -131,28 +131,28 @@ func (c *Crawler) extractOurTransactionsFromBlock(block *api.BlockExtention, cur
 		transaction := t.Transaction
 
 		// if transaction is not success
-		if transaction.Ret[0].ContractRet != core.Transaction_Result_SUCCESS {
+		if transaction.Ret[0].ContractRet != corev2.Transaction_Result_SUCCESS {
 			fmt.Println("transaction is not success")
 			continue
 		}
 
 		// if transaction is not tron transfer or erc20 transfer
-		if transaction.RawData.Contract[0].Type != core.Transaction_Contract_TransferContract && transaction.RawData.Contract[0].Type != core.Transaction_Contract_TriggerSmartContract {
+		if transaction.RawData.Contract[0].Type != corev2.Transaction_Contract_TransferContract && transaction.RawData.Contract[0].Type != corev2.Transaction_Contract_TriggerSmartContract {
 			continue
 		}
 
 		var crawlTransaction *CrawlTransaction = nil
 
-		if transaction.RawData.Contract[0].Type == core.Transaction_Contract_TransferContract {
-			contract := &core.TransferContract{}
+		if transaction.RawData.Contract[0].Type == corev2.Transaction_Contract_TransferContract {
+			contract := &corev2.TransferContract{}
 			err := proto.Unmarshal(transaction.RawData.Contract[0].Parameter.Value, contract)
 			if err != nil {
 				fmt.Println(err)
 				continue
 			}
 			crawlTransaction = c.prepareTrxTransaction(t, contract)
-		} else if transaction.RawData.Contract[0].Type == core.Transaction_Contract_TriggerSmartContract {
-			contract := &core.TriggerSmartContract{}
+		} else if transaction.RawData.Contract[0].Type == corev2.Transaction_Contract_TriggerSmartContract {
+			contract := &corev2.TriggerSmartContract{}
 			err := proto.Unmarshal(transaction.RawData.Contract[0].Parameter.Value, contract)
 			if err != nil {
 				fmt.Println(err)
@@ -178,7 +178,7 @@ func (c *Crawler) extractOurTransactionsFromBlock(block *api.BlockExtention, cur
 	return txs
 }
 
-func (c *Crawler) prepareTrxTransaction(t *api.TransactionExtention, contract *core.TransferContract) *CrawlTransaction {
+func (c *Crawler) prepareTrxTransaction(t *api.TransactionExtention, contract *corev2.TransferContract) *CrawlTransaction {
 
 	// if address is hex convert to base58
 	toAddress := hexutil.Encode(contract.ToAddress)[2:]
@@ -201,7 +201,7 @@ func (c *Crawler) prepareTrxTransaction(t *api.TransactionExtention, contract *c
 	}
 }
 
-func (c *Crawler) prepareTrc20Transaction(t *api.TransactionExtention, contract *core.TriggerSmartContract) *CrawlTransaction {
+func (c *Crawler) prepareTrc20Transaction(t *api.TransactionExtention, contract *corev2.TriggerSmartContract) *CrawlTransaction {
 
 	tokenTransferData, validTokenData := util.ParseTrc20TokenTransfer(util.ToHex(contract.Data)[2:])
 

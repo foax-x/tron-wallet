@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/contract/storage_contract.proto
+// source: corev2/contract/storage_contract.proto
 
-package core
+package corev2
 
 import (
 	proto "github.com/golang/protobuf/proto"
@@ -37,7 +37,7 @@ type BuyStorageBytesContract struct {
 func (x *BuyStorageBytesContract) Reset() {
 	*x = BuyStorageBytesContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_storage_contract_proto_msgTypes[0]
+		mi := &file_corev2_contract_storage_contract_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -50,7 +50,7 @@ func (x *BuyStorageBytesContract) String() string {
 func (*BuyStorageBytesContract) ProtoMessage() {}
 
 func (x *BuyStorageBytesContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_storage_contract_proto_msgTypes[0]
+	mi := &file_corev2_contract_storage_contract_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -63,7 +63,7 @@ func (x *BuyStorageBytesContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BuyStorageBytesContract.ProtoReflect.Descriptor instead.
 func (*BuyStorageBytesContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_storage_contract_proto_rawDescGZIP(), []int{0}
+	return file_corev2_contract_storage_contract_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *BuyStorageBytesContract) GetOwnerAddress() []byte {
@@ -92,7 +92,7 @@ type BuyStorageContract struct {
 func (x *BuyStorageContract) Reset() {
 	*x = BuyStorageContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_storage_contract_proto_msgTypes[1]
+		mi := &file_corev2_contract_storage_contract_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -105,7 +105,7 @@ func (x *BuyStorageContract) String() string {
 func (*BuyStorageContract) ProtoMessage() {}
 
 func (x *BuyStorageContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_storage_contract_proto_msgTypes[1]
+	mi := &file_corev2_contract_storage_contract_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -118,7 +118,7 @@ func (x *BuyStorageContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BuyStorageContract.ProtoReflect.Descriptor instead.
 func (*BuyStorageContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_storage_contract_proto_rawDescGZIP(), []int{1}
+	return file_corev2_contract_storage_contract_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *BuyStorageContract) GetOwnerAddress() []byte {
@@ -147,7 +147,7 @@ type SellStorageContract struct {
 func (x *SellStorageContract) Reset() {
 	*x = SellStorageContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_storage_contract_proto_msgTypes[2]
+		mi := &file_corev2_contract_storage_contract_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -160,7 +160,7 @@ func (x *SellStorageContract) String() string {
 func (*SellStorageContract) ProtoMessage() {}
 
 func (x *SellStorageContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_storage_contract_proto_msgTypes[2]
+	mi := &file_corev2_contract_storage_contract_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -173,7 +173,7 @@ func (x *SellStorageContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SellStorageContract.ProtoReflect.Descriptor instead.
 func (*SellStorageContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_storage_contract_proto_rawDescGZIP(), []int{2}
+	return file_corev2_contract_storage_contract_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *SellStorageContract) GetOwnerAddress() []byte {
@@ -202,7 +202,7 @@ type UpdateBrokerageContract struct {
 func (x *UpdateBrokerageContract) Reset() {
 	*x = UpdateBrokerageContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_storage_contract_proto_msgTypes[3]
+		mi := &file_corev2_contract_storage_contract_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -215,7 +215,7 @@ func (x *UpdateBrokerageContract) String() string {
 func (*UpdateBrokerageContract) ProtoMessage() {}
 
 func (x *UpdateBrokerageContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_storage_contract_proto_msgTypes[3]
+	mi := &file_corev2_contract_storage_contract_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -228,7 +228,7 @@ func (x *UpdateBrokerageContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateBrokerageContract.ProtoReflect.Descriptor instead.
 func (*UpdateBrokerageContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_storage_contract_proto_rawDescGZIP(), []int{3}
+	return file_corev2_contract_storage_contract_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *UpdateBrokerageContract) GetOwnerAddress() []byte {
@@ -245,9 +245,9 @@ func (x *UpdateBrokerageContract) GetBrokerage() int32 {
 	return 0
 }
 
-var File_core_contract_storage_contract_proto protoreflect.FileDescriptor
+var File_corev2_contract_storage_contract_proto protoreflect.FileDescriptor
 
-var file_core_contract_storage_contract_proto_rawDesc = []byte{
+var file_corev2_contract_storage_contract_proto_rawDesc = []byte{
 	0x0a, 0x24, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74, 0x2f,
 	0x73, 0x74, 0x6f, 0x72, 0x61, 0x67, 0x65, 0x5f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74,
 	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c,
@@ -282,25 +282,25 @@ var file_core_contract_storage_contract_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_contract_storage_contract_proto_rawDescOnce sync.Once
-	file_core_contract_storage_contract_proto_rawDescData = file_core_contract_storage_contract_proto_rawDesc
+	file_corev2_contract_storage_contract_proto_rawDescOnce sync.Once
+	file_corev2_contract_storage_contract_proto_rawDescData = file_corev2_contract_storage_contract_proto_rawDesc
 )
 
-func file_core_contract_storage_contract_proto_rawDescGZIP() []byte {
-	file_core_contract_storage_contract_proto_rawDescOnce.Do(func() {
-		file_core_contract_storage_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_contract_storage_contract_proto_rawDescData)
+func file_corev2_contract_storage_contract_proto_rawDescGZIP() []byte {
+	file_corev2_contract_storage_contract_proto_rawDescOnce.Do(func() {
+		file_corev2_contract_storage_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_contract_storage_contract_proto_rawDescData)
 	})
-	return file_core_contract_storage_contract_proto_rawDescData
+	return file_corev2_contract_storage_contract_proto_rawDescData
 }
 
-var file_core_contract_storage_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_core_contract_storage_contract_proto_goTypes = []interface{}{
+var file_corev2_contract_storage_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_corev2_contract_storage_contract_proto_goTypes = []interface{}{
 	(*BuyStorageBytesContract)(nil), // 0: protocol.BuyStorageBytesContract
 	(*BuyStorageContract)(nil),      // 1: protocol.BuyStorageContract
 	(*SellStorageContract)(nil),     // 2: protocol.SellStorageContract
 	(*UpdateBrokerageContract)(nil), // 3: protocol.UpdateBrokerageContract
 }
-var file_core_contract_storage_contract_proto_depIdxs = []int32{
+var file_corev2_contract_storage_contract_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -308,13 +308,13 @@ var file_core_contract_storage_contract_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_core_contract_storage_contract_proto_init() }
-func file_core_contract_storage_contract_proto_init() {
-	if File_core_contract_storage_contract_proto != nil {
+func init() { file_corev2_contract_storage_contract_proto_init() }
+func file_corev2_contract_storage_contract_proto_init() {
+	if File_corev2_contract_storage_contract_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_core_contract_storage_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_storage_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BuyStorageBytesContract); i {
 			case 0:
 				return &v.state
@@ -326,7 +326,7 @@ func file_core_contract_storage_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_storage_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_storage_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BuyStorageContract); i {
 			case 0:
 				return &v.state
@@ -338,7 +338,7 @@ func file_core_contract_storage_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_storage_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_storage_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SellStorageContract); i {
 			case 0:
 				return &v.state
@@ -350,7 +350,7 @@ func file_core_contract_storage_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_storage_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_storage_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateBrokerageContract); i {
 			case 0:
 				return &v.state
@@ -367,18 +367,18 @@ func file_core_contract_storage_contract_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_contract_storage_contract_proto_rawDesc,
+			RawDescriptor: file_corev2_contract_storage_contract_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_contract_storage_contract_proto_goTypes,
-		DependencyIndexes: file_core_contract_storage_contract_proto_depIdxs,
-		MessageInfos:      file_core_contract_storage_contract_proto_msgTypes,
+		GoTypes:           file_corev2_contract_storage_contract_proto_goTypes,
+		DependencyIndexes: file_corev2_contract_storage_contract_proto_depIdxs,
+		MessageInfos:      file_corev2_contract_storage_contract_proto_msgTypes,
 	}.Build()
-	File_core_contract_storage_contract_proto = out.File
-	file_core_contract_storage_contract_proto_rawDesc = nil
-	file_core_contract_storage_contract_proto_goTypes = nil
-	file_core_contract_storage_contract_proto_depIdxs = nil
+	File_corev2_contract_storage_contract_proto = out.File
+	file_corev2_contract_storage_contract_proto_rawDesc = nil
+	file_corev2_contract_storage_contract_proto_goTypes = nil
+	file_corev2_contract_storage_contract_proto_depIdxs = nil
 }

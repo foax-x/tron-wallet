@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/contract/smart_contract.proto
+// source: corev2/contract/smart_contract.proto
 
-package core
+package corev2
 
 import (
 	reflect "reflect"
@@ -66,11 +66,11 @@ func (x SmartContract_ABI_Entry_EntryType) String() string {
 }
 
 func (SmartContract_ABI_Entry_EntryType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_contract_smart_contract_proto_enumTypes[0].Descriptor()
+	return file_corev2_contract_smart_contract_proto_enumTypes[0].Descriptor()
 }
 
 func (SmartContract_ABI_Entry_EntryType) Type() protoreflect.EnumType {
-	return &file_core_contract_smart_contract_proto_enumTypes[0]
+	return &file_corev2_contract_smart_contract_proto_enumTypes[0]
 }
 
 func (x SmartContract_ABI_Entry_EntryType) Number() protoreflect.EnumNumber {
@@ -79,7 +79,7 @@ func (x SmartContract_ABI_Entry_EntryType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use SmartContract_ABI_Entry_EntryType.Descriptor instead.
 func (SmartContract_ABI_Entry_EntryType) EnumDescriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0, 0}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0, 0}
 }
 
 type SmartContract_ABI_Entry_StateMutabilityType int32
@@ -121,11 +121,11 @@ func (x SmartContract_ABI_Entry_StateMutabilityType) String() string {
 }
 
 func (SmartContract_ABI_Entry_StateMutabilityType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_contract_smart_contract_proto_enumTypes[1].Descriptor()
+	return file_corev2_contract_smart_contract_proto_enumTypes[1].Descriptor()
 }
 
 func (SmartContract_ABI_Entry_StateMutabilityType) Type() protoreflect.EnumType {
-	return &file_core_contract_smart_contract_proto_enumTypes[1]
+	return &file_corev2_contract_smart_contract_proto_enumTypes[1]
 }
 
 func (x SmartContract_ABI_Entry_StateMutabilityType) Number() protoreflect.EnumNumber {
@@ -134,7 +134,7 @@ func (x SmartContract_ABI_Entry_StateMutabilityType) Number() protoreflect.EnumN
 
 // Deprecated: Use SmartContract_ABI_Entry_StateMutabilityType.Descriptor instead.
 func (SmartContract_ABI_Entry_StateMutabilityType) EnumDescriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0, 1}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0, 1}
 }
 
 type SmartContract struct {
@@ -157,7 +157,7 @@ type SmartContract struct {
 func (x *SmartContract) Reset() {
 	*x = SmartContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[0]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -170,7 +170,7 @@ func (x *SmartContract) String() string {
 func (*SmartContract) ProtoMessage() {}
 
 func (x *SmartContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[0]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -183,7 +183,7 @@ func (x *SmartContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SmartContract.ProtoReflect.Descriptor instead.
 func (*SmartContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{0}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *SmartContract) GetOriginAddress() []byte {
@@ -270,7 +270,7 @@ type CreateSmartContract struct {
 func (x *CreateSmartContract) Reset() {
 	*x = CreateSmartContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[1]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -283,7 +283,7 @@ func (x *CreateSmartContract) String() string {
 func (*CreateSmartContract) ProtoMessage() {}
 
 func (x *CreateSmartContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[1]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -296,7 +296,7 @@ func (x *CreateSmartContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateSmartContract.ProtoReflect.Descriptor instead.
 func (*CreateSmartContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{1}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *CreateSmartContract) GetOwnerAddress() []byte {
@@ -343,7 +343,7 @@ type TriggerSmartContract struct {
 func (x *TriggerSmartContract) Reset() {
 	*x = TriggerSmartContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[2]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -356,7 +356,7 @@ func (x *TriggerSmartContract) String() string {
 func (*TriggerSmartContract) ProtoMessage() {}
 
 func (x *TriggerSmartContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[2]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -369,7 +369,7 @@ func (x *TriggerSmartContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TriggerSmartContract.ProtoReflect.Descriptor instead.
 func (*TriggerSmartContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{2}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *TriggerSmartContract) GetOwnerAddress() []byte {
@@ -426,7 +426,7 @@ type ClearABIContract struct {
 func (x *ClearABIContract) Reset() {
 	*x = ClearABIContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[3]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -439,7 +439,7 @@ func (x *ClearABIContract) String() string {
 func (*ClearABIContract) ProtoMessage() {}
 
 func (x *ClearABIContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[3]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -452,7 +452,7 @@ func (x *ClearABIContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ClearABIContract.ProtoReflect.Descriptor instead.
 func (*ClearABIContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{3}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *ClearABIContract) GetOwnerAddress() []byte {
@@ -482,7 +482,7 @@ type UpdateSettingContract struct {
 func (x *UpdateSettingContract) Reset() {
 	*x = UpdateSettingContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[4]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -495,7 +495,7 @@ func (x *UpdateSettingContract) String() string {
 func (*UpdateSettingContract) ProtoMessage() {}
 
 func (x *UpdateSettingContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[4]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -508,7 +508,7 @@ func (x *UpdateSettingContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateSettingContract.ProtoReflect.Descriptor instead.
 func (*UpdateSettingContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{4}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *UpdateSettingContract) GetOwnerAddress() []byte {
@@ -545,7 +545,7 @@ type UpdateEnergyLimitContract struct {
 func (x *UpdateEnergyLimitContract) Reset() {
 	*x = UpdateEnergyLimitContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[5]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -558,7 +558,7 @@ func (x *UpdateEnergyLimitContract) String() string {
 func (*UpdateEnergyLimitContract) ProtoMessage() {}
 
 func (x *UpdateEnergyLimitContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[5]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -571,7 +571,7 @@ func (x *UpdateEnergyLimitContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UpdateEnergyLimitContract.ProtoReflect.Descriptor instead.
 func (*UpdateEnergyLimitContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{5}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *UpdateEnergyLimitContract) GetOwnerAddress() []byte {
@@ -606,7 +606,7 @@ type SmartContract_ABI struct {
 func (x *SmartContract_ABI) Reset() {
 	*x = SmartContract_ABI{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[6]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -619,7 +619,7 @@ func (x *SmartContract_ABI) String() string {
 func (*SmartContract_ABI) ProtoMessage() {}
 
 func (x *SmartContract_ABI) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[6]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -632,7 +632,7 @@ func (x *SmartContract_ABI) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SmartContract_ABI.ProtoReflect.Descriptor instead.
 func (*SmartContract_ABI) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0}
 }
 
 func (x *SmartContract_ABI) GetEntrys() []*SmartContract_ABI_Entry {
@@ -660,7 +660,7 @@ type SmartContract_ABI_Entry struct {
 func (x *SmartContract_ABI_Entry) Reset() {
 	*x = SmartContract_ABI_Entry{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[7]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -673,7 +673,7 @@ func (x *SmartContract_ABI_Entry) String() string {
 func (*SmartContract_ABI_Entry) ProtoMessage() {}
 
 func (x *SmartContract_ABI_Entry) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[7]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -686,7 +686,7 @@ func (x *SmartContract_ABI_Entry) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SmartContract_ABI_Entry.ProtoReflect.Descriptor instead.
 func (*SmartContract_ABI_Entry) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0}
 }
 
 func (x *SmartContract_ABI_Entry) GetAnonymous() bool {
@@ -758,7 +758,7 @@ type SmartContract_ABI_Entry_Param struct {
 func (x *SmartContract_ABI_Entry_Param) Reset() {
 	*x = SmartContract_ABI_Entry_Param{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_smart_contract_proto_msgTypes[8]
+		mi := &file_corev2_contract_smart_contract_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -771,7 +771,7 @@ func (x *SmartContract_ABI_Entry_Param) String() string {
 func (*SmartContract_ABI_Entry_Param) ProtoMessage() {}
 
 func (x *SmartContract_ABI_Entry_Param) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_smart_contract_proto_msgTypes[8]
+	mi := &file_corev2_contract_smart_contract_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -784,7 +784,7 @@ func (x *SmartContract_ABI_Entry_Param) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SmartContract_ABI_Entry_Param.ProtoReflect.Descriptor instead.
 func (*SmartContract_ABI_Entry_Param) Descriptor() ([]byte, []int) {
-	return file_core_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0, 0}
+	return file_corev2_contract_smart_contract_proto_rawDescGZIP(), []int{0, 0, 0, 0}
 }
 
 func (x *SmartContract_ABI_Entry_Param) GetIndexed() bool {
@@ -808,9 +808,9 @@ func (x *SmartContract_ABI_Entry_Param) GetType() string {
 	return ""
 }
 
-var File_core_contract_smart_contract_proto protoreflect.FileDescriptor
+var File_corev2_contract_smart_contract_proto protoreflect.FileDescriptor
 
-var file_core_contract_smart_contract_proto_rawDesc = []byte{
+var file_corev2_contract_smart_contract_proto_rawDesc = []byte{
 	0x0a, 0x22, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74, 0x2f,
 	0x73, 0x6d, 0x61, 0x72, 0x74, 0x5f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74, 0x2e, 0x70,
 	0x72, 0x6f, 0x74, 0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x1a, 0x0f,
@@ -948,20 +948,20 @@ var file_core_contract_smart_contract_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_contract_smart_contract_proto_rawDescOnce sync.Once
-	file_core_contract_smart_contract_proto_rawDescData = file_core_contract_smart_contract_proto_rawDesc
+	file_corev2_contract_smart_contract_proto_rawDescOnce sync.Once
+	file_corev2_contract_smart_contract_proto_rawDescData = file_corev2_contract_smart_contract_proto_rawDesc
 )
 
-func file_core_contract_smart_contract_proto_rawDescGZIP() []byte {
-	file_core_contract_smart_contract_proto_rawDescOnce.Do(func() {
-		file_core_contract_smart_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_contract_smart_contract_proto_rawDescData)
+func file_corev2_contract_smart_contract_proto_rawDescGZIP() []byte {
+	file_corev2_contract_smart_contract_proto_rawDescOnce.Do(func() {
+		file_corev2_contract_smart_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_contract_smart_contract_proto_rawDescData)
 	})
-	return file_core_contract_smart_contract_proto_rawDescData
+	return file_corev2_contract_smart_contract_proto_rawDescData
 }
 
-var file_core_contract_smart_contract_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
-var file_core_contract_smart_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
-var file_core_contract_smart_contract_proto_goTypes = []interface{}{
+var file_corev2_contract_smart_contract_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
+var file_corev2_contract_smart_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
+var file_corev2_contract_smart_contract_proto_goTypes = []interface{}{
 	(SmartContract_ABI_Entry_EntryType)(0),           // 0: protocol.SmartContract.ABI.Entry.EntryType
 	(SmartContract_ABI_Entry_StateMutabilityType)(0), // 1: protocol.SmartContract.ABI.Entry.StateMutabilityType
 	(*SmartContract)(nil),                            // 2: protocol.SmartContract
@@ -974,7 +974,7 @@ var file_core_contract_smart_contract_proto_goTypes = []interface{}{
 	(*SmartContract_ABI_Entry)(nil),                  // 9: protocol.SmartContract.ABI.Entry
 	(*SmartContract_ABI_Entry_Param)(nil),            // 10: protocol.SmartContract.ABI.Entry.Param
 }
-var file_core_contract_smart_contract_proto_depIdxs = []int32{
+var file_corev2_contract_smart_contract_proto_depIdxs = []int32{
 	8,  // 0: protocol.SmartContract.abi:type_name -> protocol.SmartContract.ABI
 	2,  // 1: protocol.CreateSmartContract.new_contract:type_name -> protocol.SmartContract
 	9,  // 2: protocol.SmartContract.ABI.entrys:type_name -> protocol.SmartContract.ABI.Entry
@@ -989,14 +989,14 @@ var file_core_contract_smart_contract_proto_depIdxs = []int32{
 	0,  // [0:7] is the sub-list for field type_name
 }
 
-func init() { file_core_contract_smart_contract_proto_init() }
-func file_core_contract_smart_contract_proto_init() {
-	if File_core_contract_smart_contract_proto != nil {
+func init() { file_corev2_contract_smart_contract_proto_init() }
+func file_corev2_contract_smart_contract_proto_init() {
+	if File_corev2_contract_smart_contract_proto != nil {
 		return
 	}
-	core.File_core_Tron_proto_init()
+	corev2.File_corev2_Tron_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_core_contract_smart_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SmartContract); i {
 			case 0:
 				return &v.state
@@ -1008,7 +1008,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CreateSmartContract); i {
 			case 0:
 				return &v.state
@@ -1020,7 +1020,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TriggerSmartContract); i {
 			case 0:
 				return &v.state
@@ -1032,7 +1032,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ClearABIContract); i {
 			case 0:
 				return &v.state
@@ -1044,7 +1044,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateSettingContract); i {
 			case 0:
 				return &v.state
@@ -1056,7 +1056,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*UpdateEnergyLimitContract); i {
 			case 0:
 				return &v.state
@@ -1068,7 +1068,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SmartContract_ABI); i {
 			case 0:
 				return &v.state
@@ -1080,7 +1080,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SmartContract_ABI_Entry); i {
 			case 0:
 				return &v.state
@@ -1092,7 +1092,7 @@ func file_core_contract_smart_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_smart_contract_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_smart_contract_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SmartContract_ABI_Entry_Param); i {
 			case 0:
 				return &v.state
@@ -1109,19 +1109,19 @@ func file_core_contract_smart_contract_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_contract_smart_contract_proto_rawDesc,
+			RawDescriptor: file_corev2_contract_smart_contract_proto_rawDesc,
 			NumEnums:      2,
 			NumMessages:   9,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_contract_smart_contract_proto_goTypes,
-		DependencyIndexes: file_core_contract_smart_contract_proto_depIdxs,
-		EnumInfos:         file_core_contract_smart_contract_proto_enumTypes,
-		MessageInfos:      file_core_contract_smart_contract_proto_msgTypes,
+		GoTypes:           file_corev2_contract_smart_contract_proto_goTypes,
+		DependencyIndexes: file_corev2_contract_smart_contract_proto_depIdxs,
+		EnumInfos:         file_corev2_contract_smart_contract_proto_enumTypes,
+		MessageInfos:      file_corev2_contract_smart_contract_proto_msgTypes,
 	}.Build()
-	File_core_contract_smart_contract_proto = out.File
-	file_core_contract_smart_contract_proto_rawDesc = nil
-	file_core_contract_smart_contract_proto_goTypes = nil
-	file_core_contract_smart_contract_proto_depIdxs = nil
+	File_corev2_contract_smart_contract_proto = out.File
+	file_corev2_contract_smart_contract_proto_rawDesc = nil
+	file_corev2_contract_smart_contract_proto_goTypes = nil
+	file_corev2_contract_smart_contract_proto_depIdxs = nil
 }

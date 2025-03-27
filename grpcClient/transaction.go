@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/foax-x/tron-wallet/grpcClient/proto/api"
-	"github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	"github.com/foax-x/tron-wallet/util"
 	"google.golang.org/protobuf/proto"
 )
@@ -12,7 +12,7 @@ import (
 func (g *GrpcClient) Transfer(from, toAddress string, amount int64) (*api.TransactionExtention, error) {
 	var err error
 
-	contract := &core.TransferContract{}
+	contract := &corev2.TransferContract{}
 	if contract.OwnerAddress, err = util.DecodeCheck(from); err != nil {
 		return nil, err
 	}
@@ -37,7 +37,7 @@ func (g *GrpcClient) Transfer(from, toAddress string, amount int64) (*api.Transa
 	return tx, nil
 }
 
-func (g *GrpcClient) Broadcast(tx *core.Transaction) (*api.Return, error) {
+func (g *GrpcClient) Broadcast(tx *corev2.Transaction) (*api.Return, error) {
 	ctx, cancel := g.getContext()
 	defer cancel()
 	result, err := g.Client.BroadcastTransaction(ctx, tx)

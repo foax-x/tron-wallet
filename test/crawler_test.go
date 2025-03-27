@@ -9,7 +9,7 @@ func TestScanBlocks(t *testing.T) {
 	c := crawler()
 	_, err := c.ScanBlocks(5)
 	if err != nil {
-		t.Errorf("ScanBlocks error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("ScanBlocks error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 }
 
@@ -19,9 +19,9 @@ func TestScanBlocksFromTo(t *testing.T) {
 
 	res, err := c.ScanBlocksFromTo(28905235, 28905236)
 	if err != nil {
-		t.Errorf("ScanBlocks error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("ScanBlocks error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 	if len(res) == 0 {
-		t.Errorf("ScanBlocks res was incorect, got: %q, want: %q.", res, "not empty")
+		t.Errorf("ScanBlocks res was incorev2ct, got: %q, want: %q.", res, "not empty")
 	}
 }

@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/contract/exchange_contract.proto
+// source: corev2/contract/exchange_contract.proto
 
-package core
+package corev2
 
 import (
 	proto "github.com/golang/protobuf/proto"
@@ -40,7 +40,7 @@ type ExchangeCreateContract struct {
 func (x *ExchangeCreateContract) Reset() {
 	*x = ExchangeCreateContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_exchange_contract_proto_msgTypes[0]
+		mi := &file_corev2_contract_exchange_contract_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -53,7 +53,7 @@ func (x *ExchangeCreateContract) String() string {
 func (*ExchangeCreateContract) ProtoMessage() {}
 
 func (x *ExchangeCreateContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_exchange_contract_proto_msgTypes[0]
+	mi := &file_corev2_contract_exchange_contract_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -66,7 +66,7 @@ func (x *ExchangeCreateContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExchangeCreateContract.ProtoReflect.Descriptor instead.
 func (*ExchangeCreateContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_exchange_contract_proto_rawDescGZIP(), []int{0}
+	return file_corev2_contract_exchange_contract_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *ExchangeCreateContract) GetOwnerAddress() []byte {
@@ -118,7 +118,7 @@ type ExchangeInjectContract struct {
 func (x *ExchangeInjectContract) Reset() {
 	*x = ExchangeInjectContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_exchange_contract_proto_msgTypes[1]
+		mi := &file_corev2_contract_exchange_contract_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -131,7 +131,7 @@ func (x *ExchangeInjectContract) String() string {
 func (*ExchangeInjectContract) ProtoMessage() {}
 
 func (x *ExchangeInjectContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_exchange_contract_proto_msgTypes[1]
+	mi := &file_corev2_contract_exchange_contract_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -144,7 +144,7 @@ func (x *ExchangeInjectContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExchangeInjectContract.ProtoReflect.Descriptor instead.
 func (*ExchangeInjectContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_exchange_contract_proto_rawDescGZIP(), []int{1}
+	return file_corev2_contract_exchange_contract_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ExchangeInjectContract) GetOwnerAddress() []byte {
@@ -189,7 +189,7 @@ type ExchangeWithdrawContract struct {
 func (x *ExchangeWithdrawContract) Reset() {
 	*x = ExchangeWithdrawContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_exchange_contract_proto_msgTypes[2]
+		mi := &file_corev2_contract_exchange_contract_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -202,7 +202,7 @@ func (x *ExchangeWithdrawContract) String() string {
 func (*ExchangeWithdrawContract) ProtoMessage() {}
 
 func (x *ExchangeWithdrawContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_exchange_contract_proto_msgTypes[2]
+	mi := &file_corev2_contract_exchange_contract_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -215,7 +215,7 @@ func (x *ExchangeWithdrawContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExchangeWithdrawContract.ProtoReflect.Descriptor instead.
 func (*ExchangeWithdrawContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_exchange_contract_proto_rawDescGZIP(), []int{2}
+	return file_corev2_contract_exchange_contract_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *ExchangeWithdrawContract) GetOwnerAddress() []byte {
@@ -261,7 +261,7 @@ type ExchangeTransactionContract struct {
 func (x *ExchangeTransactionContract) Reset() {
 	*x = ExchangeTransactionContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_exchange_contract_proto_msgTypes[3]
+		mi := &file_corev2_contract_exchange_contract_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -274,7 +274,7 @@ func (x *ExchangeTransactionContract) String() string {
 func (*ExchangeTransactionContract) ProtoMessage() {}
 
 func (x *ExchangeTransactionContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_exchange_contract_proto_msgTypes[3]
+	mi := &file_corev2_contract_exchange_contract_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -287,7 +287,7 @@ func (x *ExchangeTransactionContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ExchangeTransactionContract.ProtoReflect.Descriptor instead.
 func (*ExchangeTransactionContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_exchange_contract_proto_rawDescGZIP(), []int{3}
+	return file_corev2_contract_exchange_contract_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *ExchangeTransactionContract) GetOwnerAddress() []byte {
@@ -325,9 +325,9 @@ func (x *ExchangeTransactionContract) GetExpected() int64 {
 	return 0
 }
 
-var File_core_contract_exchange_contract_proto protoreflect.FileDescriptor
+var File_corev2_contract_exchange_contract_proto protoreflect.FileDescriptor
 
-var file_core_contract_exchange_contract_proto_rawDesc = []byte{
+var file_corev2_contract_exchange_contract_proto_rawDesc = []byte{
 	0x0a, 0x25, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74, 0x2f,
 	0x65, 0x78, 0x63, 0x68, 0x61, 0x6e, 0x67, 0x65, 0x5f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63,
 	0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f,
@@ -384,25 +384,25 @@ var file_core_contract_exchange_contract_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_contract_exchange_contract_proto_rawDescOnce sync.Once
-	file_core_contract_exchange_contract_proto_rawDescData = file_core_contract_exchange_contract_proto_rawDesc
+	file_corev2_contract_exchange_contract_proto_rawDescOnce sync.Once
+	file_corev2_contract_exchange_contract_proto_rawDescData = file_corev2_contract_exchange_contract_proto_rawDesc
 )
 
-func file_core_contract_exchange_contract_proto_rawDescGZIP() []byte {
-	file_core_contract_exchange_contract_proto_rawDescOnce.Do(func() {
-		file_core_contract_exchange_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_contract_exchange_contract_proto_rawDescData)
+func file_corev2_contract_exchange_contract_proto_rawDescGZIP() []byte {
+	file_corev2_contract_exchange_contract_proto_rawDescOnce.Do(func() {
+		file_corev2_contract_exchange_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_contract_exchange_contract_proto_rawDescData)
 	})
-	return file_core_contract_exchange_contract_proto_rawDescData
+	return file_corev2_contract_exchange_contract_proto_rawDescData
 }
 
-var file_core_contract_exchange_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_core_contract_exchange_contract_proto_goTypes = []interface{}{
+var file_corev2_contract_exchange_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_corev2_contract_exchange_contract_proto_goTypes = []interface{}{
 	(*ExchangeCreateContract)(nil),      // 0: protocol.ExchangeCreateContract
 	(*ExchangeInjectContract)(nil),      // 1: protocol.ExchangeInjectContract
 	(*ExchangeWithdrawContract)(nil),    // 2: protocol.ExchangeWithdrawContract
 	(*ExchangeTransactionContract)(nil), // 3: protocol.ExchangeTransactionContract
 }
-var file_core_contract_exchange_contract_proto_depIdxs = []int32{
+var file_corev2_contract_exchange_contract_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -410,13 +410,13 @@ var file_core_contract_exchange_contract_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_core_contract_exchange_contract_proto_init() }
-func file_core_contract_exchange_contract_proto_init() {
-	if File_core_contract_exchange_contract_proto != nil {
+func init() { file_corev2_contract_exchange_contract_proto_init() }
+func file_corev2_contract_exchange_contract_proto_init() {
+	if File_corev2_contract_exchange_contract_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_core_contract_exchange_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_exchange_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExchangeCreateContract); i {
 			case 0:
 				return &v.state
@@ -428,7 +428,7 @@ func file_core_contract_exchange_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_exchange_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_exchange_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExchangeInjectContract); i {
 			case 0:
 				return &v.state
@@ -440,7 +440,7 @@ func file_core_contract_exchange_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_exchange_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_exchange_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExchangeWithdrawContract); i {
 			case 0:
 				return &v.state
@@ -452,7 +452,7 @@ func file_core_contract_exchange_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_exchange_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_exchange_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ExchangeTransactionContract); i {
 			case 0:
 				return &v.state
@@ -469,18 +469,18 @@ func file_core_contract_exchange_contract_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_contract_exchange_contract_proto_rawDesc,
+			RawDescriptor: file_corev2_contract_exchange_contract_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_contract_exchange_contract_proto_goTypes,
-		DependencyIndexes: file_core_contract_exchange_contract_proto_depIdxs,
-		MessageInfos:      file_core_contract_exchange_contract_proto_msgTypes,
+		GoTypes:           file_corev2_contract_exchange_contract_proto_goTypes,
+		DependencyIndexes: file_corev2_contract_exchange_contract_proto_depIdxs,
+		MessageInfos:      file_corev2_contract_exchange_contract_proto_msgTypes,
 	}.Build()
-	File_core_contract_exchange_contract_proto = out.File
-	file_core_contract_exchange_contract_proto_rawDesc = nil
-	file_core_contract_exchange_contract_proto_goTypes = nil
-	file_core_contract_exchange_contract_proto_depIdxs = nil
+	File_corev2_contract_exchange_contract_proto = out.File
+	file_corev2_contract_exchange_contract_proto_rawDesc = nil
+	file_corev2_contract_exchange_contract_proto_goTypes = nil
+	file_corev2_contract_exchange_contract_proto_depIdxs = nil
 }

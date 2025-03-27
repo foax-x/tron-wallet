@@ -8,7 +8,7 @@ package api
 
 import (
 	context "context"
-	core "github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	proto "github.com/golang/protobuf/proto"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
@@ -343,7 +343,7 @@ type WitnessList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Witnesses []*core.Witness `protobuf:"bytes,1,rep,name=witnesses,proto3" json:"witnesses,omitempty"`
+	Witnesses []*corev2.Witness `protobuf:"bytes,1,rep,name=witnesses,proto3" json:"witnesses,omitempty"`
 }
 
 func (x *WitnessList) Reset() {
@@ -378,7 +378,7 @@ func (*WitnessList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *WitnessList) GetWitnesses() []*core.Witness {
+func (x *WitnessList) GetWitnesses() []*corev2.Witness {
 	if x != nil {
 		return x.Witnesses
 	}
@@ -390,7 +390,7 @@ type ProposalList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Proposals []*core.Proposal `protobuf:"bytes,1,rep,name=proposals,proto3" json:"proposals,omitempty"`
+	Proposals []*corev2.Proposal `protobuf:"bytes,1,rep,name=proposals,proto3" json:"proposals,omitempty"`
 }
 
 func (x *ProposalList) Reset() {
@@ -425,7 +425,7 @@ func (*ProposalList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *ProposalList) GetProposals() []*core.Proposal {
+func (x *ProposalList) GetProposals() []*corev2.Proposal {
 	if x != nil {
 		return x.Proposals
 	}
@@ -437,7 +437,7 @@ type ExchangeList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Exchanges []*core.Exchange `protobuf:"bytes,1,rep,name=exchanges,proto3" json:"exchanges,omitempty"`
+	Exchanges []*corev2.Exchange `protobuf:"bytes,1,rep,name=exchanges,proto3" json:"exchanges,omitempty"`
 }
 
 func (x *ExchangeList) Reset() {
@@ -472,7 +472,7 @@ func (*ExchangeList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{4}
 }
 
-func (x *ExchangeList) GetExchanges() []*core.Exchange {
+func (x *ExchangeList) GetExchanges() []*corev2.Exchange {
 	if x != nil {
 		return x.Exchanges
 	}
@@ -484,7 +484,7 @@ type AssetIssueList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	AssetIssue []*core.AssetIssueContract `protobuf:"bytes,1,rep,name=assetIssue,proto3" json:"assetIssue,omitempty"`
+	AssetIssue []*corev2.AssetIssueContract `protobuf:"bytes,1,rep,name=assetIssue,proto3" json:"assetIssue,omitempty"`
 }
 
 func (x *AssetIssueList) Reset() {
@@ -519,7 +519,7 @@ func (*AssetIssueList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{5}
 }
 
-func (x *AssetIssueList) GetAssetIssue() []*core.AssetIssueContract {
+func (x *AssetIssueList) GetAssetIssue() []*corev2.AssetIssueContract {
 	if x != nil {
 		return x.AssetIssue
 	}
@@ -531,7 +531,7 @@ type BlockList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Block []*core.Block `protobuf:"bytes,1,rep,name=block,proto3" json:"block,omitempty"`
+	Block []*corev2.Block `protobuf:"bytes,1,rep,name=block,proto3" json:"block,omitempty"`
 }
 
 func (x *BlockList) Reset() {
@@ -566,7 +566,7 @@ func (*BlockList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{6}
 }
 
-func (x *BlockList) GetBlock() []*core.Block {
+func (x *BlockList) GetBlock() []*corev2.Block {
 	if x != nil {
 		return x.Block
 	}
@@ -578,7 +578,7 @@ type TransactionList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction []*core.Transaction `protobuf:"bytes,1,rep,name=transaction,proto3" json:"transaction,omitempty"`
+	Transaction []*corev2.Transaction `protobuf:"bytes,1,rep,name=transaction,proto3" json:"transaction,omitempty"`
 }
 
 func (x *TransactionList) Reset() {
@@ -613,7 +613,7 @@ func (*TransactionList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{7}
 }
 
-func (x *TransactionList) GetTransaction() []*core.Transaction {
+func (x *TransactionList) GetTransaction() []*corev2.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -680,7 +680,7 @@ type DelegatedResourceList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	DelegatedResource []*core.DelegatedResource `protobuf:"bytes,1,rep,name=delegatedResource,proto3" json:"delegatedResource,omitempty"`
+	DelegatedResource []*corev2.DelegatedResource `protobuf:"bytes,1,rep,name=delegatedResource,proto3" json:"delegatedResource,omitempty"`
 }
 
 func (x *DelegatedResourceList) Reset() {
@@ -715,7 +715,7 @@ func (*DelegatedResourceList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{9}
 }
 
-func (x *DelegatedResourceList) GetDelegatedResource() []*core.DelegatedResource {
+func (x *DelegatedResourceList) GetDelegatedResource() []*corev2.DelegatedResource {
 	if x != nil {
 		return x.DelegatedResource
 	}
@@ -1176,7 +1176,7 @@ type AccountPaginated struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Account *core.Account `protobuf:"bytes,1,opt,name=account,proto3" json:"account,omitempty"`
+	Account *corev2.Account `protobuf:"bytes,1,opt,name=account,proto3" json:"account,omitempty"`
 	Offset  int64         `protobuf:"varint,2,opt,name=offset,proto3" json:"offset,omitempty"`
 	Limit   int64         `protobuf:"varint,3,opt,name=limit,proto3" json:"limit,omitempty"`
 }
@@ -1213,7 +1213,7 @@ func (*AccountPaginated) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{19}
 }
 
-func (x *AccountPaginated) GetAccount() *core.Account {
+func (x *AccountPaginated) GetAccount() *corev2.Account {
 	if x != nil {
 		return x.Account
 	}
@@ -1880,7 +1880,7 @@ type EasyTransferResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction *core.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
+	Transaction *corev2.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
 	Result      *Return           `protobuf:"bytes,2,opt,name=result,proto3" json:"result,omitempty"`
 	Txid        []byte            `protobuf:"bytes,3,opt,name=txid,proto3" json:"txid,omitempty"` //transaction id = sha256(transaction.raw_data)
 }
@@ -1917,7 +1917,7 @@ func (*EasyTransferResponse) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{28}
 }
 
-func (x *EasyTransferResponse) GetTransaction() *core.Transaction {
+func (x *EasyTransferResponse) GetTransaction() *corev2.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -1998,7 +1998,7 @@ type TransactionExtention struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction    *core.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
+	Transaction    *corev2.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
 	Txid           []byte            `protobuf:"bytes,2,opt,name=txid,proto3" json:"txid,omitempty"` //transaction id = sha256(transaction.raw_data)
 	ConstantResult [][]byte          `protobuf:"bytes,3,rep,name=constant_result,json=constantResult,proto3" json:"constant_result,omitempty"`
 	Result         *Return           `protobuf:"bytes,4,opt,name=result,proto3" json:"result,omitempty"`
@@ -2036,7 +2036,7 @@ func (*TransactionExtention) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{30}
 }
 
-func (x *TransactionExtention) GetTransaction() *core.Transaction {
+func (x *TransactionExtention) GetTransaction() *corev2.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -2070,7 +2070,7 @@ type BlockExtention struct {
 	unknownFields protoimpl.UnknownFields
 
 	Transactions []*TransactionExtention `protobuf:"bytes,1,rep,name=transactions,proto3" json:"transactions,omitempty"`
-	BlockHeader  *core.BlockHeader       `protobuf:"bytes,2,opt,name=block_header,json=blockHeader,proto3" json:"block_header,omitempty"`
+	BlockHeader  *corev2.BlockHeader       `protobuf:"bytes,2,opt,name=block_header,json=blockHeader,proto3" json:"block_header,omitempty"`
 	Blockid      []byte                  `protobuf:"bytes,3,opt,name=blockid,proto3" json:"blockid,omitempty"`
 }
 
@@ -2113,7 +2113,7 @@ func (x *BlockExtention) GetTransactions() []*TransactionExtention {
 	return nil
 }
 
-func (x *BlockExtention) GetBlockHeader() *core.BlockHeader {
+func (x *BlockExtention) GetBlockHeader() *corev2.BlockHeader {
 	if x != nil {
 		return x.BlockHeader
 	}
@@ -2227,7 +2227,7 @@ type BlockIncrementalMerkleTree struct {
 	unknownFields protoimpl.UnknownFields
 
 	Number     int64                       `protobuf:"varint,1,opt,name=number,proto3" json:"number,omitempty"`
-	MerkleTree *core.IncrementalMerkleTree `protobuf:"bytes,2,opt,name=merkleTree,proto3" json:"merkleTree,omitempty"`
+	MerkleTree *corev2.IncrementalMerkleTree `protobuf:"bytes,2,opt,name=merkleTree,proto3" json:"merkleTree,omitempty"`
 }
 
 func (x *BlockIncrementalMerkleTree) Reset() {
@@ -2269,7 +2269,7 @@ func (x *BlockIncrementalMerkleTree) GetNumber() int64 {
 	return 0
 }
 
-func (x *BlockIncrementalMerkleTree) GetMerkleTree() *core.IncrementalMerkleTree {
+func (x *BlockIncrementalMerkleTree) GetMerkleTree() *corev2.IncrementalMerkleTree {
 	if x != nil {
 		return x.MerkleTree
 	}
@@ -2281,7 +2281,7 @@ type TransactionSignWeight struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Permission    *core.Permission              `protobuf:"bytes,1,opt,name=permission,proto3" json:"permission,omitempty"`
+	Permission    *corev2.Permission              `protobuf:"bytes,1,opt,name=permission,proto3" json:"permission,omitempty"`
 	ApprovedList  [][]byte                      `protobuf:"bytes,2,rep,name=approved_list,json=approvedList,proto3" json:"approved_list,omitempty"`
 	CurrentWeight int64                         `protobuf:"varint,3,opt,name=current_weight,json=currentWeight,proto3" json:"current_weight,omitempty"`
 	Result        *TransactionSignWeight_Result `protobuf:"bytes,4,opt,name=result,proto3" json:"result,omitempty"`
@@ -2320,7 +2320,7 @@ func (*TransactionSignWeight) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{35}
 }
 
-func (x *TransactionSignWeight) GetPermission() *core.Permission {
+func (x *TransactionSignWeight) GetPermission() *corev2.Permission {
 	if x != nil {
 		return x.Permission
 	}
@@ -2795,7 +2795,7 @@ type SpendNote struct {
 
 	Note    *Note                          `protobuf:"bytes,3,opt,name=note,proto3" json:"note,omitempty"`
 	Alpha   []byte                         `protobuf:"bytes,4,opt,name=alpha,proto3" json:"alpha,omitempty"` // random number for spend authority signature
-	Voucher *core.IncrementalMerkleVoucher `protobuf:"bytes,5,opt,name=voucher,proto3" json:"voucher,omitempty"`
+	Voucher *corev2.IncrementalMerkleVoucher `protobuf:"bytes,5,opt,name=voucher,proto3" json:"voucher,omitempty"`
 	Path    []byte                         `protobuf:"bytes,6,opt,name=path,proto3" json:"path,omitempty"` // path for cm from leaf to root in merkle tree
 }
 
@@ -2845,7 +2845,7 @@ func (x *SpendNote) GetAlpha() []byte {
 	return nil
 }
 
-func (x *SpendNote) GetVoucher() *core.IncrementalMerkleVoucher {
+func (x *SpendNote) GetVoucher() *corev2.IncrementalMerkleVoucher {
 	if x != nil {
 		return x.Voucher
 	}
@@ -3197,7 +3197,7 @@ type NfParameters struct {
 	unknownFields protoimpl.UnknownFields
 
 	Note    *Note                          `protobuf:"bytes,1,opt,name=note,proto3" json:"note,omitempty"`
-	Voucher *core.IncrementalMerkleVoucher `protobuf:"bytes,2,opt,name=voucher,proto3" json:"voucher,omitempty"`
+	Voucher *corev2.IncrementalMerkleVoucher `protobuf:"bytes,2,opt,name=voucher,proto3" json:"voucher,omitempty"`
 	Ak      []byte                         `protobuf:"bytes,3,opt,name=ak,proto3" json:"ak,omitempty"`
 	Nk      []byte                         `protobuf:"bytes,4,opt,name=nk,proto3" json:"nk,omitempty"`
 }
@@ -3241,7 +3241,7 @@ func (x *NfParameters) GetNote() *Note {
 	return nil
 }
 
-func (x *NfParameters) GetVoucher() *core.IncrementalMerkleVoucher {
+func (x *NfParameters) GetVoucher() *corev2.IncrementalMerkleVoucher {
 	if x != nil {
 		return x.Voucher
 	}
@@ -3850,7 +3850,7 @@ type TransactionInfoList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	TransactionInfo []*core.TransactionInfo `protobuf:"bytes,1,rep,name=transactionInfo,proto3" json:"transactionInfo,omitempty"`
+	TransactionInfo []*corev2.TransactionInfo `protobuf:"bytes,1,rep,name=transactionInfo,proto3" json:"transactionInfo,omitempty"`
 }
 
 func (x *TransactionInfoList) Reset() {
@@ -3885,7 +3885,7 @@ func (*TransactionInfoList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{58}
 }
 
-func (x *TransactionInfoList) GetTransactionInfo() []*core.TransactionInfo {
+func (x *TransactionInfoList) GetTransactionInfo() []*corev2.TransactionInfo {
 	if x != nil {
 		return x.TransactionInfo
 	}
@@ -5821,58 +5821,58 @@ var file_api_api_proto_goTypes = []interface{}{
 	(*TransactionApprovedList_Result)(nil),       // 67: protocol.TransactionApprovedList.Result
 	(*DecryptNotes_NoteTx)(nil),                  // 68: protocol.DecryptNotes.NoteTx
 	(*DecryptNotesMarked_NoteTx)(nil),            // 69: protocol.DecryptNotesMarked.NoteTx
-	(*core.Witness)(nil),                         // 70: protocol.Witness
-	(*core.Proposal)(nil),                        // 71: protocol.Proposal
-	(*core.Exchange)(nil),                        // 72: protocol.Exchange
-	(*core.AssetIssueContract)(nil),              // 73: protocol.AssetIssueContract
-	(*core.Block)(nil),                           // 74: protocol.Block
-	(*core.Transaction)(nil),                     // 75: protocol.Transaction
-	(*core.DelegatedResource)(nil),               // 76: protocol.DelegatedResource
-	(*core.Account)(nil),                         // 77: protocol.Account
-	(*core.BlockHeader)(nil),                     // 78: protocol.BlockHeader
-	(*core.IncrementalMerkleTree)(nil),           // 79: protocol.IncrementalMerkleTree
-	(*core.Permission)(nil),                      // 80: protocol.Permission
-	(*core.IncrementalMerkleVoucher)(nil),        // 81: protocol.IncrementalMerkleVoucher
-	(*core.TransactionInfo)(nil),                 // 82: protocol.TransactionInfo
-	(*core.TransferContract)(nil),                // 83: protocol.TransferContract
-	(*core.AccountUpdateContract)(nil),           // 84: protocol.AccountUpdateContract
-	(*core.SetAccountIdContract)(nil),            // 85: protocol.SetAccountIdContract
-	(*core.VoteWitnessContract)(nil),             // 86: protocol.VoteWitnessContract
-	(*core.UpdateSettingContract)(nil),           // 87: protocol.UpdateSettingContract
-	(*core.UpdateEnergyLimitContract)(nil),       // 88: protocol.UpdateEnergyLimitContract
-	(*core.WitnessUpdateContract)(nil),           // 89: protocol.WitnessUpdateContract
-	(*core.AccountCreateContract)(nil),           // 90: protocol.AccountCreateContract
-	(*core.WitnessCreateContract)(nil),           // 91: protocol.WitnessCreateContract
-	(*core.TransferAssetContract)(nil),           // 92: protocol.TransferAssetContract
-	(*core.ParticipateAssetIssueContract)(nil),   // 93: protocol.ParticipateAssetIssueContract
-	(*core.FreezeBalanceContract)(nil),           // 94: protocol.FreezeBalanceContract
-	(*core.UnfreezeBalanceContract)(nil),         // 95: protocol.UnfreezeBalanceContract
-	(*core.UnfreezeAssetContract)(nil),           // 96: protocol.UnfreezeAssetContract
-	(*core.WithdrawBalanceContract)(nil),         // 97: protocol.WithdrawBalanceContract
-	(*core.UpdateAssetContract)(nil),             // 98: protocol.UpdateAssetContract
-	(*core.ProposalCreateContract)(nil),          // 99: protocol.ProposalCreateContract
-	(*core.ProposalApproveContract)(nil),         // 100: protocol.ProposalApproveContract
-	(*core.ProposalDeleteContract)(nil),          // 101: protocol.ProposalDeleteContract
-	(*core.BuyStorageContract)(nil),              // 102: protocol.BuyStorageContract
-	(*core.BuyStorageBytesContract)(nil),         // 103: protocol.BuyStorageBytesContract
-	(*core.SellStorageContract)(nil),             // 104: protocol.SellStorageContract
-	(*core.ExchangeCreateContract)(nil),          // 105: protocol.ExchangeCreateContract
-	(*core.ExchangeInjectContract)(nil),          // 106: protocol.ExchangeInjectContract
-	(*core.ExchangeWithdrawContract)(nil),        // 107: protocol.ExchangeWithdrawContract
-	(*core.ExchangeTransactionContract)(nil),     // 108: protocol.ExchangeTransactionContract
-	(*core.CreateSmartContract)(nil),             // 109: protocol.CreateSmartContract
-	(*core.TriggerSmartContract)(nil),            // 110: protocol.TriggerSmartContract
-	(*core.ClearABIContract)(nil),                // 111: protocol.ClearABIContract
-	(*core.TransactionSign)(nil),                 // 112: protocol.TransactionSign
-	(*core.AccountPermissionUpdateContract)(nil), // 113: protocol.AccountPermissionUpdateContract
-	(*core.UpdateBrokerageContract)(nil),         // 114: protocol.UpdateBrokerageContract
-	(*core.OutputPointInfo)(nil),                 // 115: protocol.OutputPointInfo
-	(*core.SmartContract)(nil),                   // 116: protocol.SmartContract
-	(*core.DelegatedResourceAccountIndex)(nil),   // 117: protocol.DelegatedResourceAccountIndex
-	(*core.ChainParameters)(nil),                 // 118: protocol.ChainParameters
-	(*core.NodeInfo)(nil),                        // 119: protocol.NodeInfo
-	(*core.IncrementalMerkleVoucherInfo)(nil),    // 120: protocol.IncrementalMerkleVoucherInfo
-	(*core.DynamicProperties)(nil),               // 121: protocol.DynamicProperties
+	(*corev2.Witness)(nil),                         // 70: protocol.Witness
+	(*corev2.Proposal)(nil),                        // 71: protocol.Proposal
+	(*corev2.Exchange)(nil),                        // 72: protocol.Exchange
+	(*corev2.AssetIssueContract)(nil),              // 73: protocol.AssetIssueContract
+	(*corev2.Block)(nil),                           // 74: protocol.Block
+	(*corev2.Transaction)(nil),                     // 75: protocol.Transaction
+	(*corev2.DelegatedResource)(nil),               // 76: protocol.DelegatedResource
+	(*corev2.Account)(nil),                         // 77: protocol.Account
+	(*corev2.BlockHeader)(nil),                     // 78: protocol.BlockHeader
+	(*corev2.IncrementalMerkleTree)(nil),           // 79: protocol.IncrementalMerkleTree
+	(*corev2.Permission)(nil),                      // 80: protocol.Permission
+	(*corev2.IncrementalMerkleVoucher)(nil),        // 81: protocol.IncrementalMerkleVoucher
+	(*corev2.TransactionInfo)(nil),                 // 82: protocol.TransactionInfo
+	(*corev2.TransferContract)(nil),                // 83: protocol.TransferContract
+	(*corev2.AccountUpdateContract)(nil),           // 84: protocol.AccountUpdateContract
+	(*corev2.SetAccountIdContract)(nil),            // 85: protocol.SetAccountIdContract
+	(*corev2.VoteWitnessContract)(nil),             // 86: protocol.VoteWitnessContract
+	(*corev2.UpdateSettingContract)(nil),           // 87: protocol.UpdateSettingContract
+	(*corev2.UpdateEnergyLimitContract)(nil),       // 88: protocol.UpdateEnergyLimitContract
+	(*corev2.WitnessUpdateContract)(nil),           // 89: protocol.WitnessUpdateContract
+	(*corev2.AccountCreateContract)(nil),           // 90: protocol.AccountCreateContract
+	(*corev2.WitnessCreateContract)(nil),           // 91: protocol.WitnessCreateContract
+	(*corev2.TransferAssetContract)(nil),           // 92: protocol.TransferAssetContract
+	(*corev2.ParticipateAssetIssueContract)(nil),   // 93: protocol.ParticipateAssetIssueContract
+	(*corev2.FreezeBalanceContract)(nil),           // 94: protocol.FreezeBalanceContract
+	(*corev2.UnfreezeBalanceContract)(nil),         // 95: protocol.UnfreezeBalanceContract
+	(*corev2.UnfreezeAssetContract)(nil),           // 96: protocol.UnfreezeAssetContract
+	(*corev2.WithdrawBalanceContract)(nil),         // 97: protocol.WithdrawBalanceContract
+	(*corev2.UpdateAssetContract)(nil),             // 98: protocol.UpdateAssetContract
+	(*corev2.ProposalCreateContract)(nil),          // 99: protocol.ProposalCreateContract
+	(*corev2.ProposalApproveContract)(nil),         // 100: protocol.ProposalApproveContract
+	(*corev2.ProposalDeleteContract)(nil),          // 101: protocol.ProposalDeleteContract
+	(*corev2.BuyStorageContract)(nil),              // 102: protocol.BuyStorageContract
+	(*corev2.BuyStorageBytesContract)(nil),         // 103: protocol.BuyStorageBytesContract
+	(*corev2.SellStorageContract)(nil),             // 104: protocol.SellStorageContract
+	(*corev2.ExchangeCreateContract)(nil),          // 105: protocol.ExchangeCreateContract
+	(*corev2.ExchangeInjectContract)(nil),          // 106: protocol.ExchangeInjectContract
+	(*corev2.ExchangeWithdrawContract)(nil),        // 107: protocol.ExchangeWithdrawContract
+	(*corev2.ExchangeTransactionContract)(nil),     // 108: protocol.ExchangeTransactionContract
+	(*corev2.CreateSmartContract)(nil),             // 109: protocol.CreateSmartContract
+	(*corev2.TriggerSmartContract)(nil),            // 110: protocol.TriggerSmartContract
+	(*corev2.ClearABIContract)(nil),                // 111: protocol.ClearABIContract
+	(*corev2.TransactionSign)(nil),                 // 112: protocol.TransactionSign
+	(*corev2.AccountPermissionUpdateContract)(nil), // 113: protocol.AccountPermissionUpdateContract
+	(*corev2.UpdateBrokerageContract)(nil),         // 114: protocol.UpdateBrokerageContract
+	(*corev2.OutputPointInfo)(nil),                 // 115: protocol.OutputPointInfo
+	(*corev2.SmartContract)(nil),                   // 116: protocol.SmartContract
+	(*corev2.DelegatedResourceAccountIndex)(nil),   // 117: protocol.DelegatedResourceAccountIndex
+	(*corev2.ChainParameters)(nil),                 // 118: protocol.ChainParameters
+	(*corev2.NodeInfo)(nil),                        // 119: protocol.NodeInfo
+	(*corev2.IncrementalMerkleVoucherInfo)(nil),    // 120: protocol.IncrementalMerkleVoucherInfo
+	(*corev2.DynamicProperties)(nil),               // 121: protocol.DynamicProperties
 }
 var file_api_api_proto_depIdxs = []int32{
 	0,   // 0: protocol.Return.code:type_name -> protocol.Return.response_code
@@ -7040,97 +7040,97 @@ const _ = grpc.SupportPackageIsVersion6
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type WalletClient interface {
-	GetAccount(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error)
-	GetAccountById(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error)
+	GetAccount(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error)
+	GetAccountById(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error)
 	//Please use CreateTransaction2 instead of this function.
-	CreateTransaction(ctx context.Context, in *core.TransferContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	CreateTransaction(ctx context.Context, in *corev2.TransferContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of CreateTransaction.
-	CreateTransaction2(ctx context.Context, in *core.TransferContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	BroadcastTransaction(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*Return, error)
+	CreateTransaction2(ctx context.Context, in *corev2.TransferContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	BroadcastTransaction(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*Return, error)
 	//Please use UpdateAccount2 instead of this function.
-	UpdateAccount(ctx context.Context, in *core.AccountUpdateContract, opts ...grpc.CallOption) (*core.Transaction, error)
-	SetAccountId(ctx context.Context, in *core.SetAccountIdContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	UpdateAccount(ctx context.Context, in *corev2.AccountUpdateContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
+	SetAccountId(ctx context.Context, in *corev2.SetAccountIdContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of UpdateAccount.
-	UpdateAccount2(ctx context.Context, in *core.AccountUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UpdateAccount2(ctx context.Context, in *corev2.AccountUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use VoteWitnessAccount2 instead of this function.
-	VoteWitnessAccount(ctx context.Context, in *core.VoteWitnessContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	VoteWitnessAccount(ctx context.Context, in *corev2.VoteWitnessContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//modify the consume_user_resource_percent
-	UpdateSetting(ctx context.Context, in *core.UpdateSettingContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UpdateSetting(ctx context.Context, in *corev2.UpdateSettingContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//modify the energy_limit
-	UpdateEnergyLimit(ctx context.Context, in *core.UpdateEnergyLimitContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UpdateEnergyLimit(ctx context.Context, in *corev2.UpdateEnergyLimitContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Use this function instead of VoteWitnessAccount.
-	VoteWitnessAccount2(ctx context.Context, in *core.VoteWitnessContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	VoteWitnessAccount2(ctx context.Context, in *corev2.VoteWitnessContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use CreateAssetIssue2 instead of this function.
-	CreateAssetIssue(ctx context.Context, in *core.AssetIssueContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	CreateAssetIssue(ctx context.Context, in *corev2.AssetIssueContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of CreateAssetIssue.
-	CreateAssetIssue2(ctx context.Context, in *core.AssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	CreateAssetIssue2(ctx context.Context, in *corev2.AssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use UpdateWitness2 instead of this function.
-	UpdateWitness(ctx context.Context, in *core.WitnessUpdateContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	UpdateWitness(ctx context.Context, in *corev2.WitnessUpdateContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of UpdateWitness.
-	UpdateWitness2(ctx context.Context, in *core.WitnessUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UpdateWitness2(ctx context.Context, in *corev2.WitnessUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use CreateAccount2 instead of this function.
-	CreateAccount(ctx context.Context, in *core.AccountCreateContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	CreateAccount(ctx context.Context, in *corev2.AccountCreateContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of CreateAccount.
-	CreateAccount2(ctx context.Context, in *core.AccountCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	CreateAccount2(ctx context.Context, in *corev2.AccountCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use CreateWitness2 instead of this function.
-	CreateWitness(ctx context.Context, in *core.WitnessCreateContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	CreateWitness(ctx context.Context, in *corev2.WitnessCreateContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of CreateWitness.
-	CreateWitness2(ctx context.Context, in *core.WitnessCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	CreateWitness2(ctx context.Context, in *corev2.WitnessCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use TransferAsset2 instead of this function.
-	TransferAsset(ctx context.Context, in *core.TransferAssetContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	TransferAsset(ctx context.Context, in *corev2.TransferAssetContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of TransferAsset.
-	TransferAsset2(ctx context.Context, in *core.TransferAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	TransferAsset2(ctx context.Context, in *corev2.TransferAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use ParticipateAssetIssue2 instead of this function.
-	ParticipateAssetIssue(ctx context.Context, in *core.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	ParticipateAssetIssue(ctx context.Context, in *corev2.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of ParticipateAssetIssue.
-	ParticipateAssetIssue2(ctx context.Context, in *core.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ParticipateAssetIssue2(ctx context.Context, in *corev2.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use FreezeBalance2 instead of this function.
-	FreezeBalance(ctx context.Context, in *core.FreezeBalanceContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	FreezeBalance(ctx context.Context, in *corev2.FreezeBalanceContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of FreezeBalance.
-	FreezeBalance2(ctx context.Context, in *core.FreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	FreezeBalance2(ctx context.Context, in *corev2.FreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use UnfreezeBalance2 instead of this function.
-	UnfreezeBalance(ctx context.Context, in *core.UnfreezeBalanceContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	UnfreezeBalance(ctx context.Context, in *corev2.UnfreezeBalanceContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of UnfreezeBalance.
-	UnfreezeBalance2(ctx context.Context, in *core.UnfreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UnfreezeBalance2(ctx context.Context, in *corev2.UnfreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use UnfreezeAsset2 instead of this function.
-	UnfreezeAsset(ctx context.Context, in *core.UnfreezeAssetContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	UnfreezeAsset(ctx context.Context, in *corev2.UnfreezeAssetContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of UnfreezeAsset.
-	UnfreezeAsset2(ctx context.Context, in *core.UnfreezeAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UnfreezeAsset2(ctx context.Context, in *corev2.UnfreezeAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use WithdrawBalance2 instead of this function.
-	WithdrawBalance(ctx context.Context, in *core.WithdrawBalanceContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	WithdrawBalance(ctx context.Context, in *corev2.WithdrawBalanceContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of WithdrawBalance.
-	WithdrawBalance2(ctx context.Context, in *core.WithdrawBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	WithdrawBalance2(ctx context.Context, in *corev2.WithdrawBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Please use UpdateAsset2 instead of this function.
-	UpdateAsset(ctx context.Context, in *core.UpdateAssetContract, opts ...grpc.CallOption) (*core.Transaction, error)
+	UpdateAsset(ctx context.Context, in *corev2.UpdateAssetContract, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Use this function instead of UpdateAsset.
-	UpdateAsset2(ctx context.Context, in *core.UpdateAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ProposalCreate(ctx context.Context, in *core.ProposalCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ProposalApprove(ctx context.Context, in *core.ProposalApproveContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ProposalDelete(ctx context.Context, in *core.ProposalDeleteContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	BuyStorage(ctx context.Context, in *core.BuyStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	BuyStorageBytes(ctx context.Context, in *core.BuyStorageBytesContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	SellStorage(ctx context.Context, in *core.SellStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ExchangeCreate(ctx context.Context, in *core.ExchangeCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ExchangeInject(ctx context.Context, in *core.ExchangeInjectContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ExchangeWithdraw(ctx context.Context, in *core.ExchangeWithdrawContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ExchangeTransaction(ctx context.Context, in *core.ExchangeTransactionContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UpdateAsset2(ctx context.Context, in *corev2.UpdateAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ProposalCreate(ctx context.Context, in *corev2.ProposalCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ProposalApprove(ctx context.Context, in *corev2.ProposalApproveContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ProposalDelete(ctx context.Context, in *corev2.ProposalDeleteContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	BuyStorage(ctx context.Context, in *corev2.BuyStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	BuyStorageBytes(ctx context.Context, in *corev2.BuyStorageBytesContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	SellStorage(ctx context.Context, in *corev2.SellStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ExchangeCreate(ctx context.Context, in *corev2.ExchangeCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ExchangeInject(ctx context.Context, in *corev2.ExchangeInjectContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ExchangeWithdraw(ctx context.Context, in *corev2.ExchangeWithdrawContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ExchangeTransaction(ctx context.Context, in *corev2.ExchangeTransactionContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	ListNodes(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*NodeList, error)
-	GetAssetIssueByAccount(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*AssetIssueList, error)
-	GetAccountNet(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*AccountNetMessage, error)
-	GetAccountResource(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*AccountResourceMessage, error)
-	GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error)
+	GetAssetIssueByAccount(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*AssetIssueList, error)
+	GetAccountNet(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*AccountNetMessage, error)
+	GetAccountResource(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*AccountResourceMessage, error)
+	GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error)
 	GetAssetIssueListByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*AssetIssueList, error)
-	GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error)
+	GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error)
 	//Please use GetNowBlock2 instead of this function.
-	GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.Block, error)
+	GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.Block, error)
 	//Use this function instead of GetNowBlock.
 	GetNowBlock2(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*BlockExtention, error)
 	//Please use GetBlockByNum2 instead of this function.
-	GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*core.Block, error)
+	GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*corev2.Block, error)
 	//Use this function instead of GetBlockByNum.
 	GetBlockByNum2(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*BlockExtention, error)
 	GetTransactionCountByBlockNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*NumberMessage, error)
-	GetBlockById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Block, error)
+	GetBlockById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Block, error)
 	//Please use GetBlockByLimitNext2 instead of this function.
 	GetBlockByLimitNext(ctx context.Context, in *BlockLimit, opts ...grpc.CallOption) (*BlockList, error)
 	//Use this function instead of GetBlockByLimitNext.
@@ -7139,32 +7139,32 @@ type WalletClient interface {
 	GetBlockByLatestNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*BlockList, error)
 	//Use this function instead of GetBlockByLatestNum.
 	GetBlockByLatestNum2(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*BlockListExtention, error)
-	GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Transaction, error)
-	DeployContract(ctx context.Context, in *core.CreateSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	GetContract(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.SmartContract, error)
-	TriggerContract(ctx context.Context, in *core.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	TriggerConstantContract(ctx context.Context, in *core.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	ClearContractABI(ctx context.Context, in *core.ClearABIContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Transaction, error)
+	DeployContract(ctx context.Context, in *corev2.CreateSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	GetContract(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.SmartContract, error)
+	TriggerContract(ctx context.Context, in *corev2.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	TriggerConstantContract(ctx context.Context, in *corev2.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	ClearContractABI(ctx context.Context, in *corev2.ClearABIContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	ListWitnesses(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*WitnessList, error)
 	GetDelegatedResource(ctx context.Context, in *DelegatedResourceMessage, opts ...grpc.CallOption) (*DelegatedResourceList, error)
-	GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.DelegatedResourceAccountIndex, error)
+	GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.DelegatedResourceAccountIndex, error)
 	ListProposals(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*ProposalList, error)
 	GetPaginatedProposalList(ctx context.Context, in *PaginatedMessage, opts ...grpc.CallOption) (*ProposalList, error)
-	GetProposalById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Proposal, error)
+	GetProposalById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Proposal, error)
 	ListExchanges(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*ExchangeList, error)
 	GetPaginatedExchangeList(ctx context.Context, in *PaginatedMessage, opts ...grpc.CallOption) (*ExchangeList, error)
-	GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Exchange, error)
-	GetChainParameters(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.ChainParameters, error)
+	GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Exchange, error)
+	GetChainParameters(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.ChainParameters, error)
 	GetAssetIssueList(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*AssetIssueList, error)
 	GetPaginatedAssetIssueList(ctx context.Context, in *PaginatedMessage, opts ...grpc.CallOption) (*AssetIssueList, error)
 	TotalTransaction(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*NumberMessage, error)
 	GetNextMaintenanceTime(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*NumberMessage, error)
 	//Warning: do not invoke this interface provided by others.
 	//Please use GetTransactionSign2 instead of this function.
-	GetTransactionSign(ctx context.Context, in *core.TransactionSign, opts ...grpc.CallOption) (*core.Transaction, error)
+	GetTransactionSign(ctx context.Context, in *corev2.TransactionSign, opts ...grpc.CallOption) (*corev2.Transaction, error)
 	//Warning: do not invoke this interface provided by others.
 	//Use this function instead of GetTransactionSign.
-	GetTransactionSign2(ctx context.Context, in *core.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error)
+	GetTransactionSign2(ctx context.Context, in *corev2.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error)
 	//Warning: do not invoke this interface provided by others.
 	CreateAddress(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*BytesMessage, error)
 	//Warning: do not invoke this interface provided by others.
@@ -7177,18 +7177,18 @@ type WalletClient interface {
 	EasyTransferByPrivate(ctx context.Context, in *EasyTransferByPrivateMessage, opts ...grpc.CallOption) (*EasyTransferResponse, error)
 	//Warning: do not invoke this interface provided by others.
 	GenerateAddress(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*AddressPrKeyPairMessage, error)
-	GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.TransactionInfo, error)
-	AccountPermissionUpdate(ctx context.Context, in *core.AccountPermissionUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
-	AddSign(ctx context.Context, in *core.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error)
-	GetTransactionSignWeight(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*TransactionSignWeight, error)
-	GetTransactionApprovedList(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*TransactionApprovedList, error)
-	GetNodeInfo(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.NodeInfo, error)
+	GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.TransactionInfo, error)
+	AccountPermissionUpdate(ctx context.Context, in *corev2.AccountPermissionUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	AddSign(ctx context.Context, in *corev2.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error)
+	GetTransactionSignWeight(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*TransactionSignWeight, error)
+	GetTransactionApprovedList(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*TransactionApprovedList, error)
+	GetNodeInfo(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.NodeInfo, error)
 	GetRewardInfo(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*NumberMessage, error)
 	GetBrokerageInfo(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*NumberMessage, error)
-	UpdateBrokerage(ctx context.Context, in *core.UpdateBrokerageContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	UpdateBrokerage(ctx context.Context, in *corev2.UpdateBrokerageContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	// for shiededTransaction
 	CreateShieldedTransaction(ctx context.Context, in *PrivateParameters, opts ...grpc.CallOption) (*TransactionExtention, error)
-	GetMerkleTreeVoucherInfo(ctx context.Context, in *core.OutputPointInfo, opts ...grpc.CallOption) (*core.IncrementalMerkleVoucherInfo, error)
+	GetMerkleTreeVoucherInfo(ctx context.Context, in *corev2.OutputPointInfo, opts ...grpc.CallOption) (*corev2.IncrementalMerkleVoucherInfo, error)
 	ScanNoteByIvk(ctx context.Context, in *IvkDecryptParameters, opts ...grpc.CallOption) (*DecryptNotes, error)
 	ScanAndMarkNoteByIvk(ctx context.Context, in *IvkDecryptAndMarkParameters, opts ...grpc.CallOption) (*DecryptNotesMarked, error)
 	ScanNoteByOvk(ctx context.Context, in *OvkDecryptParameters, opts ...grpc.CallOption) (*DecryptNotes, error)
@@ -7203,10 +7203,10 @@ type WalletClient interface {
 	GetRcm(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*BytesMessage, error)
 	IsSpend(ctx context.Context, in *NoteParameters, opts ...grpc.CallOption) (*SpendResult, error)
 	CreateShieldedTransactionWithoutSpendAuthSig(ctx context.Context, in *PrivateParametersWithoutAsk, opts ...grpc.CallOption) (*TransactionExtention, error)
-	GetShieldTransactionHash(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*BytesMessage, error)
+	GetShieldTransactionHash(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*BytesMessage, error)
 	CreateSpendAuthSig(ctx context.Context, in *SpendAuthSigParameters, opts ...grpc.CallOption) (*BytesMessage, error)
 	CreateShieldNullifier(ctx context.Context, in *NfParameters, opts ...grpc.CallOption) (*BytesMessage, error)
-	CreateCommonTransaction(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*TransactionExtention, error)
+	CreateCommonTransaction(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*TransactionExtention, error)
 	GetTransactionInfoByBlockNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*TransactionInfoList, error)
 }
 
@@ -7218,8 +7218,8 @@ func NewWalletClient(cc grpc.ClientConnInterface) WalletClient {
 	return &walletClient{cc}
 }
 
-func (c *walletClient) GetAccount(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error) {
-	out := new(core.Account)
+func (c *walletClient) GetAccount(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error) {
+	out := new(corev2.Account)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAccount", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7227,8 +7227,8 @@ func (c *walletClient) GetAccount(ctx context.Context, in *core.Account, opts ..
 	return out, nil
 }
 
-func (c *walletClient) GetAccountById(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error) {
-	out := new(core.Account)
+func (c *walletClient) GetAccountById(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error) {
+	out := new(corev2.Account)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAccountById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7236,8 +7236,8 @@ func (c *walletClient) GetAccountById(ctx context.Context, in *core.Account, opt
 	return out, nil
 }
 
-func (c *walletClient) CreateTransaction(ctx context.Context, in *core.TransferContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) CreateTransaction(ctx context.Context, in *corev2.TransferContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateTransaction", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7245,7 +7245,7 @@ func (c *walletClient) CreateTransaction(ctx context.Context, in *core.TransferC
 	return out, nil
 }
 
-func (c *walletClient) CreateTransaction2(ctx context.Context, in *core.TransferContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) CreateTransaction2(ctx context.Context, in *corev2.TransferContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateTransaction2", in, out, opts...)
 	if err != nil {
@@ -7254,7 +7254,7 @@ func (c *walletClient) CreateTransaction2(ctx context.Context, in *core.Transfer
 	return out, nil
 }
 
-func (c *walletClient) BroadcastTransaction(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*Return, error) {
+func (c *walletClient) BroadcastTransaction(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*Return, error) {
 	out := new(Return)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/BroadcastTransaction", in, out, opts...)
 	if err != nil {
@@ -7263,8 +7263,8 @@ func (c *walletClient) BroadcastTransaction(ctx context.Context, in *core.Transa
 	return out, nil
 }
 
-func (c *walletClient) UpdateAccount(ctx context.Context, in *core.AccountUpdateContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) UpdateAccount(ctx context.Context, in *corev2.AccountUpdateContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateAccount", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7272,8 +7272,8 @@ func (c *walletClient) UpdateAccount(ctx context.Context, in *core.AccountUpdate
 	return out, nil
 }
 
-func (c *walletClient) SetAccountId(ctx context.Context, in *core.SetAccountIdContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) SetAccountId(ctx context.Context, in *corev2.SetAccountIdContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/SetAccountId", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7281,7 +7281,7 @@ func (c *walletClient) SetAccountId(ctx context.Context, in *core.SetAccountIdCo
 	return out, nil
 }
 
-func (c *walletClient) UpdateAccount2(ctx context.Context, in *core.AccountUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UpdateAccount2(ctx context.Context, in *corev2.AccountUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateAccount2", in, out, opts...)
 	if err != nil {
@@ -7290,8 +7290,8 @@ func (c *walletClient) UpdateAccount2(ctx context.Context, in *core.AccountUpdat
 	return out, nil
 }
 
-func (c *walletClient) VoteWitnessAccount(ctx context.Context, in *core.VoteWitnessContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) VoteWitnessAccount(ctx context.Context, in *corev2.VoteWitnessContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/VoteWitnessAccount", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7299,7 +7299,7 @@ func (c *walletClient) VoteWitnessAccount(ctx context.Context, in *core.VoteWitn
 	return out, nil
 }
 
-func (c *walletClient) UpdateSetting(ctx context.Context, in *core.UpdateSettingContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UpdateSetting(ctx context.Context, in *corev2.UpdateSettingContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateSetting", in, out, opts...)
 	if err != nil {
@@ -7308,7 +7308,7 @@ func (c *walletClient) UpdateSetting(ctx context.Context, in *core.UpdateSetting
 	return out, nil
 }
 
-func (c *walletClient) UpdateEnergyLimit(ctx context.Context, in *core.UpdateEnergyLimitContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UpdateEnergyLimit(ctx context.Context, in *corev2.UpdateEnergyLimitContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateEnergyLimit", in, out, opts...)
 	if err != nil {
@@ -7317,7 +7317,7 @@ func (c *walletClient) UpdateEnergyLimit(ctx context.Context, in *core.UpdateEne
 	return out, nil
 }
 
-func (c *walletClient) VoteWitnessAccount2(ctx context.Context, in *core.VoteWitnessContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) VoteWitnessAccount2(ctx context.Context, in *corev2.VoteWitnessContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/VoteWitnessAccount2", in, out, opts...)
 	if err != nil {
@@ -7326,8 +7326,8 @@ func (c *walletClient) VoteWitnessAccount2(ctx context.Context, in *core.VoteWit
 	return out, nil
 }
 
-func (c *walletClient) CreateAssetIssue(ctx context.Context, in *core.AssetIssueContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) CreateAssetIssue(ctx context.Context, in *corev2.AssetIssueContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateAssetIssue", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7335,7 +7335,7 @@ func (c *walletClient) CreateAssetIssue(ctx context.Context, in *core.AssetIssue
 	return out, nil
 }
 
-func (c *walletClient) CreateAssetIssue2(ctx context.Context, in *core.AssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) CreateAssetIssue2(ctx context.Context, in *corev2.AssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateAssetIssue2", in, out, opts...)
 	if err != nil {
@@ -7344,8 +7344,8 @@ func (c *walletClient) CreateAssetIssue2(ctx context.Context, in *core.AssetIssu
 	return out, nil
 }
 
-func (c *walletClient) UpdateWitness(ctx context.Context, in *core.WitnessUpdateContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) UpdateWitness(ctx context.Context, in *corev2.WitnessUpdateContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateWitness", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7353,7 +7353,7 @@ func (c *walletClient) UpdateWitness(ctx context.Context, in *core.WitnessUpdate
 	return out, nil
 }
 
-func (c *walletClient) UpdateWitness2(ctx context.Context, in *core.WitnessUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UpdateWitness2(ctx context.Context, in *corev2.WitnessUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateWitness2", in, out, opts...)
 	if err != nil {
@@ -7362,8 +7362,8 @@ func (c *walletClient) UpdateWitness2(ctx context.Context, in *core.WitnessUpdat
 	return out, nil
 }
 
-func (c *walletClient) CreateAccount(ctx context.Context, in *core.AccountCreateContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) CreateAccount(ctx context.Context, in *corev2.AccountCreateContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateAccount", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7371,7 +7371,7 @@ func (c *walletClient) CreateAccount(ctx context.Context, in *core.AccountCreate
 	return out, nil
 }
 
-func (c *walletClient) CreateAccount2(ctx context.Context, in *core.AccountCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) CreateAccount2(ctx context.Context, in *corev2.AccountCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateAccount2", in, out, opts...)
 	if err != nil {
@@ -7380,8 +7380,8 @@ func (c *walletClient) CreateAccount2(ctx context.Context, in *core.AccountCreat
 	return out, nil
 }
 
-func (c *walletClient) CreateWitness(ctx context.Context, in *core.WitnessCreateContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) CreateWitness(ctx context.Context, in *corev2.WitnessCreateContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateWitness", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7389,7 +7389,7 @@ func (c *walletClient) CreateWitness(ctx context.Context, in *core.WitnessCreate
 	return out, nil
 }
 
-func (c *walletClient) CreateWitness2(ctx context.Context, in *core.WitnessCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) CreateWitness2(ctx context.Context, in *corev2.WitnessCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateWitness2", in, out, opts...)
 	if err != nil {
@@ -7398,8 +7398,8 @@ func (c *walletClient) CreateWitness2(ctx context.Context, in *core.WitnessCreat
 	return out, nil
 }
 
-func (c *walletClient) TransferAsset(ctx context.Context, in *core.TransferAssetContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) TransferAsset(ctx context.Context, in *corev2.TransferAssetContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/TransferAsset", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7407,7 +7407,7 @@ func (c *walletClient) TransferAsset(ctx context.Context, in *core.TransferAsset
 	return out, nil
 }
 
-func (c *walletClient) TransferAsset2(ctx context.Context, in *core.TransferAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) TransferAsset2(ctx context.Context, in *corev2.TransferAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/TransferAsset2", in, out, opts...)
 	if err != nil {
@@ -7416,8 +7416,8 @@ func (c *walletClient) TransferAsset2(ctx context.Context, in *core.TransferAsse
 	return out, nil
 }
 
-func (c *walletClient) ParticipateAssetIssue(ctx context.Context, in *core.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) ParticipateAssetIssue(ctx context.Context, in *corev2.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ParticipateAssetIssue", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7425,7 +7425,7 @@ func (c *walletClient) ParticipateAssetIssue(ctx context.Context, in *core.Parti
 	return out, nil
 }
 
-func (c *walletClient) ParticipateAssetIssue2(ctx context.Context, in *core.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ParticipateAssetIssue2(ctx context.Context, in *corev2.ParticipateAssetIssueContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ParticipateAssetIssue2", in, out, opts...)
 	if err != nil {
@@ -7434,8 +7434,8 @@ func (c *walletClient) ParticipateAssetIssue2(ctx context.Context, in *core.Part
 	return out, nil
 }
 
-func (c *walletClient) FreezeBalance(ctx context.Context, in *core.FreezeBalanceContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) FreezeBalance(ctx context.Context, in *corev2.FreezeBalanceContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/FreezeBalance", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7443,7 +7443,7 @@ func (c *walletClient) FreezeBalance(ctx context.Context, in *core.FreezeBalance
 	return out, nil
 }
 
-func (c *walletClient) FreezeBalance2(ctx context.Context, in *core.FreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) FreezeBalance2(ctx context.Context, in *corev2.FreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/FreezeBalance2", in, out, opts...)
 	if err != nil {
@@ -7452,8 +7452,8 @@ func (c *walletClient) FreezeBalance2(ctx context.Context, in *core.FreezeBalanc
 	return out, nil
 }
 
-func (c *walletClient) UnfreezeBalance(ctx context.Context, in *core.UnfreezeBalanceContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) UnfreezeBalance(ctx context.Context, in *corev2.UnfreezeBalanceContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UnfreezeBalance", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7461,7 +7461,7 @@ func (c *walletClient) UnfreezeBalance(ctx context.Context, in *core.UnfreezeBal
 	return out, nil
 }
 
-func (c *walletClient) UnfreezeBalance2(ctx context.Context, in *core.UnfreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UnfreezeBalance2(ctx context.Context, in *corev2.UnfreezeBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UnfreezeBalance2", in, out, opts...)
 	if err != nil {
@@ -7470,8 +7470,8 @@ func (c *walletClient) UnfreezeBalance2(ctx context.Context, in *core.UnfreezeBa
 	return out, nil
 }
 
-func (c *walletClient) UnfreezeAsset(ctx context.Context, in *core.UnfreezeAssetContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) UnfreezeAsset(ctx context.Context, in *corev2.UnfreezeAssetContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UnfreezeAsset", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7479,7 +7479,7 @@ func (c *walletClient) UnfreezeAsset(ctx context.Context, in *core.UnfreezeAsset
 	return out, nil
 }
 
-func (c *walletClient) UnfreezeAsset2(ctx context.Context, in *core.UnfreezeAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UnfreezeAsset2(ctx context.Context, in *corev2.UnfreezeAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UnfreezeAsset2", in, out, opts...)
 	if err != nil {
@@ -7488,8 +7488,8 @@ func (c *walletClient) UnfreezeAsset2(ctx context.Context, in *core.UnfreezeAsse
 	return out, nil
 }
 
-func (c *walletClient) WithdrawBalance(ctx context.Context, in *core.WithdrawBalanceContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) WithdrawBalance(ctx context.Context, in *corev2.WithdrawBalanceContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/WithdrawBalance", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7497,7 +7497,7 @@ func (c *walletClient) WithdrawBalance(ctx context.Context, in *core.WithdrawBal
 	return out, nil
 }
 
-func (c *walletClient) WithdrawBalance2(ctx context.Context, in *core.WithdrawBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) WithdrawBalance2(ctx context.Context, in *corev2.WithdrawBalanceContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/WithdrawBalance2", in, out, opts...)
 	if err != nil {
@@ -7506,8 +7506,8 @@ func (c *walletClient) WithdrawBalance2(ctx context.Context, in *core.WithdrawBa
 	return out, nil
 }
 
-func (c *walletClient) UpdateAsset(ctx context.Context, in *core.UpdateAssetContract, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) UpdateAsset(ctx context.Context, in *corev2.UpdateAssetContract, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateAsset", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7515,7 +7515,7 @@ func (c *walletClient) UpdateAsset(ctx context.Context, in *core.UpdateAssetCont
 	return out, nil
 }
 
-func (c *walletClient) UpdateAsset2(ctx context.Context, in *core.UpdateAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UpdateAsset2(ctx context.Context, in *corev2.UpdateAssetContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateAsset2", in, out, opts...)
 	if err != nil {
@@ -7524,7 +7524,7 @@ func (c *walletClient) UpdateAsset2(ctx context.Context, in *core.UpdateAssetCon
 	return out, nil
 }
 
-func (c *walletClient) ProposalCreate(ctx context.Context, in *core.ProposalCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ProposalCreate(ctx context.Context, in *corev2.ProposalCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ProposalCreate", in, out, opts...)
 	if err != nil {
@@ -7533,7 +7533,7 @@ func (c *walletClient) ProposalCreate(ctx context.Context, in *core.ProposalCrea
 	return out, nil
 }
 
-func (c *walletClient) ProposalApprove(ctx context.Context, in *core.ProposalApproveContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ProposalApprove(ctx context.Context, in *corev2.ProposalApproveContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ProposalApprove", in, out, opts...)
 	if err != nil {
@@ -7542,7 +7542,7 @@ func (c *walletClient) ProposalApprove(ctx context.Context, in *core.ProposalApp
 	return out, nil
 }
 
-func (c *walletClient) ProposalDelete(ctx context.Context, in *core.ProposalDeleteContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ProposalDelete(ctx context.Context, in *corev2.ProposalDeleteContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ProposalDelete", in, out, opts...)
 	if err != nil {
@@ -7551,7 +7551,7 @@ func (c *walletClient) ProposalDelete(ctx context.Context, in *core.ProposalDele
 	return out, nil
 }
 
-func (c *walletClient) BuyStorage(ctx context.Context, in *core.BuyStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) BuyStorage(ctx context.Context, in *corev2.BuyStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/BuyStorage", in, out, opts...)
 	if err != nil {
@@ -7560,7 +7560,7 @@ func (c *walletClient) BuyStorage(ctx context.Context, in *core.BuyStorageContra
 	return out, nil
 }
 
-func (c *walletClient) BuyStorageBytes(ctx context.Context, in *core.BuyStorageBytesContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) BuyStorageBytes(ctx context.Context, in *corev2.BuyStorageBytesContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/BuyStorageBytes", in, out, opts...)
 	if err != nil {
@@ -7569,7 +7569,7 @@ func (c *walletClient) BuyStorageBytes(ctx context.Context, in *core.BuyStorageB
 	return out, nil
 }
 
-func (c *walletClient) SellStorage(ctx context.Context, in *core.SellStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) SellStorage(ctx context.Context, in *corev2.SellStorageContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/SellStorage", in, out, opts...)
 	if err != nil {
@@ -7578,7 +7578,7 @@ func (c *walletClient) SellStorage(ctx context.Context, in *core.SellStorageCont
 	return out, nil
 }
 
-func (c *walletClient) ExchangeCreate(ctx context.Context, in *core.ExchangeCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ExchangeCreate(ctx context.Context, in *corev2.ExchangeCreateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ExchangeCreate", in, out, opts...)
 	if err != nil {
@@ -7587,7 +7587,7 @@ func (c *walletClient) ExchangeCreate(ctx context.Context, in *core.ExchangeCrea
 	return out, nil
 }
 
-func (c *walletClient) ExchangeInject(ctx context.Context, in *core.ExchangeInjectContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ExchangeInject(ctx context.Context, in *corev2.ExchangeInjectContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ExchangeInject", in, out, opts...)
 	if err != nil {
@@ -7596,7 +7596,7 @@ func (c *walletClient) ExchangeInject(ctx context.Context, in *core.ExchangeInje
 	return out, nil
 }
 
-func (c *walletClient) ExchangeWithdraw(ctx context.Context, in *core.ExchangeWithdrawContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ExchangeWithdraw(ctx context.Context, in *corev2.ExchangeWithdrawContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ExchangeWithdraw", in, out, opts...)
 	if err != nil {
@@ -7605,7 +7605,7 @@ func (c *walletClient) ExchangeWithdraw(ctx context.Context, in *core.ExchangeWi
 	return out, nil
 }
 
-func (c *walletClient) ExchangeTransaction(ctx context.Context, in *core.ExchangeTransactionContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ExchangeTransaction(ctx context.Context, in *corev2.ExchangeTransactionContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ExchangeTransaction", in, out, opts...)
 	if err != nil {
@@ -7623,7 +7623,7 @@ func (c *walletClient) ListNodes(ctx context.Context, in *EmptyMessage, opts ...
 	return out, nil
 }
 
-func (c *walletClient) GetAssetIssueByAccount(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*AssetIssueList, error) {
+func (c *walletClient) GetAssetIssueByAccount(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*AssetIssueList, error) {
 	out := new(AssetIssueList)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAssetIssueByAccount", in, out, opts...)
 	if err != nil {
@@ -7632,7 +7632,7 @@ func (c *walletClient) GetAssetIssueByAccount(ctx context.Context, in *core.Acco
 	return out, nil
 }
 
-func (c *walletClient) GetAccountNet(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*AccountNetMessage, error) {
+func (c *walletClient) GetAccountNet(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*AccountNetMessage, error) {
 	out := new(AccountNetMessage)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAccountNet", in, out, opts...)
 	if err != nil {
@@ -7641,7 +7641,7 @@ func (c *walletClient) GetAccountNet(ctx context.Context, in *core.Account, opts
 	return out, nil
 }
 
-func (c *walletClient) GetAccountResource(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*AccountResourceMessage, error) {
+func (c *walletClient) GetAccountResource(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*AccountResourceMessage, error) {
 	out := new(AccountResourceMessage)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAccountResource", in, out, opts...)
 	if err != nil {
@@ -7650,8 +7650,8 @@ func (c *walletClient) GetAccountResource(ctx context.Context, in *core.Account,
 	return out, nil
 }
 
-func (c *walletClient) GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error) {
-	out := new(core.AssetIssueContract)
+func (c *walletClient) GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error) {
+	out := new(corev2.AssetIssueContract)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAssetIssueByName", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7668,8 +7668,8 @@ func (c *walletClient) GetAssetIssueListByName(ctx context.Context, in *BytesMes
 	return out, nil
 }
 
-func (c *walletClient) GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error) {
-	out := new(core.AssetIssueContract)
+func (c *walletClient) GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error) {
+	out := new(corev2.AssetIssueContract)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetAssetIssueById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7677,8 +7677,8 @@ func (c *walletClient) GetAssetIssueById(ctx context.Context, in *BytesMessage, 
 	return out, nil
 }
 
-func (c *walletClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *walletClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetNowBlock", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7695,8 +7695,8 @@ func (c *walletClient) GetNowBlock2(ctx context.Context, in *EmptyMessage, opts 
 	return out, nil
 }
 
-func (c *walletClient) GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *walletClient) GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetBlockByNum", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7722,8 +7722,8 @@ func (c *walletClient) GetTransactionCountByBlockNum(ctx context.Context, in *Nu
 	return out, nil
 }
 
-func (c *walletClient) GetBlockById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *walletClient) GetBlockById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetBlockById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7767,8 +7767,8 @@ func (c *walletClient) GetBlockByLatestNum2(ctx context.Context, in *NumberMessa
 	return out, nil
 }
 
-func (c *walletClient) GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetTransactionById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7776,7 +7776,7 @@ func (c *walletClient) GetTransactionById(ctx context.Context, in *BytesMessage,
 	return out, nil
 }
 
-func (c *walletClient) DeployContract(ctx context.Context, in *core.CreateSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) DeployContract(ctx context.Context, in *corev2.CreateSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/DeployContract", in, out, opts...)
 	if err != nil {
@@ -7785,8 +7785,8 @@ func (c *walletClient) DeployContract(ctx context.Context, in *core.CreateSmartC
 	return out, nil
 }
 
-func (c *walletClient) GetContract(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.SmartContract, error) {
-	out := new(core.SmartContract)
+func (c *walletClient) GetContract(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.SmartContract, error) {
+	out := new(corev2.SmartContract)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetContract", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7794,7 +7794,7 @@ func (c *walletClient) GetContract(ctx context.Context, in *BytesMessage, opts .
 	return out, nil
 }
 
-func (c *walletClient) TriggerContract(ctx context.Context, in *core.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) TriggerContract(ctx context.Context, in *corev2.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/TriggerContract", in, out, opts...)
 	if err != nil {
@@ -7803,7 +7803,7 @@ func (c *walletClient) TriggerContract(ctx context.Context, in *core.TriggerSmar
 	return out, nil
 }
 
-func (c *walletClient) TriggerConstantContract(ctx context.Context, in *core.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) TriggerConstantContract(ctx context.Context, in *corev2.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/TriggerConstantContract", in, out, opts...)
 	if err != nil {
@@ -7812,7 +7812,7 @@ func (c *walletClient) TriggerConstantContract(ctx context.Context, in *core.Tri
 	return out, nil
 }
 
-func (c *walletClient) ClearContractABI(ctx context.Context, in *core.ClearABIContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) ClearContractABI(ctx context.Context, in *corev2.ClearABIContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/ClearContractABI", in, out, opts...)
 	if err != nil {
@@ -7839,8 +7839,8 @@ func (c *walletClient) GetDelegatedResource(ctx context.Context, in *DelegatedRe
 	return out, nil
 }
 
-func (c *walletClient) GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.DelegatedResourceAccountIndex, error) {
-	out := new(core.DelegatedResourceAccountIndex)
+func (c *walletClient) GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.DelegatedResourceAccountIndex, error) {
+	out := new(corev2.DelegatedResourceAccountIndex)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetDelegatedResourceAccountIndex", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7866,8 +7866,8 @@ func (c *walletClient) GetPaginatedProposalList(ctx context.Context, in *Paginat
 	return out, nil
 }
 
-func (c *walletClient) GetProposalById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Proposal, error) {
-	out := new(core.Proposal)
+func (c *walletClient) GetProposalById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Proposal, error) {
+	out := new(corev2.Proposal)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetProposalById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7893,8 +7893,8 @@ func (c *walletClient) GetPaginatedExchangeList(ctx context.Context, in *Paginat
 	return out, nil
 }
 
-func (c *walletClient) GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Exchange, error) {
-	out := new(core.Exchange)
+func (c *walletClient) GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Exchange, error) {
+	out := new(corev2.Exchange)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetExchangeById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7902,8 +7902,8 @@ func (c *walletClient) GetExchangeById(ctx context.Context, in *BytesMessage, op
 	return out, nil
 }
 
-func (c *walletClient) GetChainParameters(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.ChainParameters, error) {
-	out := new(core.ChainParameters)
+func (c *walletClient) GetChainParameters(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.ChainParameters, error) {
+	out := new(corev2.ChainParameters)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetChainParameters", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7947,8 +7947,8 @@ func (c *walletClient) GetNextMaintenanceTime(ctx context.Context, in *EmptyMess
 	return out, nil
 }
 
-func (c *walletClient) GetTransactionSign(ctx context.Context, in *core.TransactionSign, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletClient) GetTransactionSign(ctx context.Context, in *corev2.TransactionSign, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetTransactionSign", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -7956,7 +7956,7 @@ func (c *walletClient) GetTransactionSign(ctx context.Context, in *core.Transact
 	return out, nil
 }
 
-func (c *walletClient) GetTransactionSign2(ctx context.Context, in *core.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) GetTransactionSign2(ctx context.Context, in *corev2.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetTransactionSign2", in, out, opts...)
 	if err != nil {
@@ -8019,8 +8019,8 @@ func (c *walletClient) GenerateAddress(ctx context.Context, in *EmptyMessage, op
 	return out, nil
 }
 
-func (c *walletClient) GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.TransactionInfo, error) {
-	out := new(core.TransactionInfo)
+func (c *walletClient) GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.TransactionInfo, error) {
+	out := new(corev2.TransactionInfo)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetTransactionInfoById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -8028,7 +8028,7 @@ func (c *walletClient) GetTransactionInfoById(ctx context.Context, in *BytesMess
 	return out, nil
 }
 
-func (c *walletClient) AccountPermissionUpdate(ctx context.Context, in *core.AccountPermissionUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) AccountPermissionUpdate(ctx context.Context, in *corev2.AccountPermissionUpdateContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/AccountPermissionUpdate", in, out, opts...)
 	if err != nil {
@@ -8037,7 +8037,7 @@ func (c *walletClient) AccountPermissionUpdate(ctx context.Context, in *core.Acc
 	return out, nil
 }
 
-func (c *walletClient) AddSign(ctx context.Context, in *core.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) AddSign(ctx context.Context, in *corev2.TransactionSign, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/AddSign", in, out, opts...)
 	if err != nil {
@@ -8046,7 +8046,7 @@ func (c *walletClient) AddSign(ctx context.Context, in *core.TransactionSign, op
 	return out, nil
 }
 
-func (c *walletClient) GetTransactionSignWeight(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*TransactionSignWeight, error) {
+func (c *walletClient) GetTransactionSignWeight(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*TransactionSignWeight, error) {
 	out := new(TransactionSignWeight)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetTransactionSignWeight", in, out, opts...)
 	if err != nil {
@@ -8055,7 +8055,7 @@ func (c *walletClient) GetTransactionSignWeight(ctx context.Context, in *core.Tr
 	return out, nil
 }
 
-func (c *walletClient) GetTransactionApprovedList(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*TransactionApprovedList, error) {
+func (c *walletClient) GetTransactionApprovedList(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*TransactionApprovedList, error) {
 	out := new(TransactionApprovedList)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetTransactionApprovedList", in, out, opts...)
 	if err != nil {
@@ -8064,8 +8064,8 @@ func (c *walletClient) GetTransactionApprovedList(ctx context.Context, in *core.
 	return out, nil
 }
 
-func (c *walletClient) GetNodeInfo(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.NodeInfo, error) {
-	out := new(core.NodeInfo)
+func (c *walletClient) GetNodeInfo(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.NodeInfo, error) {
+	out := new(corev2.NodeInfo)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetNodeInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -8091,7 +8091,7 @@ func (c *walletClient) GetBrokerageInfo(ctx context.Context, in *BytesMessage, o
 	return out, nil
 }
 
-func (c *walletClient) UpdateBrokerage(ctx context.Context, in *core.UpdateBrokerageContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) UpdateBrokerage(ctx context.Context, in *corev2.UpdateBrokerageContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/UpdateBrokerage", in, out, opts...)
 	if err != nil {
@@ -8109,8 +8109,8 @@ func (c *walletClient) CreateShieldedTransaction(ctx context.Context, in *Privat
 	return out, nil
 }
 
-func (c *walletClient) GetMerkleTreeVoucherInfo(ctx context.Context, in *core.OutputPointInfo, opts ...grpc.CallOption) (*core.IncrementalMerkleVoucherInfo, error) {
-	out := new(core.IncrementalMerkleVoucherInfo)
+func (c *walletClient) GetMerkleTreeVoucherInfo(ctx context.Context, in *corev2.OutputPointInfo, opts ...grpc.CallOption) (*corev2.IncrementalMerkleVoucherInfo, error) {
+	out := new(corev2.IncrementalMerkleVoucherInfo)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetMerkleTreeVoucherInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -8244,7 +8244,7 @@ func (c *walletClient) CreateShieldedTransactionWithoutSpendAuthSig(ctx context.
 	return out, nil
 }
 
-func (c *walletClient) GetShieldTransactionHash(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*BytesMessage, error) {
+func (c *walletClient) GetShieldTransactionHash(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*BytesMessage, error) {
 	out := new(BytesMessage)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/GetShieldTransactionHash", in, out, opts...)
 	if err != nil {
@@ -8271,7 +8271,7 @@ func (c *walletClient) CreateShieldNullifier(ctx context.Context, in *NfParamete
 	return out, nil
 }
 
-func (c *walletClient) CreateCommonTransaction(ctx context.Context, in *core.Transaction, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletClient) CreateCommonTransaction(ctx context.Context, in *corev2.Transaction, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.Wallet/CreateCommonTransaction", in, out, opts...)
 	if err != nil {
@@ -8291,97 +8291,97 @@ func (c *walletClient) GetTransactionInfoByBlockNum(ctx context.Context, in *Num
 
 // WalletServer is the server API for Wallet service.
 type WalletServer interface {
-	GetAccount(context.Context, *core.Account) (*core.Account, error)
-	GetAccountById(context.Context, *core.Account) (*core.Account, error)
+	GetAccount(context.Context, *corev2.Account) (*corev2.Account, error)
+	GetAccountById(context.Context, *corev2.Account) (*corev2.Account, error)
 	//Please use CreateTransaction2 instead of this function.
-	CreateTransaction(context.Context, *core.TransferContract) (*core.Transaction, error)
+	CreateTransaction(context.Context, *corev2.TransferContract) (*corev2.Transaction, error)
 	//Use this function instead of CreateTransaction.
-	CreateTransaction2(context.Context, *core.TransferContract) (*TransactionExtention, error)
-	BroadcastTransaction(context.Context, *core.Transaction) (*Return, error)
+	CreateTransaction2(context.Context, *corev2.TransferContract) (*TransactionExtention, error)
+	BroadcastTransaction(context.Context, *corev2.Transaction) (*Return, error)
 	//Please use UpdateAccount2 instead of this function.
-	UpdateAccount(context.Context, *core.AccountUpdateContract) (*core.Transaction, error)
-	SetAccountId(context.Context, *core.SetAccountIdContract) (*core.Transaction, error)
+	UpdateAccount(context.Context, *corev2.AccountUpdateContract) (*corev2.Transaction, error)
+	SetAccountId(context.Context, *corev2.SetAccountIdContract) (*corev2.Transaction, error)
 	//Use this function instead of UpdateAccount.
-	UpdateAccount2(context.Context, *core.AccountUpdateContract) (*TransactionExtention, error)
+	UpdateAccount2(context.Context, *corev2.AccountUpdateContract) (*TransactionExtention, error)
 	//Please use VoteWitnessAccount2 instead of this function.
-	VoteWitnessAccount(context.Context, *core.VoteWitnessContract) (*core.Transaction, error)
+	VoteWitnessAccount(context.Context, *corev2.VoteWitnessContract) (*corev2.Transaction, error)
 	//modify the consume_user_resource_percent
-	UpdateSetting(context.Context, *core.UpdateSettingContract) (*TransactionExtention, error)
+	UpdateSetting(context.Context, *corev2.UpdateSettingContract) (*TransactionExtention, error)
 	//modify the energy_limit
-	UpdateEnergyLimit(context.Context, *core.UpdateEnergyLimitContract) (*TransactionExtention, error)
+	UpdateEnergyLimit(context.Context, *corev2.UpdateEnergyLimitContract) (*TransactionExtention, error)
 	//Use this function instead of VoteWitnessAccount.
-	VoteWitnessAccount2(context.Context, *core.VoteWitnessContract) (*TransactionExtention, error)
+	VoteWitnessAccount2(context.Context, *corev2.VoteWitnessContract) (*TransactionExtention, error)
 	//Please use CreateAssetIssue2 instead of this function.
-	CreateAssetIssue(context.Context, *core.AssetIssueContract) (*core.Transaction, error)
+	CreateAssetIssue(context.Context, *corev2.AssetIssueContract) (*corev2.Transaction, error)
 	//Use this function instead of CreateAssetIssue.
-	CreateAssetIssue2(context.Context, *core.AssetIssueContract) (*TransactionExtention, error)
+	CreateAssetIssue2(context.Context, *corev2.AssetIssueContract) (*TransactionExtention, error)
 	//Please use UpdateWitness2 instead of this function.
-	UpdateWitness(context.Context, *core.WitnessUpdateContract) (*core.Transaction, error)
+	UpdateWitness(context.Context, *corev2.WitnessUpdateContract) (*corev2.Transaction, error)
 	//Use this function instead of UpdateWitness.
-	UpdateWitness2(context.Context, *core.WitnessUpdateContract) (*TransactionExtention, error)
+	UpdateWitness2(context.Context, *corev2.WitnessUpdateContract) (*TransactionExtention, error)
 	//Please use CreateAccount2 instead of this function.
-	CreateAccount(context.Context, *core.AccountCreateContract) (*core.Transaction, error)
+	CreateAccount(context.Context, *corev2.AccountCreateContract) (*corev2.Transaction, error)
 	//Use this function instead of CreateAccount.
-	CreateAccount2(context.Context, *core.AccountCreateContract) (*TransactionExtention, error)
+	CreateAccount2(context.Context, *corev2.AccountCreateContract) (*TransactionExtention, error)
 	//Please use CreateWitness2 instead of this function.
-	CreateWitness(context.Context, *core.WitnessCreateContract) (*core.Transaction, error)
+	CreateWitness(context.Context, *corev2.WitnessCreateContract) (*corev2.Transaction, error)
 	//Use this function instead of CreateWitness.
-	CreateWitness2(context.Context, *core.WitnessCreateContract) (*TransactionExtention, error)
+	CreateWitness2(context.Context, *corev2.WitnessCreateContract) (*TransactionExtention, error)
 	//Please use TransferAsset2 instead of this function.
-	TransferAsset(context.Context, *core.TransferAssetContract) (*core.Transaction, error)
+	TransferAsset(context.Context, *corev2.TransferAssetContract) (*corev2.Transaction, error)
 	//Use this function instead of TransferAsset.
-	TransferAsset2(context.Context, *core.TransferAssetContract) (*TransactionExtention, error)
+	TransferAsset2(context.Context, *corev2.TransferAssetContract) (*TransactionExtention, error)
 	//Please use ParticipateAssetIssue2 instead of this function.
-	ParticipateAssetIssue(context.Context, *core.ParticipateAssetIssueContract) (*core.Transaction, error)
+	ParticipateAssetIssue(context.Context, *corev2.ParticipateAssetIssueContract) (*corev2.Transaction, error)
 	//Use this function instead of ParticipateAssetIssue.
-	ParticipateAssetIssue2(context.Context, *core.ParticipateAssetIssueContract) (*TransactionExtention, error)
+	ParticipateAssetIssue2(context.Context, *corev2.ParticipateAssetIssueContract) (*TransactionExtention, error)
 	//Please use FreezeBalance2 instead of this function.
-	FreezeBalance(context.Context, *core.FreezeBalanceContract) (*core.Transaction, error)
+	FreezeBalance(context.Context, *corev2.FreezeBalanceContract) (*corev2.Transaction, error)
 	//Use this function instead of FreezeBalance.
-	FreezeBalance2(context.Context, *core.FreezeBalanceContract) (*TransactionExtention, error)
+	FreezeBalance2(context.Context, *corev2.FreezeBalanceContract) (*TransactionExtention, error)
 	//Please use UnfreezeBalance2 instead of this function.
-	UnfreezeBalance(context.Context, *core.UnfreezeBalanceContract) (*core.Transaction, error)
+	UnfreezeBalance(context.Context, *corev2.UnfreezeBalanceContract) (*corev2.Transaction, error)
 	//Use this function instead of UnfreezeBalance.
-	UnfreezeBalance2(context.Context, *core.UnfreezeBalanceContract) (*TransactionExtention, error)
+	UnfreezeBalance2(context.Context, *corev2.UnfreezeBalanceContract) (*TransactionExtention, error)
 	//Please use UnfreezeAsset2 instead of this function.
-	UnfreezeAsset(context.Context, *core.UnfreezeAssetContract) (*core.Transaction, error)
+	UnfreezeAsset(context.Context, *corev2.UnfreezeAssetContract) (*corev2.Transaction, error)
 	//Use this function instead of UnfreezeAsset.
-	UnfreezeAsset2(context.Context, *core.UnfreezeAssetContract) (*TransactionExtention, error)
+	UnfreezeAsset2(context.Context, *corev2.UnfreezeAssetContract) (*TransactionExtention, error)
 	//Please use WithdrawBalance2 instead of this function.
-	WithdrawBalance(context.Context, *core.WithdrawBalanceContract) (*core.Transaction, error)
+	WithdrawBalance(context.Context, *corev2.WithdrawBalanceContract) (*corev2.Transaction, error)
 	//Use this function instead of WithdrawBalance.
-	WithdrawBalance2(context.Context, *core.WithdrawBalanceContract) (*TransactionExtention, error)
+	WithdrawBalance2(context.Context, *corev2.WithdrawBalanceContract) (*TransactionExtention, error)
 	//Please use UpdateAsset2 instead of this function.
-	UpdateAsset(context.Context, *core.UpdateAssetContract) (*core.Transaction, error)
+	UpdateAsset(context.Context, *corev2.UpdateAssetContract) (*corev2.Transaction, error)
 	//Use this function instead of UpdateAsset.
-	UpdateAsset2(context.Context, *core.UpdateAssetContract) (*TransactionExtention, error)
-	ProposalCreate(context.Context, *core.ProposalCreateContract) (*TransactionExtention, error)
-	ProposalApprove(context.Context, *core.ProposalApproveContract) (*TransactionExtention, error)
-	ProposalDelete(context.Context, *core.ProposalDeleteContract) (*TransactionExtention, error)
-	BuyStorage(context.Context, *core.BuyStorageContract) (*TransactionExtention, error)
-	BuyStorageBytes(context.Context, *core.BuyStorageBytesContract) (*TransactionExtention, error)
-	SellStorage(context.Context, *core.SellStorageContract) (*TransactionExtention, error)
-	ExchangeCreate(context.Context, *core.ExchangeCreateContract) (*TransactionExtention, error)
-	ExchangeInject(context.Context, *core.ExchangeInjectContract) (*TransactionExtention, error)
-	ExchangeWithdraw(context.Context, *core.ExchangeWithdrawContract) (*TransactionExtention, error)
-	ExchangeTransaction(context.Context, *core.ExchangeTransactionContract) (*TransactionExtention, error)
+	UpdateAsset2(context.Context, *corev2.UpdateAssetContract) (*TransactionExtention, error)
+	ProposalCreate(context.Context, *corev2.ProposalCreateContract) (*TransactionExtention, error)
+	ProposalApprove(context.Context, *corev2.ProposalApproveContract) (*TransactionExtention, error)
+	ProposalDelete(context.Context, *corev2.ProposalDeleteContract) (*TransactionExtention, error)
+	BuyStorage(context.Context, *corev2.BuyStorageContract) (*TransactionExtention, error)
+	BuyStorageBytes(context.Context, *corev2.BuyStorageBytesContract) (*TransactionExtention, error)
+	SellStorage(context.Context, *corev2.SellStorageContract) (*TransactionExtention, error)
+	ExchangeCreate(context.Context, *corev2.ExchangeCreateContract) (*TransactionExtention, error)
+	ExchangeInject(context.Context, *corev2.ExchangeInjectContract) (*TransactionExtention, error)
+	ExchangeWithdraw(context.Context, *corev2.ExchangeWithdrawContract) (*TransactionExtention, error)
+	ExchangeTransaction(context.Context, *corev2.ExchangeTransactionContract) (*TransactionExtention, error)
 	ListNodes(context.Context, *EmptyMessage) (*NodeList, error)
-	GetAssetIssueByAccount(context.Context, *core.Account) (*AssetIssueList, error)
-	GetAccountNet(context.Context, *core.Account) (*AccountNetMessage, error)
-	GetAccountResource(context.Context, *core.Account) (*AccountResourceMessage, error)
-	GetAssetIssueByName(context.Context, *BytesMessage) (*core.AssetIssueContract, error)
+	GetAssetIssueByAccount(context.Context, *corev2.Account) (*AssetIssueList, error)
+	GetAccountNet(context.Context, *corev2.Account) (*AccountNetMessage, error)
+	GetAccountResource(context.Context, *corev2.Account) (*AccountResourceMessage, error)
+	GetAssetIssueByName(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error)
 	GetAssetIssueListByName(context.Context, *BytesMessage) (*AssetIssueList, error)
-	GetAssetIssueById(context.Context, *BytesMessage) (*core.AssetIssueContract, error)
+	GetAssetIssueById(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error)
 	//Please use GetNowBlock2 instead of this function.
-	GetNowBlock(context.Context, *EmptyMessage) (*core.Block, error)
+	GetNowBlock(context.Context, *EmptyMessage) (*corev2.Block, error)
 	//Use this function instead of GetNowBlock.
 	GetNowBlock2(context.Context, *EmptyMessage) (*BlockExtention, error)
 	//Please use GetBlockByNum2 instead of this function.
-	GetBlockByNum(context.Context, *NumberMessage) (*core.Block, error)
+	GetBlockByNum(context.Context, *NumberMessage) (*corev2.Block, error)
 	//Use this function instead of GetBlockByNum.
 	GetBlockByNum2(context.Context, *NumberMessage) (*BlockExtention, error)
 	GetTransactionCountByBlockNum(context.Context, *NumberMessage) (*NumberMessage, error)
-	GetBlockById(context.Context, *BytesMessage) (*core.Block, error)
+	GetBlockById(context.Context, *BytesMessage) (*corev2.Block, error)
 	//Please use GetBlockByLimitNext2 instead of this function.
 	GetBlockByLimitNext(context.Context, *BlockLimit) (*BlockList, error)
 	//Use this function instead of GetBlockByLimitNext.
@@ -8390,32 +8390,32 @@ type WalletServer interface {
 	GetBlockByLatestNum(context.Context, *NumberMessage) (*BlockList, error)
 	//Use this function instead of GetBlockByLatestNum.
 	GetBlockByLatestNum2(context.Context, *NumberMessage) (*BlockListExtention, error)
-	GetTransactionById(context.Context, *BytesMessage) (*core.Transaction, error)
-	DeployContract(context.Context, *core.CreateSmartContract) (*TransactionExtention, error)
-	GetContract(context.Context, *BytesMessage) (*core.SmartContract, error)
-	TriggerContract(context.Context, *core.TriggerSmartContract) (*TransactionExtention, error)
-	TriggerConstantContract(context.Context, *core.TriggerSmartContract) (*TransactionExtention, error)
-	ClearContractABI(context.Context, *core.ClearABIContract) (*TransactionExtention, error)
+	GetTransactionById(context.Context, *BytesMessage) (*corev2.Transaction, error)
+	DeployContract(context.Context, *corev2.CreateSmartContract) (*TransactionExtention, error)
+	GetContract(context.Context, *BytesMessage) (*corev2.SmartContract, error)
+	TriggerContract(context.Context, *corev2.TriggerSmartContract) (*TransactionExtention, error)
+	TriggerConstantContract(context.Context, *corev2.TriggerSmartContract) (*TransactionExtention, error)
+	ClearContractABI(context.Context, *corev2.ClearABIContract) (*TransactionExtention, error)
 	ListWitnesses(context.Context, *EmptyMessage) (*WitnessList, error)
 	GetDelegatedResource(context.Context, *DelegatedResourceMessage) (*DelegatedResourceList, error)
-	GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*core.DelegatedResourceAccountIndex, error)
+	GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*corev2.DelegatedResourceAccountIndex, error)
 	ListProposals(context.Context, *EmptyMessage) (*ProposalList, error)
 	GetPaginatedProposalList(context.Context, *PaginatedMessage) (*ProposalList, error)
-	GetProposalById(context.Context, *BytesMessage) (*core.Proposal, error)
+	GetProposalById(context.Context, *BytesMessage) (*corev2.Proposal, error)
 	ListExchanges(context.Context, *EmptyMessage) (*ExchangeList, error)
 	GetPaginatedExchangeList(context.Context, *PaginatedMessage) (*ExchangeList, error)
-	GetExchangeById(context.Context, *BytesMessage) (*core.Exchange, error)
-	GetChainParameters(context.Context, *EmptyMessage) (*core.ChainParameters, error)
+	GetExchangeById(context.Context, *BytesMessage) (*corev2.Exchange, error)
+	GetChainParameters(context.Context, *EmptyMessage) (*corev2.ChainParameters, error)
 	GetAssetIssueList(context.Context, *EmptyMessage) (*AssetIssueList, error)
 	GetPaginatedAssetIssueList(context.Context, *PaginatedMessage) (*AssetIssueList, error)
 	TotalTransaction(context.Context, *EmptyMessage) (*NumberMessage, error)
 	GetNextMaintenanceTime(context.Context, *EmptyMessage) (*NumberMessage, error)
 	//Warning: do not invoke this interface provided by others.
 	//Please use GetTransactionSign2 instead of this function.
-	GetTransactionSign(context.Context, *core.TransactionSign) (*core.Transaction, error)
+	GetTransactionSign(context.Context, *corev2.TransactionSign) (*corev2.Transaction, error)
 	//Warning: do not invoke this interface provided by others.
 	//Use this function instead of GetTransactionSign.
-	GetTransactionSign2(context.Context, *core.TransactionSign) (*TransactionExtention, error)
+	GetTransactionSign2(context.Context, *corev2.TransactionSign) (*TransactionExtention, error)
 	//Warning: do not invoke this interface provided by others.
 	CreateAddress(context.Context, *BytesMessage) (*BytesMessage, error)
 	//Warning: do not invoke this interface provided by others.
@@ -8428,18 +8428,18 @@ type WalletServer interface {
 	EasyTransferByPrivate(context.Context, *EasyTransferByPrivateMessage) (*EasyTransferResponse, error)
 	//Warning: do not invoke this interface provided by others.
 	GenerateAddress(context.Context, *EmptyMessage) (*AddressPrKeyPairMessage, error)
-	GetTransactionInfoById(context.Context, *BytesMessage) (*core.TransactionInfo, error)
-	AccountPermissionUpdate(context.Context, *core.AccountPermissionUpdateContract) (*TransactionExtention, error)
-	AddSign(context.Context, *core.TransactionSign) (*TransactionExtention, error)
-	GetTransactionSignWeight(context.Context, *core.Transaction) (*TransactionSignWeight, error)
-	GetTransactionApprovedList(context.Context, *core.Transaction) (*TransactionApprovedList, error)
-	GetNodeInfo(context.Context, *EmptyMessage) (*core.NodeInfo, error)
+	GetTransactionInfoById(context.Context, *BytesMessage) (*corev2.TransactionInfo, error)
+	AccountPermissionUpdate(context.Context, *corev2.AccountPermissionUpdateContract) (*TransactionExtention, error)
+	AddSign(context.Context, *corev2.TransactionSign) (*TransactionExtention, error)
+	GetTransactionSignWeight(context.Context, *corev2.Transaction) (*TransactionSignWeight, error)
+	GetTransactionApprovedList(context.Context, *corev2.Transaction) (*TransactionApprovedList, error)
+	GetNodeInfo(context.Context, *EmptyMessage) (*corev2.NodeInfo, error)
 	GetRewardInfo(context.Context, *BytesMessage) (*NumberMessage, error)
 	GetBrokerageInfo(context.Context, *BytesMessage) (*NumberMessage, error)
-	UpdateBrokerage(context.Context, *core.UpdateBrokerageContract) (*TransactionExtention, error)
+	UpdateBrokerage(context.Context, *corev2.UpdateBrokerageContract) (*TransactionExtention, error)
 	// for shiededTransaction
 	CreateShieldedTransaction(context.Context, *PrivateParameters) (*TransactionExtention, error)
-	GetMerkleTreeVoucherInfo(context.Context, *core.OutputPointInfo) (*core.IncrementalMerkleVoucherInfo, error)
+	GetMerkleTreeVoucherInfo(context.Context, *corev2.OutputPointInfo) (*corev2.IncrementalMerkleVoucherInfo, error)
 	ScanNoteByIvk(context.Context, *IvkDecryptParameters) (*DecryptNotes, error)
 	ScanAndMarkNoteByIvk(context.Context, *IvkDecryptAndMarkParameters) (*DecryptNotesMarked, error)
 	ScanNoteByOvk(context.Context, *OvkDecryptParameters) (*DecryptNotes, error)
@@ -8454,10 +8454,10 @@ type WalletServer interface {
 	GetRcm(context.Context, *EmptyMessage) (*BytesMessage, error)
 	IsSpend(context.Context, *NoteParameters) (*SpendResult, error)
 	CreateShieldedTransactionWithoutSpendAuthSig(context.Context, *PrivateParametersWithoutAsk) (*TransactionExtention, error)
-	GetShieldTransactionHash(context.Context, *core.Transaction) (*BytesMessage, error)
+	GetShieldTransactionHash(context.Context, *corev2.Transaction) (*BytesMessage, error)
 	CreateSpendAuthSig(context.Context, *SpendAuthSigParameters) (*BytesMessage, error)
 	CreateShieldNullifier(context.Context, *NfParameters) (*BytesMessage, error)
-	CreateCommonTransaction(context.Context, *core.Transaction) (*TransactionExtention, error)
+	CreateCommonTransaction(context.Context, *corev2.Transaction) (*TransactionExtention, error)
 	GetTransactionInfoByBlockNum(context.Context, *NumberMessage) (*TransactionInfoList, error)
 }
 
@@ -8465,166 +8465,166 @@ type WalletServer interface {
 type UnimplementedWalletServer struct {
 }
 
-func (*UnimplementedWalletServer) GetAccount(context.Context, *core.Account) (*core.Account, error) {
+func (*UnimplementedWalletServer) GetAccount(context.Context, *corev2.Account) (*corev2.Account, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAccount not implemented")
 }
-func (*UnimplementedWalletServer) GetAccountById(context.Context, *core.Account) (*core.Account, error) {
+func (*UnimplementedWalletServer) GetAccountById(context.Context, *corev2.Account) (*corev2.Account, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAccountById not implemented")
 }
-func (*UnimplementedWalletServer) CreateTransaction(context.Context, *core.TransferContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) CreateTransaction(context.Context, *corev2.TransferContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateTransaction not implemented")
 }
-func (*UnimplementedWalletServer) CreateTransaction2(context.Context, *core.TransferContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) CreateTransaction2(context.Context, *corev2.TransferContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateTransaction2 not implemented")
 }
-func (*UnimplementedWalletServer) BroadcastTransaction(context.Context, *core.Transaction) (*Return, error) {
+func (*UnimplementedWalletServer) BroadcastTransaction(context.Context, *corev2.Transaction) (*Return, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method BroadcastTransaction not implemented")
 }
-func (*UnimplementedWalletServer) UpdateAccount(context.Context, *core.AccountUpdateContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) UpdateAccount(context.Context, *corev2.AccountUpdateContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateAccount not implemented")
 }
-func (*UnimplementedWalletServer) SetAccountId(context.Context, *core.SetAccountIdContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) SetAccountId(context.Context, *corev2.SetAccountIdContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SetAccountId not implemented")
 }
-func (*UnimplementedWalletServer) UpdateAccount2(context.Context, *core.AccountUpdateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UpdateAccount2(context.Context, *corev2.AccountUpdateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateAccount2 not implemented")
 }
-func (*UnimplementedWalletServer) VoteWitnessAccount(context.Context, *core.VoteWitnessContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) VoteWitnessAccount(context.Context, *corev2.VoteWitnessContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method VoteWitnessAccount not implemented")
 }
-func (*UnimplementedWalletServer) UpdateSetting(context.Context, *core.UpdateSettingContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UpdateSetting(context.Context, *corev2.UpdateSettingContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateSetting not implemented")
 }
-func (*UnimplementedWalletServer) UpdateEnergyLimit(context.Context, *core.UpdateEnergyLimitContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UpdateEnergyLimit(context.Context, *corev2.UpdateEnergyLimitContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateEnergyLimit not implemented")
 }
-func (*UnimplementedWalletServer) VoteWitnessAccount2(context.Context, *core.VoteWitnessContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) VoteWitnessAccount2(context.Context, *corev2.VoteWitnessContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method VoteWitnessAccount2 not implemented")
 }
-func (*UnimplementedWalletServer) CreateAssetIssue(context.Context, *core.AssetIssueContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) CreateAssetIssue(context.Context, *corev2.AssetIssueContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateAssetIssue not implemented")
 }
-func (*UnimplementedWalletServer) CreateAssetIssue2(context.Context, *core.AssetIssueContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) CreateAssetIssue2(context.Context, *corev2.AssetIssueContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateAssetIssue2 not implemented")
 }
-func (*UnimplementedWalletServer) UpdateWitness(context.Context, *core.WitnessUpdateContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) UpdateWitness(context.Context, *corev2.WitnessUpdateContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateWitness not implemented")
 }
-func (*UnimplementedWalletServer) UpdateWitness2(context.Context, *core.WitnessUpdateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UpdateWitness2(context.Context, *corev2.WitnessUpdateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateWitness2 not implemented")
 }
-func (*UnimplementedWalletServer) CreateAccount(context.Context, *core.AccountCreateContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) CreateAccount(context.Context, *corev2.AccountCreateContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateAccount not implemented")
 }
-func (*UnimplementedWalletServer) CreateAccount2(context.Context, *core.AccountCreateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) CreateAccount2(context.Context, *corev2.AccountCreateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateAccount2 not implemented")
 }
-func (*UnimplementedWalletServer) CreateWitness(context.Context, *core.WitnessCreateContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) CreateWitness(context.Context, *corev2.WitnessCreateContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateWitness not implemented")
 }
-func (*UnimplementedWalletServer) CreateWitness2(context.Context, *core.WitnessCreateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) CreateWitness2(context.Context, *corev2.WitnessCreateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateWitness2 not implemented")
 }
-func (*UnimplementedWalletServer) TransferAsset(context.Context, *core.TransferAssetContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) TransferAsset(context.Context, *corev2.TransferAssetContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TransferAsset not implemented")
 }
-func (*UnimplementedWalletServer) TransferAsset2(context.Context, *core.TransferAssetContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) TransferAsset2(context.Context, *corev2.TransferAssetContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TransferAsset2 not implemented")
 }
-func (*UnimplementedWalletServer) ParticipateAssetIssue(context.Context, *core.ParticipateAssetIssueContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) ParticipateAssetIssue(context.Context, *corev2.ParticipateAssetIssueContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ParticipateAssetIssue not implemented")
 }
-func (*UnimplementedWalletServer) ParticipateAssetIssue2(context.Context, *core.ParticipateAssetIssueContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ParticipateAssetIssue2(context.Context, *corev2.ParticipateAssetIssueContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ParticipateAssetIssue2 not implemented")
 }
-func (*UnimplementedWalletServer) FreezeBalance(context.Context, *core.FreezeBalanceContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) FreezeBalance(context.Context, *corev2.FreezeBalanceContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method FreezeBalance not implemented")
 }
-func (*UnimplementedWalletServer) FreezeBalance2(context.Context, *core.FreezeBalanceContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) FreezeBalance2(context.Context, *corev2.FreezeBalanceContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method FreezeBalance2 not implemented")
 }
-func (*UnimplementedWalletServer) UnfreezeBalance(context.Context, *core.UnfreezeBalanceContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) UnfreezeBalance(context.Context, *corev2.UnfreezeBalanceContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UnfreezeBalance not implemented")
 }
-func (*UnimplementedWalletServer) UnfreezeBalance2(context.Context, *core.UnfreezeBalanceContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UnfreezeBalance2(context.Context, *corev2.UnfreezeBalanceContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UnfreezeBalance2 not implemented")
 }
-func (*UnimplementedWalletServer) UnfreezeAsset(context.Context, *core.UnfreezeAssetContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) UnfreezeAsset(context.Context, *corev2.UnfreezeAssetContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UnfreezeAsset not implemented")
 }
-func (*UnimplementedWalletServer) UnfreezeAsset2(context.Context, *core.UnfreezeAssetContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UnfreezeAsset2(context.Context, *corev2.UnfreezeAssetContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UnfreezeAsset2 not implemented")
 }
-func (*UnimplementedWalletServer) WithdrawBalance(context.Context, *core.WithdrawBalanceContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) WithdrawBalance(context.Context, *corev2.WithdrawBalanceContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method WithdrawBalance not implemented")
 }
-func (*UnimplementedWalletServer) WithdrawBalance2(context.Context, *core.WithdrawBalanceContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) WithdrawBalance2(context.Context, *corev2.WithdrawBalanceContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method WithdrawBalance2 not implemented")
 }
-func (*UnimplementedWalletServer) UpdateAsset(context.Context, *core.UpdateAssetContract) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) UpdateAsset(context.Context, *corev2.UpdateAssetContract) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateAsset not implemented")
 }
-func (*UnimplementedWalletServer) UpdateAsset2(context.Context, *core.UpdateAssetContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UpdateAsset2(context.Context, *corev2.UpdateAssetContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateAsset2 not implemented")
 }
-func (*UnimplementedWalletServer) ProposalCreate(context.Context, *core.ProposalCreateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ProposalCreate(context.Context, *corev2.ProposalCreateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ProposalCreate not implemented")
 }
-func (*UnimplementedWalletServer) ProposalApprove(context.Context, *core.ProposalApproveContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ProposalApprove(context.Context, *corev2.ProposalApproveContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ProposalApprove not implemented")
 }
-func (*UnimplementedWalletServer) ProposalDelete(context.Context, *core.ProposalDeleteContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ProposalDelete(context.Context, *corev2.ProposalDeleteContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ProposalDelete not implemented")
 }
-func (*UnimplementedWalletServer) BuyStorage(context.Context, *core.BuyStorageContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) BuyStorage(context.Context, *corev2.BuyStorageContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method BuyStorage not implemented")
 }
-func (*UnimplementedWalletServer) BuyStorageBytes(context.Context, *core.BuyStorageBytesContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) BuyStorageBytes(context.Context, *corev2.BuyStorageBytesContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method BuyStorageBytes not implemented")
 }
-func (*UnimplementedWalletServer) SellStorage(context.Context, *core.SellStorageContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) SellStorage(context.Context, *corev2.SellStorageContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SellStorage not implemented")
 }
-func (*UnimplementedWalletServer) ExchangeCreate(context.Context, *core.ExchangeCreateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ExchangeCreate(context.Context, *corev2.ExchangeCreateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ExchangeCreate not implemented")
 }
-func (*UnimplementedWalletServer) ExchangeInject(context.Context, *core.ExchangeInjectContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ExchangeInject(context.Context, *corev2.ExchangeInjectContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ExchangeInject not implemented")
 }
-func (*UnimplementedWalletServer) ExchangeWithdraw(context.Context, *core.ExchangeWithdrawContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ExchangeWithdraw(context.Context, *corev2.ExchangeWithdrawContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ExchangeWithdraw not implemented")
 }
-func (*UnimplementedWalletServer) ExchangeTransaction(context.Context, *core.ExchangeTransactionContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ExchangeTransaction(context.Context, *corev2.ExchangeTransactionContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ExchangeTransaction not implemented")
 }
 func (*UnimplementedWalletServer) ListNodes(context.Context, *EmptyMessage) (*NodeList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ListNodes not implemented")
 }
-func (*UnimplementedWalletServer) GetAssetIssueByAccount(context.Context, *core.Account) (*AssetIssueList, error) {
+func (*UnimplementedWalletServer) GetAssetIssueByAccount(context.Context, *corev2.Account) (*AssetIssueList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueByAccount not implemented")
 }
-func (*UnimplementedWalletServer) GetAccountNet(context.Context, *core.Account) (*AccountNetMessage, error) {
+func (*UnimplementedWalletServer) GetAccountNet(context.Context, *corev2.Account) (*AccountNetMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAccountNet not implemented")
 }
-func (*UnimplementedWalletServer) GetAccountResource(context.Context, *core.Account) (*AccountResourceMessage, error) {
+func (*UnimplementedWalletServer) GetAccountResource(context.Context, *corev2.Account) (*AccountResourceMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAccountResource not implemented")
 }
-func (*UnimplementedWalletServer) GetAssetIssueByName(context.Context, *BytesMessage) (*core.AssetIssueContract, error) {
+func (*UnimplementedWalletServer) GetAssetIssueByName(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueByName not implemented")
 }
 func (*UnimplementedWalletServer) GetAssetIssueListByName(context.Context, *BytesMessage) (*AssetIssueList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueListByName not implemented")
 }
-func (*UnimplementedWalletServer) GetAssetIssueById(context.Context, *BytesMessage) (*core.AssetIssueContract, error) {
+func (*UnimplementedWalletServer) GetAssetIssueById(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueById not implemented")
 }
-func (*UnimplementedWalletServer) GetNowBlock(context.Context, *EmptyMessage) (*core.Block, error) {
+func (*UnimplementedWalletServer) GetNowBlock(context.Context, *EmptyMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNowBlock not implemented")
 }
 func (*UnimplementedWalletServer) GetNowBlock2(context.Context, *EmptyMessage) (*BlockExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNowBlock2 not implemented")
 }
-func (*UnimplementedWalletServer) GetBlockByNum(context.Context, *NumberMessage) (*core.Block, error) {
+func (*UnimplementedWalletServer) GetBlockByNum(context.Context, *NumberMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBlockByNum not implemented")
 }
 func (*UnimplementedWalletServer) GetBlockByNum2(context.Context, *NumberMessage) (*BlockExtention, error) {
@@ -8633,7 +8633,7 @@ func (*UnimplementedWalletServer) GetBlockByNum2(context.Context, *NumberMessage
 func (*UnimplementedWalletServer) GetTransactionCountByBlockNum(context.Context, *NumberMessage) (*NumberMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionCountByBlockNum not implemented")
 }
-func (*UnimplementedWalletServer) GetBlockById(context.Context, *BytesMessage) (*core.Block, error) {
+func (*UnimplementedWalletServer) GetBlockById(context.Context, *BytesMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBlockById not implemented")
 }
 func (*UnimplementedWalletServer) GetBlockByLimitNext(context.Context, *BlockLimit) (*BlockList, error) {
@@ -8648,22 +8648,22 @@ func (*UnimplementedWalletServer) GetBlockByLatestNum(context.Context, *NumberMe
 func (*UnimplementedWalletServer) GetBlockByLatestNum2(context.Context, *NumberMessage) (*BlockListExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBlockByLatestNum2 not implemented")
 }
-func (*UnimplementedWalletServer) GetTransactionById(context.Context, *BytesMessage) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) GetTransactionById(context.Context, *BytesMessage) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionById not implemented")
 }
-func (*UnimplementedWalletServer) DeployContract(context.Context, *core.CreateSmartContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) DeployContract(context.Context, *corev2.CreateSmartContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method DeployContract not implemented")
 }
-func (*UnimplementedWalletServer) GetContract(context.Context, *BytesMessage) (*core.SmartContract, error) {
+func (*UnimplementedWalletServer) GetContract(context.Context, *BytesMessage) (*corev2.SmartContract, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetContract not implemented")
 }
-func (*UnimplementedWalletServer) TriggerContract(context.Context, *core.TriggerSmartContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) TriggerContract(context.Context, *corev2.TriggerSmartContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TriggerContract not implemented")
 }
-func (*UnimplementedWalletServer) TriggerConstantContract(context.Context, *core.TriggerSmartContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) TriggerConstantContract(context.Context, *corev2.TriggerSmartContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TriggerConstantContract not implemented")
 }
-func (*UnimplementedWalletServer) ClearContractABI(context.Context, *core.ClearABIContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) ClearContractABI(context.Context, *corev2.ClearABIContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ClearContractABI not implemented")
 }
 func (*UnimplementedWalletServer) ListWitnesses(context.Context, *EmptyMessage) (*WitnessList, error) {
@@ -8672,7 +8672,7 @@ func (*UnimplementedWalletServer) ListWitnesses(context.Context, *EmptyMessage) 
 func (*UnimplementedWalletServer) GetDelegatedResource(context.Context, *DelegatedResourceMessage) (*DelegatedResourceList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetDelegatedResource not implemented")
 }
-func (*UnimplementedWalletServer) GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*core.DelegatedResourceAccountIndex, error) {
+func (*UnimplementedWalletServer) GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*corev2.DelegatedResourceAccountIndex, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetDelegatedResourceAccountIndex not implemented")
 }
 func (*UnimplementedWalletServer) ListProposals(context.Context, *EmptyMessage) (*ProposalList, error) {
@@ -8681,7 +8681,7 @@ func (*UnimplementedWalletServer) ListProposals(context.Context, *EmptyMessage) 
 func (*UnimplementedWalletServer) GetPaginatedProposalList(context.Context, *PaginatedMessage) (*ProposalList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetPaginatedProposalList not implemented")
 }
-func (*UnimplementedWalletServer) GetProposalById(context.Context, *BytesMessage) (*core.Proposal, error) {
+func (*UnimplementedWalletServer) GetProposalById(context.Context, *BytesMessage) (*corev2.Proposal, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetProposalById not implemented")
 }
 func (*UnimplementedWalletServer) ListExchanges(context.Context, *EmptyMessage) (*ExchangeList, error) {
@@ -8690,10 +8690,10 @@ func (*UnimplementedWalletServer) ListExchanges(context.Context, *EmptyMessage) 
 func (*UnimplementedWalletServer) GetPaginatedExchangeList(context.Context, *PaginatedMessage) (*ExchangeList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetPaginatedExchangeList not implemented")
 }
-func (*UnimplementedWalletServer) GetExchangeById(context.Context, *BytesMessage) (*core.Exchange, error) {
+func (*UnimplementedWalletServer) GetExchangeById(context.Context, *BytesMessage) (*corev2.Exchange, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetExchangeById not implemented")
 }
-func (*UnimplementedWalletServer) GetChainParameters(context.Context, *EmptyMessage) (*core.ChainParameters, error) {
+func (*UnimplementedWalletServer) GetChainParameters(context.Context, *EmptyMessage) (*corev2.ChainParameters, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetChainParameters not implemented")
 }
 func (*UnimplementedWalletServer) GetAssetIssueList(context.Context, *EmptyMessage) (*AssetIssueList, error) {
@@ -8708,10 +8708,10 @@ func (*UnimplementedWalletServer) TotalTransaction(context.Context, *EmptyMessag
 func (*UnimplementedWalletServer) GetNextMaintenanceTime(context.Context, *EmptyMessage) (*NumberMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNextMaintenanceTime not implemented")
 }
-func (*UnimplementedWalletServer) GetTransactionSign(context.Context, *core.TransactionSign) (*core.Transaction, error) {
+func (*UnimplementedWalletServer) GetTransactionSign(context.Context, *corev2.TransactionSign) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionSign not implemented")
 }
-func (*UnimplementedWalletServer) GetTransactionSign2(context.Context, *core.TransactionSign) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) GetTransactionSign2(context.Context, *corev2.TransactionSign) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionSign2 not implemented")
 }
 func (*UnimplementedWalletServer) CreateAddress(context.Context, *BytesMessage) (*BytesMessage, error) {
@@ -8732,22 +8732,22 @@ func (*UnimplementedWalletServer) EasyTransferByPrivate(context.Context, *EasyTr
 func (*UnimplementedWalletServer) GenerateAddress(context.Context, *EmptyMessage) (*AddressPrKeyPairMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GenerateAddress not implemented")
 }
-func (*UnimplementedWalletServer) GetTransactionInfoById(context.Context, *BytesMessage) (*core.TransactionInfo, error) {
+func (*UnimplementedWalletServer) GetTransactionInfoById(context.Context, *BytesMessage) (*corev2.TransactionInfo, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionInfoById not implemented")
 }
-func (*UnimplementedWalletServer) AccountPermissionUpdate(context.Context, *core.AccountPermissionUpdateContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) AccountPermissionUpdate(context.Context, *corev2.AccountPermissionUpdateContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AccountPermissionUpdate not implemented")
 }
-func (*UnimplementedWalletServer) AddSign(context.Context, *core.TransactionSign) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) AddSign(context.Context, *corev2.TransactionSign) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AddSign not implemented")
 }
-func (*UnimplementedWalletServer) GetTransactionSignWeight(context.Context, *core.Transaction) (*TransactionSignWeight, error) {
+func (*UnimplementedWalletServer) GetTransactionSignWeight(context.Context, *corev2.Transaction) (*TransactionSignWeight, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionSignWeight not implemented")
 }
-func (*UnimplementedWalletServer) GetTransactionApprovedList(context.Context, *core.Transaction) (*TransactionApprovedList, error) {
+func (*UnimplementedWalletServer) GetTransactionApprovedList(context.Context, *corev2.Transaction) (*TransactionApprovedList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionApprovedList not implemented")
 }
-func (*UnimplementedWalletServer) GetNodeInfo(context.Context, *EmptyMessage) (*core.NodeInfo, error) {
+func (*UnimplementedWalletServer) GetNodeInfo(context.Context, *EmptyMessage) (*corev2.NodeInfo, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNodeInfo not implemented")
 }
 func (*UnimplementedWalletServer) GetRewardInfo(context.Context, *BytesMessage) (*NumberMessage, error) {
@@ -8756,13 +8756,13 @@ func (*UnimplementedWalletServer) GetRewardInfo(context.Context, *BytesMessage) 
 func (*UnimplementedWalletServer) GetBrokerageInfo(context.Context, *BytesMessage) (*NumberMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBrokerageInfo not implemented")
 }
-func (*UnimplementedWalletServer) UpdateBrokerage(context.Context, *core.UpdateBrokerageContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) UpdateBrokerage(context.Context, *corev2.UpdateBrokerageContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateBrokerage not implemented")
 }
 func (*UnimplementedWalletServer) CreateShieldedTransaction(context.Context, *PrivateParameters) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateShieldedTransaction not implemented")
 }
-func (*UnimplementedWalletServer) GetMerkleTreeVoucherInfo(context.Context, *core.OutputPointInfo) (*core.IncrementalMerkleVoucherInfo, error) {
+func (*UnimplementedWalletServer) GetMerkleTreeVoucherInfo(context.Context, *corev2.OutputPointInfo) (*corev2.IncrementalMerkleVoucherInfo, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMerkleTreeVoucherInfo not implemented")
 }
 func (*UnimplementedWalletServer) ScanNoteByIvk(context.Context, *IvkDecryptParameters) (*DecryptNotes, error) {
@@ -8807,7 +8807,7 @@ func (*UnimplementedWalletServer) IsSpend(context.Context, *NoteParameters) (*Sp
 func (*UnimplementedWalletServer) CreateShieldedTransactionWithoutSpendAuthSig(context.Context, *PrivateParametersWithoutAsk) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateShieldedTransactionWithoutSpendAuthSig not implemented")
 }
-func (*UnimplementedWalletServer) GetShieldTransactionHash(context.Context, *core.Transaction) (*BytesMessage, error) {
+func (*UnimplementedWalletServer) GetShieldTransactionHash(context.Context, *corev2.Transaction) (*BytesMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetShieldTransactionHash not implemented")
 }
 func (*UnimplementedWalletServer) CreateSpendAuthSig(context.Context, *SpendAuthSigParameters) (*BytesMessage, error) {
@@ -8816,7 +8816,7 @@ func (*UnimplementedWalletServer) CreateSpendAuthSig(context.Context, *SpendAuth
 func (*UnimplementedWalletServer) CreateShieldNullifier(context.Context, *NfParameters) (*BytesMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateShieldNullifier not implemented")
 }
-func (*UnimplementedWalletServer) CreateCommonTransaction(context.Context, *core.Transaction) (*TransactionExtention, error) {
+func (*UnimplementedWalletServer) CreateCommonTransaction(context.Context, *corev2.Transaction) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateCommonTransaction not implemented")
 }
 func (*UnimplementedWalletServer) GetTransactionInfoByBlockNum(context.Context, *NumberMessage) (*TransactionInfoList, error) {
@@ -8828,7 +8828,7 @@ func RegisterWalletServer(s *grpc.Server, srv WalletServer) {
 }
 
 func _Wallet_GetAccount_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8840,13 +8840,13 @@ func _Wallet_GetAccount_Handler(srv interface{}, ctx context.Context, dec func(i
 		FullMethod: "/protocol.Wallet/GetAccount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetAccount(ctx, req.(*core.Account))
+		return srv.(WalletServer).GetAccount(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_GetAccountById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8858,13 +8858,13 @@ func _Wallet_GetAccountById_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/GetAccountById",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetAccountById(ctx, req.(*core.Account))
+		return srv.(WalletServer).GetAccountById(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateTransaction_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransferContract)
+	in := new(corev2.TransferContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8876,13 +8876,13 @@ func _Wallet_CreateTransaction_Handler(srv interface{}, ctx context.Context, dec
 		FullMethod: "/protocol.Wallet/CreateTransaction",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateTransaction(ctx, req.(*core.TransferContract))
+		return srv.(WalletServer).CreateTransaction(ctx, req.(*corev2.TransferContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateTransaction2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransferContract)
+	in := new(corev2.TransferContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8894,13 +8894,13 @@ func _Wallet_CreateTransaction2_Handler(srv interface{}, ctx context.Context, de
 		FullMethod: "/protocol.Wallet/CreateTransaction2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateTransaction2(ctx, req.(*core.TransferContract))
+		return srv.(WalletServer).CreateTransaction2(ctx, req.(*corev2.TransferContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_BroadcastTransaction_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Transaction)
+	in := new(corev2.Transaction)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8912,13 +8912,13 @@ func _Wallet_BroadcastTransaction_Handler(srv interface{}, ctx context.Context, 
 		FullMethod: "/protocol.Wallet/BroadcastTransaction",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).BroadcastTransaction(ctx, req.(*core.Transaction))
+		return srv.(WalletServer).BroadcastTransaction(ctx, req.(*corev2.Transaction))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateAccount_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AccountUpdateContract)
+	in := new(corev2.AccountUpdateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8930,13 +8930,13 @@ func _Wallet_UpdateAccount_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/UpdateAccount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateAccount(ctx, req.(*core.AccountUpdateContract))
+		return srv.(WalletServer).UpdateAccount(ctx, req.(*corev2.AccountUpdateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_SetAccountId_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.SetAccountIdContract)
+	in := new(corev2.SetAccountIdContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8948,13 +8948,13 @@ func _Wallet_SetAccountId_Handler(srv interface{}, ctx context.Context, dec func
 		FullMethod: "/protocol.Wallet/SetAccountId",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).SetAccountId(ctx, req.(*core.SetAccountIdContract))
+		return srv.(WalletServer).SetAccountId(ctx, req.(*corev2.SetAccountIdContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateAccount2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AccountUpdateContract)
+	in := new(corev2.AccountUpdateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8966,13 +8966,13 @@ func _Wallet_UpdateAccount2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/UpdateAccount2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateAccount2(ctx, req.(*core.AccountUpdateContract))
+		return srv.(WalletServer).UpdateAccount2(ctx, req.(*corev2.AccountUpdateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_VoteWitnessAccount_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.VoteWitnessContract)
+	in := new(corev2.VoteWitnessContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -8984,13 +8984,13 @@ func _Wallet_VoteWitnessAccount_Handler(srv interface{}, ctx context.Context, de
 		FullMethod: "/protocol.Wallet/VoteWitnessAccount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).VoteWitnessAccount(ctx, req.(*core.VoteWitnessContract))
+		return srv.(WalletServer).VoteWitnessAccount(ctx, req.(*corev2.VoteWitnessContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateSetting_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UpdateSettingContract)
+	in := new(corev2.UpdateSettingContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9002,13 +9002,13 @@ func _Wallet_UpdateSetting_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/UpdateSetting",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateSetting(ctx, req.(*core.UpdateSettingContract))
+		return srv.(WalletServer).UpdateSetting(ctx, req.(*corev2.UpdateSettingContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateEnergyLimit_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UpdateEnergyLimitContract)
+	in := new(corev2.UpdateEnergyLimitContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9020,13 +9020,13 @@ func _Wallet_UpdateEnergyLimit_Handler(srv interface{}, ctx context.Context, dec
 		FullMethod: "/protocol.Wallet/UpdateEnergyLimit",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateEnergyLimit(ctx, req.(*core.UpdateEnergyLimitContract))
+		return srv.(WalletServer).UpdateEnergyLimit(ctx, req.(*corev2.UpdateEnergyLimitContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_VoteWitnessAccount2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.VoteWitnessContract)
+	in := new(corev2.VoteWitnessContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9038,13 +9038,13 @@ func _Wallet_VoteWitnessAccount2_Handler(srv interface{}, ctx context.Context, d
 		FullMethod: "/protocol.Wallet/VoteWitnessAccount2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).VoteWitnessAccount2(ctx, req.(*core.VoteWitnessContract))
+		return srv.(WalletServer).VoteWitnessAccount2(ctx, req.(*corev2.VoteWitnessContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateAssetIssue_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AssetIssueContract)
+	in := new(corev2.AssetIssueContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9056,13 +9056,13 @@ func _Wallet_CreateAssetIssue_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/protocol.Wallet/CreateAssetIssue",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateAssetIssue(ctx, req.(*core.AssetIssueContract))
+		return srv.(WalletServer).CreateAssetIssue(ctx, req.(*corev2.AssetIssueContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateAssetIssue2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AssetIssueContract)
+	in := new(corev2.AssetIssueContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9074,13 +9074,13 @@ func _Wallet_CreateAssetIssue2_Handler(srv interface{}, ctx context.Context, dec
 		FullMethod: "/protocol.Wallet/CreateAssetIssue2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateAssetIssue2(ctx, req.(*core.AssetIssueContract))
+		return srv.(WalletServer).CreateAssetIssue2(ctx, req.(*corev2.AssetIssueContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateWitness_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.WitnessUpdateContract)
+	in := new(corev2.WitnessUpdateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9092,13 +9092,13 @@ func _Wallet_UpdateWitness_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/UpdateWitness",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateWitness(ctx, req.(*core.WitnessUpdateContract))
+		return srv.(WalletServer).UpdateWitness(ctx, req.(*corev2.WitnessUpdateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateWitness2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.WitnessUpdateContract)
+	in := new(corev2.WitnessUpdateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9110,13 +9110,13 @@ func _Wallet_UpdateWitness2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/UpdateWitness2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateWitness2(ctx, req.(*core.WitnessUpdateContract))
+		return srv.(WalletServer).UpdateWitness2(ctx, req.(*corev2.WitnessUpdateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateAccount_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AccountCreateContract)
+	in := new(corev2.AccountCreateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9128,13 +9128,13 @@ func _Wallet_CreateAccount_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/CreateAccount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateAccount(ctx, req.(*core.AccountCreateContract))
+		return srv.(WalletServer).CreateAccount(ctx, req.(*corev2.AccountCreateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateAccount2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AccountCreateContract)
+	in := new(corev2.AccountCreateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9146,13 +9146,13 @@ func _Wallet_CreateAccount2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/CreateAccount2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateAccount2(ctx, req.(*core.AccountCreateContract))
+		return srv.(WalletServer).CreateAccount2(ctx, req.(*corev2.AccountCreateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateWitness_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.WitnessCreateContract)
+	in := new(corev2.WitnessCreateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9164,13 +9164,13 @@ func _Wallet_CreateWitness_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/CreateWitness",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateWitness(ctx, req.(*core.WitnessCreateContract))
+		return srv.(WalletServer).CreateWitness(ctx, req.(*corev2.WitnessCreateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_CreateWitness2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.WitnessCreateContract)
+	in := new(corev2.WitnessCreateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9182,13 +9182,13 @@ func _Wallet_CreateWitness2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/CreateWitness2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateWitness2(ctx, req.(*core.WitnessCreateContract))
+		return srv.(WalletServer).CreateWitness2(ctx, req.(*corev2.WitnessCreateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_TransferAsset_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransferAssetContract)
+	in := new(corev2.TransferAssetContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9200,13 +9200,13 @@ func _Wallet_TransferAsset_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/TransferAsset",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).TransferAsset(ctx, req.(*core.TransferAssetContract))
+		return srv.(WalletServer).TransferAsset(ctx, req.(*corev2.TransferAssetContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_TransferAsset2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransferAssetContract)
+	in := new(corev2.TransferAssetContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9218,13 +9218,13 @@ func _Wallet_TransferAsset2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/TransferAsset2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).TransferAsset2(ctx, req.(*core.TransferAssetContract))
+		return srv.(WalletServer).TransferAsset2(ctx, req.(*corev2.TransferAssetContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ParticipateAssetIssue_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ParticipateAssetIssueContract)
+	in := new(corev2.ParticipateAssetIssueContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9236,13 +9236,13 @@ func _Wallet_ParticipateAssetIssue_Handler(srv interface{}, ctx context.Context,
 		FullMethod: "/protocol.Wallet/ParticipateAssetIssue",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ParticipateAssetIssue(ctx, req.(*core.ParticipateAssetIssueContract))
+		return srv.(WalletServer).ParticipateAssetIssue(ctx, req.(*corev2.ParticipateAssetIssueContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ParticipateAssetIssue2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ParticipateAssetIssueContract)
+	in := new(corev2.ParticipateAssetIssueContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9254,13 +9254,13 @@ func _Wallet_ParticipateAssetIssue2_Handler(srv interface{}, ctx context.Context
 		FullMethod: "/protocol.Wallet/ParticipateAssetIssue2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ParticipateAssetIssue2(ctx, req.(*core.ParticipateAssetIssueContract))
+		return srv.(WalletServer).ParticipateAssetIssue2(ctx, req.(*corev2.ParticipateAssetIssueContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_FreezeBalance_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.FreezeBalanceContract)
+	in := new(corev2.FreezeBalanceContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9272,13 +9272,13 @@ func _Wallet_FreezeBalance_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/FreezeBalance",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).FreezeBalance(ctx, req.(*core.FreezeBalanceContract))
+		return srv.(WalletServer).FreezeBalance(ctx, req.(*corev2.FreezeBalanceContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_FreezeBalance2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.FreezeBalanceContract)
+	in := new(corev2.FreezeBalanceContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9290,13 +9290,13 @@ func _Wallet_FreezeBalance2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/FreezeBalance2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).FreezeBalance2(ctx, req.(*core.FreezeBalanceContract))
+		return srv.(WalletServer).FreezeBalance2(ctx, req.(*corev2.FreezeBalanceContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UnfreezeBalance_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UnfreezeBalanceContract)
+	in := new(corev2.UnfreezeBalanceContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9308,13 +9308,13 @@ func _Wallet_UnfreezeBalance_Handler(srv interface{}, ctx context.Context, dec f
 		FullMethod: "/protocol.Wallet/UnfreezeBalance",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UnfreezeBalance(ctx, req.(*core.UnfreezeBalanceContract))
+		return srv.(WalletServer).UnfreezeBalance(ctx, req.(*corev2.UnfreezeBalanceContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UnfreezeBalance2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UnfreezeBalanceContract)
+	in := new(corev2.UnfreezeBalanceContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9326,13 +9326,13 @@ func _Wallet_UnfreezeBalance2_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/protocol.Wallet/UnfreezeBalance2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UnfreezeBalance2(ctx, req.(*core.UnfreezeBalanceContract))
+		return srv.(WalletServer).UnfreezeBalance2(ctx, req.(*corev2.UnfreezeBalanceContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UnfreezeAsset_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UnfreezeAssetContract)
+	in := new(corev2.UnfreezeAssetContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9344,13 +9344,13 @@ func _Wallet_UnfreezeAsset_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/UnfreezeAsset",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UnfreezeAsset(ctx, req.(*core.UnfreezeAssetContract))
+		return srv.(WalletServer).UnfreezeAsset(ctx, req.(*corev2.UnfreezeAssetContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UnfreezeAsset2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UnfreezeAssetContract)
+	in := new(corev2.UnfreezeAssetContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9362,13 +9362,13 @@ func _Wallet_UnfreezeAsset2_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/UnfreezeAsset2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UnfreezeAsset2(ctx, req.(*core.UnfreezeAssetContract))
+		return srv.(WalletServer).UnfreezeAsset2(ctx, req.(*corev2.UnfreezeAssetContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_WithdrawBalance_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.WithdrawBalanceContract)
+	in := new(corev2.WithdrawBalanceContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9380,13 +9380,13 @@ func _Wallet_WithdrawBalance_Handler(srv interface{}, ctx context.Context, dec f
 		FullMethod: "/protocol.Wallet/WithdrawBalance",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).WithdrawBalance(ctx, req.(*core.WithdrawBalanceContract))
+		return srv.(WalletServer).WithdrawBalance(ctx, req.(*corev2.WithdrawBalanceContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_WithdrawBalance2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.WithdrawBalanceContract)
+	in := new(corev2.WithdrawBalanceContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9398,13 +9398,13 @@ func _Wallet_WithdrawBalance2_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/protocol.Wallet/WithdrawBalance2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).WithdrawBalance2(ctx, req.(*core.WithdrawBalanceContract))
+		return srv.(WalletServer).WithdrawBalance2(ctx, req.(*corev2.WithdrawBalanceContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateAsset_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UpdateAssetContract)
+	in := new(corev2.UpdateAssetContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9416,13 +9416,13 @@ func _Wallet_UpdateAsset_Handler(srv interface{}, ctx context.Context, dec func(
 		FullMethod: "/protocol.Wallet/UpdateAsset",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateAsset(ctx, req.(*core.UpdateAssetContract))
+		return srv.(WalletServer).UpdateAsset(ctx, req.(*corev2.UpdateAssetContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_UpdateAsset2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UpdateAssetContract)
+	in := new(corev2.UpdateAssetContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9434,13 +9434,13 @@ func _Wallet_UpdateAsset2_Handler(srv interface{}, ctx context.Context, dec func
 		FullMethod: "/protocol.Wallet/UpdateAsset2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateAsset2(ctx, req.(*core.UpdateAssetContract))
+		return srv.(WalletServer).UpdateAsset2(ctx, req.(*corev2.UpdateAssetContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ProposalCreate_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ProposalCreateContract)
+	in := new(corev2.ProposalCreateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9452,13 +9452,13 @@ func _Wallet_ProposalCreate_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/ProposalCreate",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ProposalCreate(ctx, req.(*core.ProposalCreateContract))
+		return srv.(WalletServer).ProposalCreate(ctx, req.(*corev2.ProposalCreateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ProposalApprove_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ProposalApproveContract)
+	in := new(corev2.ProposalApproveContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9470,13 +9470,13 @@ func _Wallet_ProposalApprove_Handler(srv interface{}, ctx context.Context, dec f
 		FullMethod: "/protocol.Wallet/ProposalApprove",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ProposalApprove(ctx, req.(*core.ProposalApproveContract))
+		return srv.(WalletServer).ProposalApprove(ctx, req.(*corev2.ProposalApproveContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ProposalDelete_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ProposalDeleteContract)
+	in := new(corev2.ProposalDeleteContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9488,13 +9488,13 @@ func _Wallet_ProposalDelete_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/ProposalDelete",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ProposalDelete(ctx, req.(*core.ProposalDeleteContract))
+		return srv.(WalletServer).ProposalDelete(ctx, req.(*corev2.ProposalDeleteContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_BuyStorage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.BuyStorageContract)
+	in := new(corev2.BuyStorageContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9506,13 +9506,13 @@ func _Wallet_BuyStorage_Handler(srv interface{}, ctx context.Context, dec func(i
 		FullMethod: "/protocol.Wallet/BuyStorage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).BuyStorage(ctx, req.(*core.BuyStorageContract))
+		return srv.(WalletServer).BuyStorage(ctx, req.(*corev2.BuyStorageContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_BuyStorageBytes_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.BuyStorageBytesContract)
+	in := new(corev2.BuyStorageBytesContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9524,13 +9524,13 @@ func _Wallet_BuyStorageBytes_Handler(srv interface{}, ctx context.Context, dec f
 		FullMethod: "/protocol.Wallet/BuyStorageBytes",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).BuyStorageBytes(ctx, req.(*core.BuyStorageBytesContract))
+		return srv.(WalletServer).BuyStorageBytes(ctx, req.(*corev2.BuyStorageBytesContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_SellStorage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.SellStorageContract)
+	in := new(corev2.SellStorageContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9542,13 +9542,13 @@ func _Wallet_SellStorage_Handler(srv interface{}, ctx context.Context, dec func(
 		FullMethod: "/protocol.Wallet/SellStorage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).SellStorage(ctx, req.(*core.SellStorageContract))
+		return srv.(WalletServer).SellStorage(ctx, req.(*corev2.SellStorageContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ExchangeCreate_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ExchangeCreateContract)
+	in := new(corev2.ExchangeCreateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9560,13 +9560,13 @@ func _Wallet_ExchangeCreate_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/ExchangeCreate",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ExchangeCreate(ctx, req.(*core.ExchangeCreateContract))
+		return srv.(WalletServer).ExchangeCreate(ctx, req.(*corev2.ExchangeCreateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ExchangeInject_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ExchangeInjectContract)
+	in := new(corev2.ExchangeInjectContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9578,13 +9578,13 @@ func _Wallet_ExchangeInject_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/ExchangeInject",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ExchangeInject(ctx, req.(*core.ExchangeInjectContract))
+		return srv.(WalletServer).ExchangeInject(ctx, req.(*corev2.ExchangeInjectContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ExchangeWithdraw_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ExchangeWithdrawContract)
+	in := new(corev2.ExchangeWithdrawContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9596,13 +9596,13 @@ func _Wallet_ExchangeWithdraw_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/protocol.Wallet/ExchangeWithdraw",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ExchangeWithdraw(ctx, req.(*core.ExchangeWithdrawContract))
+		return srv.(WalletServer).ExchangeWithdraw(ctx, req.(*corev2.ExchangeWithdrawContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ExchangeTransaction_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ExchangeTransactionContract)
+	in := new(corev2.ExchangeTransactionContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9614,7 +9614,7 @@ func _Wallet_ExchangeTransaction_Handler(srv interface{}, ctx context.Context, d
 		FullMethod: "/protocol.Wallet/ExchangeTransaction",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ExchangeTransaction(ctx, req.(*core.ExchangeTransactionContract))
+		return srv.(WalletServer).ExchangeTransaction(ctx, req.(*corev2.ExchangeTransactionContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -9638,7 +9638,7 @@ func _Wallet_ListNodes_Handler(srv interface{}, ctx context.Context, dec func(in
 }
 
 func _Wallet_GetAssetIssueByAccount_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9650,13 +9650,13 @@ func _Wallet_GetAssetIssueByAccount_Handler(srv interface{}, ctx context.Context
 		FullMethod: "/protocol.Wallet/GetAssetIssueByAccount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetAssetIssueByAccount(ctx, req.(*core.Account))
+		return srv.(WalletServer).GetAssetIssueByAccount(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_GetAccountNet_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9668,13 +9668,13 @@ func _Wallet_GetAccountNet_Handler(srv interface{}, ctx context.Context, dec fun
 		FullMethod: "/protocol.Wallet/GetAccountNet",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetAccountNet(ctx, req.(*core.Account))
+		return srv.(WalletServer).GetAccountNet(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_GetAccountResource_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9686,7 +9686,7 @@ func _Wallet_GetAccountResource_Handler(srv interface{}, ctx context.Context, de
 		FullMethod: "/protocol.Wallet/GetAccountResource",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetAccountResource(ctx, req.(*core.Account))
+		return srv.(WalletServer).GetAccountResource(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -9944,7 +9944,7 @@ func _Wallet_GetTransactionById_Handler(srv interface{}, ctx context.Context, de
 }
 
 func _Wallet_DeployContract_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.CreateSmartContract)
+	in := new(corev2.CreateSmartContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9956,7 +9956,7 @@ func _Wallet_DeployContract_Handler(srv interface{}, ctx context.Context, dec fu
 		FullMethod: "/protocol.Wallet/DeployContract",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).DeployContract(ctx, req.(*core.CreateSmartContract))
+		return srv.(WalletServer).DeployContract(ctx, req.(*corev2.CreateSmartContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -9980,7 +9980,7 @@ func _Wallet_GetContract_Handler(srv interface{}, ctx context.Context, dec func(
 }
 
 func _Wallet_TriggerContract_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TriggerSmartContract)
+	in := new(corev2.TriggerSmartContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -9992,13 +9992,13 @@ func _Wallet_TriggerContract_Handler(srv interface{}, ctx context.Context, dec f
 		FullMethod: "/protocol.Wallet/TriggerContract",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).TriggerContract(ctx, req.(*core.TriggerSmartContract))
+		return srv.(WalletServer).TriggerContract(ctx, req.(*corev2.TriggerSmartContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_TriggerConstantContract_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TriggerSmartContract)
+	in := new(corev2.TriggerSmartContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10010,13 +10010,13 @@ func _Wallet_TriggerConstantContract_Handler(srv interface{}, ctx context.Contex
 		FullMethod: "/protocol.Wallet/TriggerConstantContract",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).TriggerConstantContract(ctx, req.(*core.TriggerSmartContract))
+		return srv.(WalletServer).TriggerConstantContract(ctx, req.(*corev2.TriggerSmartContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_ClearContractABI_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.ClearABIContract)
+	in := new(corev2.ClearABIContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10028,7 +10028,7 @@ func _Wallet_ClearContractABI_Handler(srv interface{}, ctx context.Context, dec 
 		FullMethod: "/protocol.Wallet/ClearContractABI",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).ClearContractABI(ctx, req.(*core.ClearABIContract))
+		return srv.(WalletServer).ClearContractABI(ctx, req.(*corev2.ClearABIContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -10286,7 +10286,7 @@ func _Wallet_GetNextMaintenanceTime_Handler(srv interface{}, ctx context.Context
 }
 
 func _Wallet_GetTransactionSign_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransactionSign)
+	in := new(corev2.TransactionSign)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10298,13 +10298,13 @@ func _Wallet_GetTransactionSign_Handler(srv interface{}, ctx context.Context, de
 		FullMethod: "/protocol.Wallet/GetTransactionSign",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetTransactionSign(ctx, req.(*core.TransactionSign))
+		return srv.(WalletServer).GetTransactionSign(ctx, req.(*corev2.TransactionSign))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_GetTransactionSign2_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransactionSign)
+	in := new(corev2.TransactionSign)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10316,7 +10316,7 @@ func _Wallet_GetTransactionSign2_Handler(srv interface{}, ctx context.Context, d
 		FullMethod: "/protocol.Wallet/GetTransactionSign2",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetTransactionSign2(ctx, req.(*core.TransactionSign))
+		return srv.(WalletServer).GetTransactionSign2(ctx, req.(*corev2.TransactionSign))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -10448,7 +10448,7 @@ func _Wallet_GetTransactionInfoById_Handler(srv interface{}, ctx context.Context
 }
 
 func _Wallet_AccountPermissionUpdate_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.AccountPermissionUpdateContract)
+	in := new(corev2.AccountPermissionUpdateContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10460,13 +10460,13 @@ func _Wallet_AccountPermissionUpdate_Handler(srv interface{}, ctx context.Contex
 		FullMethod: "/protocol.Wallet/AccountPermissionUpdate",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).AccountPermissionUpdate(ctx, req.(*core.AccountPermissionUpdateContract))
+		return srv.(WalletServer).AccountPermissionUpdate(ctx, req.(*corev2.AccountPermissionUpdateContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_AddSign_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TransactionSign)
+	in := new(corev2.TransactionSign)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10478,13 +10478,13 @@ func _Wallet_AddSign_Handler(srv interface{}, ctx context.Context, dec func(inte
 		FullMethod: "/protocol.Wallet/AddSign",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).AddSign(ctx, req.(*core.TransactionSign))
+		return srv.(WalletServer).AddSign(ctx, req.(*corev2.TransactionSign))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_GetTransactionSignWeight_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Transaction)
+	in := new(corev2.Transaction)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10496,13 +10496,13 @@ func _Wallet_GetTransactionSignWeight_Handler(srv interface{}, ctx context.Conte
 		FullMethod: "/protocol.Wallet/GetTransactionSignWeight",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetTransactionSignWeight(ctx, req.(*core.Transaction))
+		return srv.(WalletServer).GetTransactionSignWeight(ctx, req.(*corev2.Transaction))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _Wallet_GetTransactionApprovedList_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Transaction)
+	in := new(corev2.Transaction)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10514,7 +10514,7 @@ func _Wallet_GetTransactionApprovedList_Handler(srv interface{}, ctx context.Con
 		FullMethod: "/protocol.Wallet/GetTransactionApprovedList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetTransactionApprovedList(ctx, req.(*core.Transaction))
+		return srv.(WalletServer).GetTransactionApprovedList(ctx, req.(*corev2.Transaction))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -10574,7 +10574,7 @@ func _Wallet_GetBrokerageInfo_Handler(srv interface{}, ctx context.Context, dec 
 }
 
 func _Wallet_UpdateBrokerage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.UpdateBrokerageContract)
+	in := new(corev2.UpdateBrokerageContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10586,7 +10586,7 @@ func _Wallet_UpdateBrokerage_Handler(srv interface{}, ctx context.Context, dec f
 		FullMethod: "/protocol.Wallet/UpdateBrokerage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).UpdateBrokerage(ctx, req.(*core.UpdateBrokerageContract))
+		return srv.(WalletServer).UpdateBrokerage(ctx, req.(*corev2.UpdateBrokerageContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -10610,7 +10610,7 @@ func _Wallet_CreateShieldedTransaction_Handler(srv interface{}, ctx context.Cont
 }
 
 func _Wallet_GetMerkleTreeVoucherInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.OutputPointInfo)
+	in := new(corev2.OutputPointInfo)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10622,7 +10622,7 @@ func _Wallet_GetMerkleTreeVoucherInfo_Handler(srv interface{}, ctx context.Conte
 		FullMethod: "/protocol.Wallet/GetMerkleTreeVoucherInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetMerkleTreeVoucherInfo(ctx, req.(*core.OutputPointInfo))
+		return srv.(WalletServer).GetMerkleTreeVoucherInfo(ctx, req.(*corev2.OutputPointInfo))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -10880,7 +10880,7 @@ func _Wallet_CreateShieldedTransactionWithoutSpendAuthSig_Handler(srv interface{
 }
 
 func _Wallet_GetShieldTransactionHash_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Transaction)
+	in := new(corev2.Transaction)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10892,7 +10892,7 @@ func _Wallet_GetShieldTransactionHash_Handler(srv interface{}, ctx context.Conte
 		FullMethod: "/protocol.Wallet/GetShieldTransactionHash",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).GetShieldTransactionHash(ctx, req.(*core.Transaction))
+		return srv.(WalletServer).GetShieldTransactionHash(ctx, req.(*corev2.Transaction))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -10934,7 +10934,7 @@ func _Wallet_CreateShieldNullifier_Handler(srv interface{}, ctx context.Context,
 }
 
 func _Wallet_CreateCommonTransaction_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Transaction)
+	in := new(corev2.Transaction)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -10946,7 +10946,7 @@ func _Wallet_CreateCommonTransaction_Handler(srv interface{}, ctx context.Contex
 		FullMethod: "/protocol.Wallet/CreateCommonTransaction",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletServer).CreateCommonTransaction(ctx, req.(*core.Transaction))
+		return srv.(WalletServer).CreateCommonTransaction(ctx, req.(*corev2.Transaction))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -11458,39 +11458,39 @@ var _Wallet_serviceDesc = grpc.ServiceDesc{
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type WalletSolidityClient interface {
-	GetAccount(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error)
-	GetAccountById(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error)
+	GetAccount(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error)
+	GetAccountById(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error)
 	ListWitnesses(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*WitnessList, error)
 	GetAssetIssueList(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*AssetIssueList, error)
 	GetPaginatedAssetIssueList(ctx context.Context, in *PaginatedMessage, opts ...grpc.CallOption) (*AssetIssueList, error)
-	GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error)
+	GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error)
 	GetAssetIssueListByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*AssetIssueList, error)
-	GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error)
+	GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error)
 	//Please use GetNowBlock2 instead of this function.
-	GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.Block, error)
+	GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.Block, error)
 	//Use this function instead of GetNowBlock.
 	GetNowBlock2(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*BlockExtention, error)
 	//Please use GetBlockByNum2 instead of this function.
-	GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*core.Block, error)
+	GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*corev2.Block, error)
 	//Use this function instead of GetBlockByNum.
 	GetBlockByNum2(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*BlockExtention, error)
 	GetTransactionCountByBlockNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*NumberMessage, error)
 	GetDelegatedResource(ctx context.Context, in *DelegatedResourceMessage, opts ...grpc.CallOption) (*DelegatedResourceList, error)
-	GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.DelegatedResourceAccountIndex, error)
-	GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Exchange, error)
+	GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.DelegatedResourceAccountIndex, error)
+	GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Exchange, error)
 	ListExchanges(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*ExchangeList, error)
-	GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Transaction, error)
-	GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.TransactionInfo, error)
+	GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Transaction, error)
+	GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.TransactionInfo, error)
 	//Warning: do not invoke this interface provided by others.
 	GenerateAddress(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*AddressPrKeyPairMessage, error)
-	GetMerkleTreeVoucherInfo(ctx context.Context, in *core.OutputPointInfo, opts ...grpc.CallOption) (*core.IncrementalMerkleVoucherInfo, error)
+	GetMerkleTreeVoucherInfo(ctx context.Context, in *corev2.OutputPointInfo, opts ...grpc.CallOption) (*corev2.IncrementalMerkleVoucherInfo, error)
 	ScanNoteByIvk(ctx context.Context, in *IvkDecryptParameters, opts ...grpc.CallOption) (*DecryptNotes, error)
 	ScanAndMarkNoteByIvk(ctx context.Context, in *IvkDecryptAndMarkParameters, opts ...grpc.CallOption) (*DecryptNotesMarked, error)
 	ScanNoteByOvk(ctx context.Context, in *OvkDecryptParameters, opts ...grpc.CallOption) (*DecryptNotes, error)
 	IsSpend(ctx context.Context, in *NoteParameters, opts ...grpc.CallOption) (*SpendResult, error)
 	GetRewardInfo(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*NumberMessage, error)
 	GetBrokerageInfo(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*NumberMessage, error)
-	TriggerConstantContract(ctx context.Context, in *core.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
+	TriggerConstantContract(ctx context.Context, in *corev2.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error)
 	GetTransactionInfoByBlockNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*TransactionInfoList, error)
 }
 
@@ -11502,8 +11502,8 @@ func NewWalletSolidityClient(cc grpc.ClientConnInterface) WalletSolidityClient {
 	return &walletSolidityClient{cc}
 }
 
-func (c *walletSolidityClient) GetAccount(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error) {
-	out := new(core.Account)
+func (c *walletSolidityClient) GetAccount(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error) {
+	out := new(corev2.Account)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetAccount", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11511,8 +11511,8 @@ func (c *walletSolidityClient) GetAccount(ctx context.Context, in *core.Account,
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetAccountById(ctx context.Context, in *core.Account, opts ...grpc.CallOption) (*core.Account, error) {
-	out := new(core.Account)
+func (c *walletSolidityClient) GetAccountById(ctx context.Context, in *corev2.Account, opts ...grpc.CallOption) (*corev2.Account, error) {
+	out := new(corev2.Account)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetAccountById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11547,8 +11547,8 @@ func (c *walletSolidityClient) GetPaginatedAssetIssueList(ctx context.Context, i
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error) {
-	out := new(core.AssetIssueContract)
+func (c *walletSolidityClient) GetAssetIssueByName(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error) {
+	out := new(corev2.AssetIssueContract)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetAssetIssueByName", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11565,8 +11565,8 @@ func (c *walletSolidityClient) GetAssetIssueListByName(ctx context.Context, in *
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.AssetIssueContract, error) {
-	out := new(core.AssetIssueContract)
+func (c *walletSolidityClient) GetAssetIssueById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.AssetIssueContract, error) {
+	out := new(corev2.AssetIssueContract)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetAssetIssueById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11574,8 +11574,8 @@ func (c *walletSolidityClient) GetAssetIssueById(ctx context.Context, in *BytesM
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *walletSolidityClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetNowBlock", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11592,8 +11592,8 @@ func (c *walletSolidityClient) GetNowBlock2(ctx context.Context, in *EmptyMessag
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *walletSolidityClient) GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetBlockByNum", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11628,8 +11628,8 @@ func (c *walletSolidityClient) GetDelegatedResource(ctx context.Context, in *Del
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.DelegatedResourceAccountIndex, error) {
-	out := new(core.DelegatedResourceAccountIndex)
+func (c *walletSolidityClient) GetDelegatedResourceAccountIndex(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.DelegatedResourceAccountIndex, error) {
+	out := new(corev2.DelegatedResourceAccountIndex)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetDelegatedResourceAccountIndex", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11637,8 +11637,8 @@ func (c *walletSolidityClient) GetDelegatedResourceAccountIndex(ctx context.Cont
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Exchange, error) {
-	out := new(core.Exchange)
+func (c *walletSolidityClient) GetExchangeById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Exchange, error) {
+	out := new(corev2.Exchange)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetExchangeById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11655,8 +11655,8 @@ func (c *walletSolidityClient) ListExchanges(ctx context.Context, in *EmptyMessa
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.Transaction, error) {
-	out := new(core.Transaction)
+func (c *walletSolidityClient) GetTransactionById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.Transaction, error) {
+	out := new(corev2.Transaction)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetTransactionById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11664,8 +11664,8 @@ func (c *walletSolidityClient) GetTransactionById(ctx context.Context, in *Bytes
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*core.TransactionInfo, error) {
-	out := new(core.TransactionInfo)
+func (c *walletSolidityClient) GetTransactionInfoById(ctx context.Context, in *BytesMessage, opts ...grpc.CallOption) (*corev2.TransactionInfo, error) {
+	out := new(corev2.TransactionInfo)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetTransactionInfoById", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11682,8 +11682,8 @@ func (c *walletSolidityClient) GenerateAddress(ctx context.Context, in *EmptyMes
 	return out, nil
 }
 
-func (c *walletSolidityClient) GetMerkleTreeVoucherInfo(ctx context.Context, in *core.OutputPointInfo, opts ...grpc.CallOption) (*core.IncrementalMerkleVoucherInfo, error) {
-	out := new(core.IncrementalMerkleVoucherInfo)
+func (c *walletSolidityClient) GetMerkleTreeVoucherInfo(ctx context.Context, in *corev2.OutputPointInfo, opts ...grpc.CallOption) (*corev2.IncrementalMerkleVoucherInfo, error) {
+	out := new(corev2.IncrementalMerkleVoucherInfo)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/GetMerkleTreeVoucherInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -11745,7 +11745,7 @@ func (c *walletSolidityClient) GetBrokerageInfo(ctx context.Context, in *BytesMe
 	return out, nil
 }
 
-func (c *walletSolidityClient) TriggerConstantContract(ctx context.Context, in *core.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
+func (c *walletSolidityClient) TriggerConstantContract(ctx context.Context, in *corev2.TriggerSmartContract, opts ...grpc.CallOption) (*TransactionExtention, error) {
 	out := new(TransactionExtention)
 	err := c.cc.Invoke(ctx, "/protocol.WalletSolidity/TriggerConstantContract", in, out, opts...)
 	if err != nil {
@@ -11765,39 +11765,39 @@ func (c *walletSolidityClient) GetTransactionInfoByBlockNum(ctx context.Context,
 
 // WalletSolidityServer is the server API for WalletSolidity service.
 type WalletSolidityServer interface {
-	GetAccount(context.Context, *core.Account) (*core.Account, error)
-	GetAccountById(context.Context, *core.Account) (*core.Account, error)
+	GetAccount(context.Context, *corev2.Account) (*corev2.Account, error)
+	GetAccountById(context.Context, *corev2.Account) (*corev2.Account, error)
 	ListWitnesses(context.Context, *EmptyMessage) (*WitnessList, error)
 	GetAssetIssueList(context.Context, *EmptyMessage) (*AssetIssueList, error)
 	GetPaginatedAssetIssueList(context.Context, *PaginatedMessage) (*AssetIssueList, error)
-	GetAssetIssueByName(context.Context, *BytesMessage) (*core.AssetIssueContract, error)
+	GetAssetIssueByName(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error)
 	GetAssetIssueListByName(context.Context, *BytesMessage) (*AssetIssueList, error)
-	GetAssetIssueById(context.Context, *BytesMessage) (*core.AssetIssueContract, error)
+	GetAssetIssueById(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error)
 	//Please use GetNowBlock2 instead of this function.
-	GetNowBlock(context.Context, *EmptyMessage) (*core.Block, error)
+	GetNowBlock(context.Context, *EmptyMessage) (*corev2.Block, error)
 	//Use this function instead of GetNowBlock.
 	GetNowBlock2(context.Context, *EmptyMessage) (*BlockExtention, error)
 	//Please use GetBlockByNum2 instead of this function.
-	GetBlockByNum(context.Context, *NumberMessage) (*core.Block, error)
+	GetBlockByNum(context.Context, *NumberMessage) (*corev2.Block, error)
 	//Use this function instead of GetBlockByNum.
 	GetBlockByNum2(context.Context, *NumberMessage) (*BlockExtention, error)
 	GetTransactionCountByBlockNum(context.Context, *NumberMessage) (*NumberMessage, error)
 	GetDelegatedResource(context.Context, *DelegatedResourceMessage) (*DelegatedResourceList, error)
-	GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*core.DelegatedResourceAccountIndex, error)
-	GetExchangeById(context.Context, *BytesMessage) (*core.Exchange, error)
+	GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*corev2.DelegatedResourceAccountIndex, error)
+	GetExchangeById(context.Context, *BytesMessage) (*corev2.Exchange, error)
 	ListExchanges(context.Context, *EmptyMessage) (*ExchangeList, error)
-	GetTransactionById(context.Context, *BytesMessage) (*core.Transaction, error)
-	GetTransactionInfoById(context.Context, *BytesMessage) (*core.TransactionInfo, error)
+	GetTransactionById(context.Context, *BytesMessage) (*corev2.Transaction, error)
+	GetTransactionInfoById(context.Context, *BytesMessage) (*corev2.TransactionInfo, error)
 	//Warning: do not invoke this interface provided by others.
 	GenerateAddress(context.Context, *EmptyMessage) (*AddressPrKeyPairMessage, error)
-	GetMerkleTreeVoucherInfo(context.Context, *core.OutputPointInfo) (*core.IncrementalMerkleVoucherInfo, error)
+	GetMerkleTreeVoucherInfo(context.Context, *corev2.OutputPointInfo) (*corev2.IncrementalMerkleVoucherInfo, error)
 	ScanNoteByIvk(context.Context, *IvkDecryptParameters) (*DecryptNotes, error)
 	ScanAndMarkNoteByIvk(context.Context, *IvkDecryptAndMarkParameters) (*DecryptNotesMarked, error)
 	ScanNoteByOvk(context.Context, *OvkDecryptParameters) (*DecryptNotes, error)
 	IsSpend(context.Context, *NoteParameters) (*SpendResult, error)
 	GetRewardInfo(context.Context, *BytesMessage) (*NumberMessage, error)
 	GetBrokerageInfo(context.Context, *BytesMessage) (*NumberMessage, error)
-	TriggerConstantContract(context.Context, *core.TriggerSmartContract) (*TransactionExtention, error)
+	TriggerConstantContract(context.Context, *corev2.TriggerSmartContract) (*TransactionExtention, error)
 	GetTransactionInfoByBlockNum(context.Context, *NumberMessage) (*TransactionInfoList, error)
 }
 
@@ -11805,10 +11805,10 @@ type WalletSolidityServer interface {
 type UnimplementedWalletSolidityServer struct {
 }
 
-func (*UnimplementedWalletSolidityServer) GetAccount(context.Context, *core.Account) (*core.Account, error) {
+func (*UnimplementedWalletSolidityServer) GetAccount(context.Context, *corev2.Account) (*corev2.Account, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAccount not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetAccountById(context.Context, *core.Account) (*core.Account, error) {
+func (*UnimplementedWalletSolidityServer) GetAccountById(context.Context, *corev2.Account) (*corev2.Account, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAccountById not implemented")
 }
 func (*UnimplementedWalletSolidityServer) ListWitnesses(context.Context, *EmptyMessage) (*WitnessList, error) {
@@ -11820,22 +11820,22 @@ func (*UnimplementedWalletSolidityServer) GetAssetIssueList(context.Context, *Em
 func (*UnimplementedWalletSolidityServer) GetPaginatedAssetIssueList(context.Context, *PaginatedMessage) (*AssetIssueList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetPaginatedAssetIssueList not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetAssetIssueByName(context.Context, *BytesMessage) (*core.AssetIssueContract, error) {
+func (*UnimplementedWalletSolidityServer) GetAssetIssueByName(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueByName not implemented")
 }
 func (*UnimplementedWalletSolidityServer) GetAssetIssueListByName(context.Context, *BytesMessage) (*AssetIssueList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueListByName not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetAssetIssueById(context.Context, *BytesMessage) (*core.AssetIssueContract, error) {
+func (*UnimplementedWalletSolidityServer) GetAssetIssueById(context.Context, *BytesMessage) (*corev2.AssetIssueContract, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAssetIssueById not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetNowBlock(context.Context, *EmptyMessage) (*core.Block, error) {
+func (*UnimplementedWalletSolidityServer) GetNowBlock(context.Context, *EmptyMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNowBlock not implemented")
 }
 func (*UnimplementedWalletSolidityServer) GetNowBlock2(context.Context, *EmptyMessage) (*BlockExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNowBlock2 not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetBlockByNum(context.Context, *NumberMessage) (*core.Block, error) {
+func (*UnimplementedWalletSolidityServer) GetBlockByNum(context.Context, *NumberMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBlockByNum not implemented")
 }
 func (*UnimplementedWalletSolidityServer) GetBlockByNum2(context.Context, *NumberMessage) (*BlockExtention, error) {
@@ -11847,25 +11847,25 @@ func (*UnimplementedWalletSolidityServer) GetTransactionCountByBlockNum(context.
 func (*UnimplementedWalletSolidityServer) GetDelegatedResource(context.Context, *DelegatedResourceMessage) (*DelegatedResourceList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetDelegatedResource not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*core.DelegatedResourceAccountIndex, error) {
+func (*UnimplementedWalletSolidityServer) GetDelegatedResourceAccountIndex(context.Context, *BytesMessage) (*corev2.DelegatedResourceAccountIndex, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetDelegatedResourceAccountIndex not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetExchangeById(context.Context, *BytesMessage) (*core.Exchange, error) {
+func (*UnimplementedWalletSolidityServer) GetExchangeById(context.Context, *BytesMessage) (*corev2.Exchange, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetExchangeById not implemented")
 }
 func (*UnimplementedWalletSolidityServer) ListExchanges(context.Context, *EmptyMessage) (*ExchangeList, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ListExchanges not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetTransactionById(context.Context, *BytesMessage) (*core.Transaction, error) {
+func (*UnimplementedWalletSolidityServer) GetTransactionById(context.Context, *BytesMessage) (*corev2.Transaction, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionById not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetTransactionInfoById(context.Context, *BytesMessage) (*core.TransactionInfo, error) {
+func (*UnimplementedWalletSolidityServer) GetTransactionInfoById(context.Context, *BytesMessage) (*corev2.TransactionInfo, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTransactionInfoById not implemented")
 }
 func (*UnimplementedWalletSolidityServer) GenerateAddress(context.Context, *EmptyMessage) (*AddressPrKeyPairMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GenerateAddress not implemented")
 }
-func (*UnimplementedWalletSolidityServer) GetMerkleTreeVoucherInfo(context.Context, *core.OutputPointInfo) (*core.IncrementalMerkleVoucherInfo, error) {
+func (*UnimplementedWalletSolidityServer) GetMerkleTreeVoucherInfo(context.Context, *corev2.OutputPointInfo) (*corev2.IncrementalMerkleVoucherInfo, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMerkleTreeVoucherInfo not implemented")
 }
 func (*UnimplementedWalletSolidityServer) ScanNoteByIvk(context.Context, *IvkDecryptParameters) (*DecryptNotes, error) {
@@ -11886,7 +11886,7 @@ func (*UnimplementedWalletSolidityServer) GetRewardInfo(context.Context, *BytesM
 func (*UnimplementedWalletSolidityServer) GetBrokerageInfo(context.Context, *BytesMessage) (*NumberMessage, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBrokerageInfo not implemented")
 }
-func (*UnimplementedWalletSolidityServer) TriggerConstantContract(context.Context, *core.TriggerSmartContract) (*TransactionExtention, error) {
+func (*UnimplementedWalletSolidityServer) TriggerConstantContract(context.Context, *corev2.TriggerSmartContract) (*TransactionExtention, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TriggerConstantContract not implemented")
 }
 func (*UnimplementedWalletSolidityServer) GetTransactionInfoByBlockNum(context.Context, *NumberMessage) (*TransactionInfoList, error) {
@@ -11898,7 +11898,7 @@ func RegisterWalletSolidityServer(s *grpc.Server, srv WalletSolidityServer) {
 }
 
 func _WalletSolidity_GetAccount_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -11910,13 +11910,13 @@ func _WalletSolidity_GetAccount_Handler(srv interface{}, ctx context.Context, de
 		FullMethod: "/protocol.WalletSolidity/GetAccount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletSolidityServer).GetAccount(ctx, req.(*core.Account))
+		return srv.(WalletSolidityServer).GetAccount(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
 func _WalletSolidity_GetAccountById_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.Account)
+	in := new(corev2.Account)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -11928,7 +11928,7 @@ func _WalletSolidity_GetAccountById_Handler(srv interface{}, ctx context.Context
 		FullMethod: "/protocol.WalletSolidity/GetAccountById",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletSolidityServer).GetAccountById(ctx, req.(*core.Account))
+		return srv.(WalletSolidityServer).GetAccountById(ctx, req.(*corev2.Account))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -12258,7 +12258,7 @@ func _WalletSolidity_GenerateAddress_Handler(srv interface{}, ctx context.Contex
 }
 
 func _WalletSolidity_GetMerkleTreeVoucherInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.OutputPointInfo)
+	in := new(corev2.OutputPointInfo)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -12270,7 +12270,7 @@ func _WalletSolidity_GetMerkleTreeVoucherInfo_Handler(srv interface{}, ctx conte
 		FullMethod: "/protocol.WalletSolidity/GetMerkleTreeVoucherInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletSolidityServer).GetMerkleTreeVoucherInfo(ctx, req.(*core.OutputPointInfo))
+		return srv.(WalletSolidityServer).GetMerkleTreeVoucherInfo(ctx, req.(*corev2.OutputPointInfo))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -12384,7 +12384,7 @@ func _WalletSolidity_GetBrokerageInfo_Handler(srv interface{}, ctx context.Conte
 }
 
 func _WalletSolidity_TriggerConstantContract_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(core.TriggerSmartContract)
+	in := new(corev2.TriggerSmartContract)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -12396,7 +12396,7 @@ func _WalletSolidity_TriggerConstantContract_Handler(srv interface{}, ctx contex
 		FullMethod: "/protocol.WalletSolidity/TriggerConstantContract",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(WalletSolidityServer).TriggerConstantContract(ctx, req.(*core.TriggerSmartContract))
+		return srv.(WalletSolidityServer).TriggerConstantContract(ctx, req.(*corev2.TriggerSmartContract))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -12738,9 +12738,9 @@ var _WalletExtension_serviceDesc = grpc.ServiceDesc{
 type DatabaseClient interface {
 	// for tapos
 	GetBlockReference(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*BlockReference, error)
-	GetDynamicProperties(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.DynamicProperties, error)
-	GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.Block, error)
-	GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*core.Block, error)
+	GetDynamicProperties(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.DynamicProperties, error)
+	GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.Block, error)
+	GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*corev2.Block, error)
 }
 
 type databaseClient struct {
@@ -12760,8 +12760,8 @@ func (c *databaseClient) GetBlockReference(ctx context.Context, in *EmptyMessage
 	return out, nil
 }
 
-func (c *databaseClient) GetDynamicProperties(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.DynamicProperties, error) {
-	out := new(core.DynamicProperties)
+func (c *databaseClient) GetDynamicProperties(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.DynamicProperties, error) {
+	out := new(corev2.DynamicProperties)
 	err := c.cc.Invoke(ctx, "/protocol.Database/GetDynamicProperties", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -12769,8 +12769,8 @@ func (c *databaseClient) GetDynamicProperties(ctx context.Context, in *EmptyMess
 	return out, nil
 }
 
-func (c *databaseClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *databaseClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.Database/GetNowBlock", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -12778,8 +12778,8 @@ func (c *databaseClient) GetNowBlock(ctx context.Context, in *EmptyMessage, opts
 	return out, nil
 }
 
-func (c *databaseClient) GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*core.Block, error) {
-	out := new(core.Block)
+func (c *databaseClient) GetBlockByNum(ctx context.Context, in *NumberMessage, opts ...grpc.CallOption) (*corev2.Block, error) {
+	out := new(corev2.Block)
 	err := c.cc.Invoke(ctx, "/protocol.Database/GetBlockByNum", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -12791,9 +12791,9 @@ func (c *databaseClient) GetBlockByNum(ctx context.Context, in *NumberMessage, o
 type DatabaseServer interface {
 	// for tapos
 	GetBlockReference(context.Context, *EmptyMessage) (*BlockReference, error)
-	GetDynamicProperties(context.Context, *EmptyMessage) (*core.DynamicProperties, error)
-	GetNowBlock(context.Context, *EmptyMessage) (*core.Block, error)
-	GetBlockByNum(context.Context, *NumberMessage) (*core.Block, error)
+	GetDynamicProperties(context.Context, *EmptyMessage) (*corev2.DynamicProperties, error)
+	GetNowBlock(context.Context, *EmptyMessage) (*corev2.Block, error)
+	GetBlockByNum(context.Context, *NumberMessage) (*corev2.Block, error)
 }
 
 // UnimplementedDatabaseServer can be embedded to have forward compatible implementations.
@@ -12803,13 +12803,13 @@ type UnimplementedDatabaseServer struct {
 func (*UnimplementedDatabaseServer) GetBlockReference(context.Context, *EmptyMessage) (*BlockReference, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBlockReference not implemented")
 }
-func (*UnimplementedDatabaseServer) GetDynamicProperties(context.Context, *EmptyMessage) (*core.DynamicProperties, error) {
+func (*UnimplementedDatabaseServer) GetDynamicProperties(context.Context, *EmptyMessage) (*corev2.DynamicProperties, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetDynamicProperties not implemented")
 }
-func (*UnimplementedDatabaseServer) GetNowBlock(context.Context, *EmptyMessage) (*core.Block, error) {
+func (*UnimplementedDatabaseServer) GetNowBlock(context.Context, *EmptyMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetNowBlock not implemented")
 }
-func (*UnimplementedDatabaseServer) GetBlockByNum(context.Context, *NumberMessage) (*core.Block, error) {
+func (*UnimplementedDatabaseServer) GetBlockByNum(context.Context, *NumberMessage) (*corev2.Block, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBlockByNum not implemented")
 }
 

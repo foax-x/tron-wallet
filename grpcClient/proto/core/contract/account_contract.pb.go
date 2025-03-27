@@ -16,9 +16,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/contract/account_contract.proto
+// source: corev2/contract/account_contract.proto
 
-package core
+package corev2
 
 import (
 	reflect "reflect"
@@ -48,13 +48,13 @@ type AccountCreateContract struct {
 
 	OwnerAddress   []byte      `protobuf:"bytes,1,opt,name=owner_address,json=ownerAddress,proto3" json:"owner_address,omitempty"`
 	AccountAddress []byte      `protobuf:"bytes,2,opt,name=account_address,json=accountAddress,proto3" json:"account_address,omitempty"`
-	Type           core.AccountType `protobuf:"varint,3,opt,name=type,proto3,enum=protocol.AccountType" json:"type,omitempty"`
+	Type           corev2.AccountType `protobuf:"varint,3,opt,name=type,proto3,enum=protocol.AccountType" json:"type,omitempty"`
 }
 
 func (x *AccountCreateContract) Reset() {
 	*x = AccountCreateContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_account_contract_proto_msgTypes[0]
+		mi := &file_corev2_contract_account_contract_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -67,7 +67,7 @@ func (x *AccountCreateContract) String() string {
 func (*AccountCreateContract) ProtoMessage() {}
 
 func (x *AccountCreateContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_account_contract_proto_msgTypes[0]
+	mi := &file_corev2_contract_account_contract_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -80,7 +80,7 @@ func (x *AccountCreateContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AccountCreateContract.ProtoReflect.Descriptor instead.
 func (*AccountCreateContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_account_contract_proto_rawDescGZIP(), []int{0}
+	return file_corev2_contract_account_contract_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *AccountCreateContract) GetOwnerAddress() []byte {
@@ -97,11 +97,11 @@ func (x *AccountCreateContract) GetAccountAddress() []byte {
 	return nil
 }
 
-func (x *AccountCreateContract) GetType() core.AccountType {
+func (x *AccountCreateContract) GetType() corev2.AccountType {
 	if x != nil {
 		return x.Type
 	}
-	return core.AccountType_Normal
+	return corev2.AccountType_Normal
 }
 
 // Update account name. Account name is not unique now.
@@ -117,7 +117,7 @@ type AccountUpdateContract struct {
 func (x *AccountUpdateContract) Reset() {
 	*x = AccountUpdateContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_account_contract_proto_msgTypes[1]
+		mi := &file_corev2_contract_account_contract_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -130,7 +130,7 @@ func (x *AccountUpdateContract) String() string {
 func (*AccountUpdateContract) ProtoMessage() {}
 
 func (x *AccountUpdateContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_account_contract_proto_msgTypes[1]
+	mi := &file_corev2_contract_account_contract_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -143,7 +143,7 @@ func (x *AccountUpdateContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AccountUpdateContract.ProtoReflect.Descriptor instead.
 func (*AccountUpdateContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_account_contract_proto_rawDescGZIP(), []int{1}
+	return file_corev2_contract_account_contract_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *AccountUpdateContract) GetAccountName() []byte {
@@ -173,7 +173,7 @@ type SetAccountIdContract struct {
 func (x *SetAccountIdContract) Reset() {
 	*x = SetAccountIdContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_account_contract_proto_msgTypes[2]
+		mi := &file_corev2_contract_account_contract_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -186,7 +186,7 @@ func (x *SetAccountIdContract) String() string {
 func (*SetAccountIdContract) ProtoMessage() {}
 
 func (x *SetAccountIdContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_account_contract_proto_msgTypes[2]
+	mi := &file_corev2_contract_account_contract_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -199,7 +199,7 @@ func (x *SetAccountIdContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetAccountIdContract.ProtoReflect.Descriptor instead.
 func (*SetAccountIdContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_account_contract_proto_rawDescGZIP(), []int{2}
+	return file_corev2_contract_account_contract_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *SetAccountIdContract) GetAccountId() []byte {
@@ -222,15 +222,15 @@ type AccountPermissionUpdateContract struct {
 	unknownFields protoimpl.UnknownFields
 
 	OwnerAddress []byte        `protobuf:"bytes,1,opt,name=owner_address,json=ownerAddress,proto3" json:"owner_address,omitempty"`
-	Owner        *core.Permission   `protobuf:"bytes,2,opt,name=owner,proto3" json:"owner,omitempty"`     //Empty is invalidate
-	Witness      *core.Permission   `protobuf:"bytes,3,opt,name=witness,proto3" json:"witness,omitempty"` //Can be empty
-	Actives      []*core.Permission `protobuf:"bytes,4,rep,name=actives,proto3" json:"actives,omitempty"` //Empty is invalidate
+	Owner        *corev2.Permission   `protobuf:"bytes,2,opt,name=owner,proto3" json:"owner,omitempty"`     //Empty is invalidate
+	Witness      *corev2.Permission   `protobuf:"bytes,3,opt,name=witness,proto3" json:"witness,omitempty"` //Can be empty
+	Actives      []*corev2.Permission `protobuf:"bytes,4,rep,name=actives,proto3" json:"actives,omitempty"` //Empty is invalidate
 }
 
 func (x *AccountPermissionUpdateContract) Reset() {
 	*x = AccountPermissionUpdateContract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_contract_account_contract_proto_msgTypes[3]
+		mi := &file_corev2_contract_account_contract_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -243,7 +243,7 @@ func (x *AccountPermissionUpdateContract) String() string {
 func (*AccountPermissionUpdateContract) ProtoMessage() {}
 
 func (x *AccountPermissionUpdateContract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_contract_account_contract_proto_msgTypes[3]
+	mi := &file_corev2_contract_account_contract_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -256,7 +256,7 @@ func (x *AccountPermissionUpdateContract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AccountPermissionUpdateContract.ProtoReflect.Descriptor instead.
 func (*AccountPermissionUpdateContract) Descriptor() ([]byte, []int) {
-	return file_core_contract_account_contract_proto_rawDescGZIP(), []int{3}
+	return file_corev2_contract_account_contract_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *AccountPermissionUpdateContract) GetOwnerAddress() []byte {
@@ -266,30 +266,30 @@ func (x *AccountPermissionUpdateContract) GetOwnerAddress() []byte {
 	return nil
 }
 
-func (x *AccountPermissionUpdateContract) GetOwner() *core.Permission {
+func (x *AccountPermissionUpdateContract) GetOwner() *corev2.Permission {
 	if x != nil {
 		return x.Owner
 	}
 	return nil
 }
 
-func (x *AccountPermissionUpdateContract) GetWitness() *core.Permission {
+func (x *AccountPermissionUpdateContract) GetWitness() *corev2.Permission {
 	if x != nil {
 		return x.Witness
 	}
 	return nil
 }
 
-func (x *AccountPermissionUpdateContract) GetActives() []*core.Permission {
+func (x *AccountPermissionUpdateContract) GetActives() []*corev2.Permission {
 	if x != nil {
 		return x.Actives
 	}
 	return nil
 }
 
-var File_core_contract_account_contract_proto protoreflect.FileDescriptor
+var File_corev2_contract_account_contract_proto protoreflect.FileDescriptor
 
-var file_core_contract_account_contract_proto_rawDesc = []byte{
+var file_corev2_contract_account_contract_proto_rawDesc = []byte{
 	0x0a, 0x24, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74, 0x2f,
 	0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x5f, 0x63, 0x6f, 0x6e, 0x74, 0x72, 0x61, 0x63, 0x74,
 	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c,
@@ -337,27 +337,27 @@ var file_core_contract_account_contract_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_contract_account_contract_proto_rawDescOnce sync.Once
-	file_core_contract_account_contract_proto_rawDescData = file_core_contract_account_contract_proto_rawDesc
+	file_corev2_contract_account_contract_proto_rawDescOnce sync.Once
+	file_corev2_contract_account_contract_proto_rawDescData = file_corev2_contract_account_contract_proto_rawDesc
 )
 
-func file_core_contract_account_contract_proto_rawDescGZIP() []byte {
-	file_core_contract_account_contract_proto_rawDescOnce.Do(func() {
-		file_core_contract_account_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_contract_account_contract_proto_rawDescData)
+func file_corev2_contract_account_contract_proto_rawDescGZIP() []byte {
+	file_corev2_contract_account_contract_proto_rawDescOnce.Do(func() {
+		file_corev2_contract_account_contract_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_contract_account_contract_proto_rawDescData)
 	})
-	return file_core_contract_account_contract_proto_rawDescData
+	return file_corev2_contract_account_contract_proto_rawDescData
 }
 
-var file_core_contract_account_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_core_contract_account_contract_proto_goTypes = []interface{}{
+var file_corev2_contract_account_contract_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_corev2_contract_account_contract_proto_goTypes = []interface{}{
 	(*AccountCreateContract)(nil),           // 0: protocol.AccountCreateContract
 	(*AccountUpdateContract)(nil),           // 1: protocol.AccountUpdateContract
 	(*SetAccountIdContract)(nil),            // 2: protocol.SetAccountIdContract
 	(*AccountPermissionUpdateContract)(nil), // 3: protocol.AccountPermissionUpdateContract
-	(core.AccountType)(0),                        // 4: protocol.AccountType
-	(*core.Permission)(nil),                      // 5: protocol.Permission
+	(corev2.AccountType)(0),                        // 4: protocol.AccountType
+	(*corev2.Permission)(nil),                      // 5: protocol.Permission
 }
-var file_core_contract_account_contract_proto_depIdxs = []int32{
+var file_corev2_contract_account_contract_proto_depIdxs = []int32{
 	4, // 0: protocol.AccountCreateContract.type:type_name -> protocol.AccountType
 	5, // 1: protocol.AccountPermissionUpdateContract.owner:type_name -> protocol.Permission
 	5, // 2: protocol.AccountPermissionUpdateContract.witness:type_name -> protocol.Permission
@@ -369,14 +369,14 @@ var file_core_contract_account_contract_proto_depIdxs = []int32{
 	0, // [0:4] is the sub-list for field type_name
 }
 
-func init() { file_core_contract_account_contract_proto_init() }
-func file_core_contract_account_contract_proto_init() {
-	if File_core_contract_account_contract_proto != nil {
+func init() { file_corev2_contract_account_contract_proto_init() }
+func file_corev2_contract_account_contract_proto_init() {
+	if File_corev2_contract_account_contract_proto != nil {
 		return
 	}
-	core.File_core_Tron_proto_init()
+	corev2.File_corev2_Tron_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_core_contract_account_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_account_contract_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AccountCreateContract); i {
 			case 0:
 				return &v.state
@@ -388,7 +388,7 @@ func file_core_contract_account_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_account_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_account_contract_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AccountUpdateContract); i {
 			case 0:
 				return &v.state
@@ -400,7 +400,7 @@ func file_core_contract_account_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_account_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_account_contract_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SetAccountIdContract); i {
 			case 0:
 				return &v.state
@@ -412,7 +412,7 @@ func file_core_contract_account_contract_proto_init() {
 				return nil
 			}
 		}
-		file_core_contract_account_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_contract_account_contract_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AccountPermissionUpdateContract); i {
 			case 0:
 				return &v.state
@@ -429,18 +429,18 @@ func file_core_contract_account_contract_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_contract_account_contract_proto_rawDesc,
+			RawDescriptor: file_corev2_contract_account_contract_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_contract_account_contract_proto_goTypes,
-		DependencyIndexes: file_core_contract_account_contract_proto_depIdxs,
-		MessageInfos:      file_core_contract_account_contract_proto_msgTypes,
+		GoTypes:           file_corev2_contract_account_contract_proto_goTypes,
+		DependencyIndexes: file_corev2_contract_account_contract_proto_depIdxs,
+		MessageInfos:      file_corev2_contract_account_contract_proto_msgTypes,
 	}.Build()
-	File_core_contract_account_contract_proto = out.File
-	file_core_contract_account_contract_proto_rawDesc = nil
-	file_core_contract_account_contract_proto_goTypes = nil
-	file_core_contract_account_contract_proto_depIdxs = nil
+	File_corev2_contract_account_contract_proto = out.File
+	file_corev2_contract_account_contract_proto_rawDesc = nil
+	file_corev2_contract_account_contract_proto_goTypes = nil
+	file_corev2_contract_account_contract_proto_depIdxs = nil
 }

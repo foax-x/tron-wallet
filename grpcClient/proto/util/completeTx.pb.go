@@ -8,7 +8,7 @@ package util
 
 import (
 	api "github.com/foax-x/tron-wallet/grpcClient/proto/api"
-	core "github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	proto "github.com/golang/protobuf/proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
@@ -35,9 +35,9 @@ type ProtoCompleteTransaction struct {
 	BlockNumber  uint64                    `protobuf:"varint,1,opt,name=BlockNumber,proto3" json:"BlockNumber,omitempty"`
 	BlockTime    uint64                    `protobuf:"varint,2,opt,name=BlockTime,proto3" json:"BlockTime,omitempty"`
 	Tx           *api.TransactionExtention `protobuf:"bytes,3,opt,name=Tx,proto3" json:"Tx,omitempty"`
-	Info         *core.TransactionInfo     `protobuf:"bytes,4,opt,name=Info,proto3" json:"Info,omitempty"`
-	ExchangeInfo *core.Exchange            `protobuf:"bytes,5,opt,name=ExchangeInfo,proto3" json:"ExchangeInfo,omitempty"`
-	AssetInfo    *core.AssetIssueContract  `protobuf:"bytes,6,opt,name=AssetInfo,proto3" json:"AssetInfo,omitempty"`
+	Info         *corev2.TransactionInfo     `protobuf:"bytes,4,opt,name=Info,proto3" json:"Info,omitempty"`
+	ExchangeInfo *corev2.Exchange            `protobuf:"bytes,5,opt,name=ExchangeInfo,proto3" json:"ExchangeInfo,omitempty"`
+	AssetInfo    *corev2.AssetIssueContract  `protobuf:"bytes,6,opt,name=AssetInfo,proto3" json:"AssetInfo,omitempty"`
 }
 
 func (x *ProtoCompleteTransaction) Reset() {
@@ -93,21 +93,21 @@ func (x *ProtoCompleteTransaction) GetTx() *api.TransactionExtention {
 	return nil
 }
 
-func (x *ProtoCompleteTransaction) GetInfo() *core.TransactionInfo {
+func (x *ProtoCompleteTransaction) GetInfo() *corev2.TransactionInfo {
 	if x != nil {
 		return x.Info
 	}
 	return nil
 }
 
-func (x *ProtoCompleteTransaction) GetExchangeInfo() *core.Exchange {
+func (x *ProtoCompleteTransaction) GetExchangeInfo() *corev2.Exchange {
 	if x != nil {
 		return x.ExchangeInfo
 	}
 	return nil
 }
 
-func (x *ProtoCompleteTransaction) GetAssetInfo() *core.AssetIssueContract {
+func (x *ProtoCompleteTransaction) GetAssetInfo() *corev2.AssetIssueContract {
 	if x != nil {
 		return x.AssetInfo
 	}
@@ -165,9 +165,9 @@ var file_completeTx_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_completeTx_proto_goTypes = []interface{}{
 	(*ProtoCompleteTransaction)(nil), // 0: protocol.ProtoCompleteTransaction
 	(*api.TransactionExtention)(nil), // 1: protocol.TransactionExtention
-	(*core.TransactionInfo)(nil),     // 2: protocol.TransactionInfo
-	(*core.Exchange)(nil),            // 3: protocol.Exchange
-	(*core.AssetIssueContract)(nil),  // 4: protocol.AssetIssueContract
+	(*corev2.TransactionInfo)(nil),     // 2: protocol.TransactionInfo
+	(*corev2.Exchange)(nil),            // 3: protocol.Exchange
+	(*corev2.AssetIssueContract)(nil),  // 4: protocol.AssetIssueContract
 }
 var file_completeTx_proto_depIdxs = []int32{
 	1, // 0: protocol.ProtoCompleteTransaction.Tx:type_name -> protocol.TransactionExtention

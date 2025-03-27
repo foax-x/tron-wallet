@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/Tron.proto
+// source: corev2/Tron.proto
 
-package core
+package corev2
 
 import (
 	proto "github.com/golang/protobuf/proto"
@@ -59,11 +59,11 @@ func (x AccountType) String() string {
 }
 
 func (AccountType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[0].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[0].Descriptor()
 }
 
 func (AccountType) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[0]
+	return &file_corev2_Tron_proto_enumTypes[0]
 }
 
 func (x AccountType) Number() protoreflect.EnumNumber {
@@ -72,7 +72,7 @@ func (x AccountType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use AccountType.Descriptor instead.
 func (AccountType) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{0}
 }
 
 type ReasonCode int32
@@ -171,11 +171,11 @@ func (x ReasonCode) String() string {
 }
 
 func (ReasonCode) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[1].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[1].Descriptor()
 }
 
 func (ReasonCode) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[1]
+	return &file_corev2_Tron_proto_enumTypes[1]
 }
 
 func (x ReasonCode) Number() protoreflect.EnumNumber {
@@ -184,7 +184,7 @@ func (x ReasonCode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use ReasonCode.Descriptor instead.
 func (ReasonCode) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{1}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{1}
 }
 
 type Proposal_State int32
@@ -223,11 +223,11 @@ func (x Proposal_State) String() string {
 }
 
 func (Proposal_State) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[2].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[2].Descriptor()
 }
 
 func (Proposal_State) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[2]
+	return &file_corev2_Tron_proto_enumTypes[2]
 }
 
 func (x Proposal_State) Number() protoreflect.EnumNumber {
@@ -236,7 +236,7 @@ func (x Proposal_State) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Proposal_State.Descriptor instead.
 func (Proposal_State) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{2, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{2, 0}
 }
 
 type Permission_PermissionType int32
@@ -272,11 +272,11 @@ func (x Permission_PermissionType) String() string {
 }
 
 func (Permission_PermissionType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[3].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[3].Descriptor()
 }
 
 func (Permission_PermissionType) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[3]
+	return &file_corev2_Tron_proto_enumTypes[3]
 }
 
 func (x Permission_PermissionType) Number() protoreflect.EnumNumber {
@@ -285,7 +285,7 @@ func (x Permission_PermissionType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Permission_PermissionType.Descriptor instead.
 func (Permission_PermissionType) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{9, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{9, 0}
 }
 
 type Transaction_Contract_ContractType int32
@@ -411,11 +411,11 @@ func (x Transaction_Contract_ContractType) String() string {
 }
 
 func (Transaction_Contract_ContractType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[4].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[4].Descriptor()
 }
 
 func (Transaction_Contract_ContractType) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[4]
+	return &file_corev2_Tron_proto_enumTypes[4]
 }
 
 func (x Transaction_Contract_ContractType) Number() protoreflect.EnumNumber {
@@ -424,7 +424,7 @@ func (x Transaction_Contract_ContractType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Transaction_Contract_ContractType.Descriptor instead.
 func (Transaction_Contract_ContractType) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16, 0, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16, 0, 0}
 }
 
 type Transaction_ResultCode int32
@@ -457,11 +457,11 @@ func (x Transaction_ResultCode) String() string {
 }
 
 func (Transaction_ResultCode) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[5].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[5].Descriptor()
 }
 
 func (Transaction_ResultCode) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[5]
+	return &file_corev2_Tron_proto_enumTypes[5]
 }
 
 func (x Transaction_ResultCode) Number() protoreflect.EnumNumber {
@@ -470,7 +470,7 @@ func (x Transaction_ResultCode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Transaction_ResultCode.Descriptor instead.
 func (Transaction_ResultCode) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16, 1, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16, 1, 0}
 }
 
 type Transaction_ResultContractResult int32
@@ -542,11 +542,11 @@ func (x Transaction_ResultContractResult) String() string {
 }
 
 func (Transaction_ResultContractResult) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[6].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[6].Descriptor()
 }
 
 func (Transaction_ResultContractResult) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[6]
+	return &file_corev2_Tron_proto_enumTypes[6]
 }
 
 func (x Transaction_ResultContractResult) Number() protoreflect.EnumNumber {
@@ -555,7 +555,7 @@ func (x Transaction_ResultContractResult) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Transaction_ResultContractResult.Descriptor instead.
 func (Transaction_ResultContractResult) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16, 1, 1}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16, 1, 1}
 }
 
 type TransactionInfoCode int32
@@ -588,11 +588,11 @@ func (x TransactionInfoCode) String() string {
 }
 
 func (TransactionInfoCode) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[7].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[7].Descriptor()
 }
 
 func (TransactionInfoCode) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[7]
+	return &file_corev2_Tron_proto_enumTypes[7]
 }
 
 func (x TransactionInfoCode) Number() protoreflect.EnumNumber {
@@ -601,7 +601,7 @@ func (x TransactionInfoCode) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use TransactionInfoCode.Descriptor instead.
 func (TransactionInfoCode) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{17, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{17, 0}
 }
 
 type BlockInventory_Type int32
@@ -637,11 +637,11 @@ func (x BlockInventory_Type) String() string {
 }
 
 func (BlockInventory_Type) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[8].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[8].Descriptor()
 }
 
 func (BlockInventory_Type) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[8]
+	return &file_corev2_Tron_proto_enumTypes[8]
 }
 
 func (x BlockInventory_Type) Number() protoreflect.EnumNumber {
@@ -650,7 +650,7 @@ func (x BlockInventory_Type) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use BlockInventory_Type.Descriptor instead.
 func (BlockInventory_Type) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{24, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{24, 0}
 }
 
 type Inventory_InventoryType int32
@@ -683,11 +683,11 @@ func (x Inventory_InventoryType) String() string {
 }
 
 func (Inventory_InventoryType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[9].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[9].Descriptor()
 }
 
 func (Inventory_InventoryType) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[9]
+	return &file_corev2_Tron_proto_enumTypes[9]
 }
 
 func (x Inventory_InventoryType) Number() protoreflect.EnumNumber {
@@ -696,7 +696,7 @@ func (x Inventory_InventoryType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Inventory_InventoryType.Descriptor instead.
 func (Inventory_InventoryType) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{25, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{25, 0}
 }
 
 type Items_ItemType int32
@@ -735,11 +735,11 @@ func (x Items_ItemType) String() string {
 }
 
 func (Items_ItemType) Descriptor() protoreflect.EnumDescriptor {
-	return file_core_Tron_proto_enumTypes[10].Descriptor()
+	return file_corev2_Tron_proto_enumTypes[10].Descriptor()
 }
 
 func (Items_ItemType) Type() protoreflect.EnumType {
-	return &file_core_Tron_proto_enumTypes[10]
+	return &file_corev2_Tron_proto_enumTypes[10]
 }
 
 func (x Items_ItemType) Number() protoreflect.EnumNumber {
@@ -748,7 +748,7 @@ func (x Items_ItemType) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Items_ItemType.Descriptor instead.
 func (Items_ItemType) EnumDescriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{26, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{26, 0}
 }
 
 // AccountId, (name, address) use name, (null, address) use address, (name, null) use name,
@@ -764,7 +764,7 @@ type AccountId struct {
 func (x *AccountId) Reset() {
 	*x = AccountId{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[0]
+		mi := &file_corev2_Tron_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -777,7 +777,7 @@ func (x *AccountId) String() string {
 func (*AccountId) ProtoMessage() {}
 
 func (x *AccountId) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[0]
+	mi := &file_corev2_Tron_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -790,7 +790,7 @@ func (x *AccountId) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AccountId.ProtoReflect.Descriptor instead.
 func (*AccountId) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *AccountId) GetName() []byte {
@@ -822,7 +822,7 @@ type Vote struct {
 func (x *Vote) Reset() {
 	*x = Vote{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[1]
+		mi := &file_corev2_Tron_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -835,7 +835,7 @@ func (x *Vote) String() string {
 func (*Vote) ProtoMessage() {}
 
 func (x *Vote) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[1]
+	mi := &file_corev2_Tron_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -848,7 +848,7 @@ func (x *Vote) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Vote.ProtoReflect.Descriptor instead.
 func (*Vote) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{1}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Vote) GetVoteAddress() []byte {
@@ -883,7 +883,7 @@ type Proposal struct {
 func (x *Proposal) Reset() {
 	*x = Proposal{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[2]
+		mi := &file_corev2_Tron_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -896,7 +896,7 @@ func (x *Proposal) String() string {
 func (*Proposal) ProtoMessage() {}
 
 func (x *Proposal) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[2]
+	mi := &file_corev2_Tron_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -909,7 +909,7 @@ func (x *Proposal) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Proposal.ProtoReflect.Descriptor instead.
 func (*Proposal) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{2}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *Proposal) GetProposalId() int64 {
@@ -979,7 +979,7 @@ type Exchange struct {
 func (x *Exchange) Reset() {
 	*x = Exchange{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[3]
+		mi := &file_corev2_Tron_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -992,7 +992,7 @@ func (x *Exchange) String() string {
 func (*Exchange) ProtoMessage() {}
 
 func (x *Exchange) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[3]
+	mi := &file_corev2_Tron_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1005,7 +1005,7 @@ func (x *Exchange) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Exchange.ProtoReflect.Descriptor instead.
 func (*Exchange) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{3}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *Exchange) GetExchangeId() int64 {
@@ -1068,7 +1068,7 @@ type ChainParameters struct {
 func (x *ChainParameters) Reset() {
 	*x = ChainParameters{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[4]
+		mi := &file_corev2_Tron_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1081,7 +1081,7 @@ func (x *ChainParameters) String() string {
 func (*ChainParameters) ProtoMessage() {}
 
 func (x *ChainParameters) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[4]
+	mi := &file_corev2_Tron_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1094,7 +1094,7 @@ func (x *ChainParameters) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChainParameters.ProtoReflect.Descriptor instead.
 func (*ChainParameters) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{4}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *ChainParameters) GetChainParameter() []*ChainParameters_ChainParameter {
@@ -1167,7 +1167,7 @@ type Account struct {
 func (x *Account) Reset() {
 	*x = Account{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[5]
+		mi := &file_corev2_Tron_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1180,7 +1180,7 @@ func (x *Account) String() string {
 func (*Account) ProtoMessage() {}
 
 func (x *Account) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[5]
+	mi := &file_corev2_Tron_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1193,7 +1193,7 @@ func (x *Account) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Account.ProtoReflect.Descriptor instead.
 func (*Account) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{5}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *Account) GetAccountName() []byte {
@@ -1446,7 +1446,7 @@ type Key struct {
 func (x *Key) Reset() {
 	*x = Key{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[6]
+		mi := &file_corev2_Tron_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1459,7 +1459,7 @@ func (x *Key) String() string {
 func (*Key) ProtoMessage() {}
 
 func (x *Key) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[6]
+	mi := &file_corev2_Tron_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1472,7 +1472,7 @@ func (x *Key) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Key.ProtoReflect.Descriptor instead.
 func (*Key) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{6}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *Key) GetAddress() []byte {
@@ -1505,7 +1505,7 @@ type DelegatedResource struct {
 func (x *DelegatedResource) Reset() {
 	*x = DelegatedResource{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[7]
+		mi := &file_corev2_Tron_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1518,7 +1518,7 @@ func (x *DelegatedResource) String() string {
 func (*DelegatedResource) ProtoMessage() {}
 
 func (x *DelegatedResource) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[7]
+	mi := &file_corev2_Tron_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1531,7 +1531,7 @@ func (x *DelegatedResource) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DelegatedResource.ProtoReflect.Descriptor instead.
 func (*DelegatedResource) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{7}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *DelegatedResource) GetFrom() []byte {
@@ -1588,7 +1588,7 @@ type Authority struct {
 func (x *Authority) Reset() {
 	*x = Authority{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[8]
+		mi := &file_corev2_Tron_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1601,7 +1601,7 @@ func (x *Authority) String() string {
 func (*Authority) ProtoMessage() {}
 
 func (x *Authority) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[8]
+	mi := &file_corev2_Tron_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1614,7 +1614,7 @@ func (x *Authority) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Authority.ProtoReflect.Descriptor instead.
 func (*Authority) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{8}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *Authority) GetAccount() *AccountId {
@@ -1648,7 +1648,7 @@ type Permission struct {
 func (x *Permission) Reset() {
 	*x = Permission{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[9]
+		mi := &file_corev2_Tron_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1661,7 +1661,7 @@ func (x *Permission) String() string {
 func (*Permission) ProtoMessage() {}
 
 func (x *Permission) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[9]
+	mi := &file_corev2_Tron_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1674,7 +1674,7 @@ func (x *Permission) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Permission.ProtoReflect.Descriptor instead.
 func (*Permission) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{9}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *Permission) GetType() Permission_PermissionType {
@@ -1746,7 +1746,7 @@ type Witness struct {
 func (x *Witness) Reset() {
 	*x = Witness{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[10]
+		mi := &file_corev2_Tron_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1759,7 +1759,7 @@ func (x *Witness) String() string {
 func (*Witness) ProtoMessage() {}
 
 func (x *Witness) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[10]
+	mi := &file_corev2_Tron_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1772,7 +1772,7 @@ func (x *Witness) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Witness.ProtoReflect.Descriptor instead.
 func (*Witness) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{10}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *Witness) GetAddress() []byte {
@@ -1852,7 +1852,7 @@ type Votes struct {
 func (x *Votes) Reset() {
 	*x = Votes{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[11]
+		mi := &file_corev2_Tron_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1865,7 +1865,7 @@ func (x *Votes) String() string {
 func (*Votes) ProtoMessage() {}
 
 func (x *Votes) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[11]
+	mi := &file_corev2_Tron_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1878,7 +1878,7 @@ func (x *Votes) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Votes.ProtoReflect.Descriptor instead.
 func (*Votes) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{11}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *Votes) GetAddress() []byte {
@@ -1914,7 +1914,7 @@ type TXOutput struct {
 func (x *TXOutput) Reset() {
 	*x = TXOutput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[12]
+		mi := &file_corev2_Tron_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1927,7 +1927,7 @@ func (x *TXOutput) String() string {
 func (*TXOutput) ProtoMessage() {}
 
 func (x *TXOutput) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[12]
+	mi := &file_corev2_Tron_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1940,7 +1940,7 @@ func (x *TXOutput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TXOutput.ProtoReflect.Descriptor instead.
 func (*TXOutput) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{12}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *TXOutput) GetValue() int64 {
@@ -1969,7 +1969,7 @@ type TXInput struct {
 func (x *TXInput) Reset() {
 	*x = TXInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[13]
+		mi := &file_corev2_Tron_proto_msgTypes[13]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1982,7 +1982,7 @@ func (x *TXInput) String() string {
 func (*TXInput) ProtoMessage() {}
 
 func (x *TXInput) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[13]
+	mi := &file_corev2_Tron_proto_msgTypes[13]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1995,7 +1995,7 @@ func (x *TXInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TXInput.ProtoReflect.Descriptor instead.
 func (*TXInput) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{13}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *TXInput) GetRawData() *TXInputRaw {
@@ -2023,7 +2023,7 @@ type TXOutputs struct {
 func (x *TXOutputs) Reset() {
 	*x = TXOutputs{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[14]
+		mi := &file_corev2_Tron_proto_msgTypes[14]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2036,7 +2036,7 @@ func (x *TXOutputs) String() string {
 func (*TXOutputs) ProtoMessage() {}
 
 func (x *TXOutputs) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[14]
+	mi := &file_corev2_Tron_proto_msgTypes[14]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2049,7 +2049,7 @@ func (x *TXOutputs) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TXOutputs.ProtoReflect.Descriptor instead.
 func (*TXOutputs) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{14}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *TXOutputs) GetOutputs() []*TXOutput {
@@ -2076,7 +2076,7 @@ type ResourceReceipt struct {
 func (x *ResourceReceipt) Reset() {
 	*x = ResourceReceipt{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[15]
+		mi := &file_corev2_Tron_proto_msgTypes[15]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2089,7 +2089,7 @@ func (x *ResourceReceipt) String() string {
 func (*ResourceReceipt) ProtoMessage() {}
 
 func (x *ResourceReceipt) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[15]
+	mi := &file_corev2_Tron_proto_msgTypes[15]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2102,7 +2102,7 @@ func (x *ResourceReceipt) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ResourceReceipt.ProtoReflect.Descriptor instead.
 func (*ResourceReceipt) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{15}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *ResourceReceipt) GetEnergyUsage() int64 {
@@ -2168,7 +2168,7 @@ type Transaction struct {
 func (x *Transaction) Reset() {
 	*x = Transaction{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[16]
+		mi := &file_corev2_Tron_proto_msgTypes[16]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2181,7 +2181,7 @@ func (x *Transaction) String() string {
 func (*Transaction) ProtoMessage() {}
 
 func (x *Transaction) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[16]
+	mi := &file_corev2_Tron_proto_msgTypes[16]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2194,7 +2194,7 @@ func (x *Transaction) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Transaction.ProtoReflect.Descriptor instead.
 func (*Transaction) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *Transaction) GetRawData() *TransactionRaw {
@@ -2247,7 +2247,7 @@ type TransactionInfo struct {
 func (x *TransactionInfo) Reset() {
 	*x = TransactionInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[17]
+		mi := &file_corev2_Tron_proto_msgTypes[17]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2260,7 +2260,7 @@ func (x *TransactionInfo) String() string {
 func (*TransactionInfo) ProtoMessage() {}
 
 func (x *TransactionInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[17]
+	mi := &file_corev2_Tron_proto_msgTypes[17]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2273,7 +2273,7 @@ func (x *TransactionInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionInfo.ProtoReflect.Descriptor instead.
 func (*TransactionInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{17}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *TransactionInfo) GetId() []byte {
@@ -2422,7 +2422,7 @@ type TransactionRet struct {
 func (x *TransactionRet) Reset() {
 	*x = TransactionRet{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[18]
+		mi := &file_corev2_Tron_proto_msgTypes[18]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2435,7 +2435,7 @@ func (x *TransactionRet) String() string {
 func (*TransactionRet) ProtoMessage() {}
 
 func (x *TransactionRet) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[18]
+	mi := &file_corev2_Tron_proto_msgTypes[18]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2448,7 +2448,7 @@ func (x *TransactionRet) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionRet.ProtoReflect.Descriptor instead.
 func (*TransactionRet) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{18}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *TransactionRet) GetBlockNumber() int64 {
@@ -2483,7 +2483,7 @@ type Transactions struct {
 func (x *Transactions) Reset() {
 	*x = Transactions{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[19]
+		mi := &file_corev2_Tron_proto_msgTypes[19]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2496,7 +2496,7 @@ func (x *Transactions) String() string {
 func (*Transactions) ProtoMessage() {}
 
 func (x *Transactions) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[19]
+	mi := &file_corev2_Tron_proto_msgTypes[19]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2509,7 +2509,7 @@ func (x *Transactions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Transactions.ProtoReflect.Descriptor instead.
 func (*Transactions) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{19}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *Transactions) GetTransactions() []*Transaction {
@@ -2531,7 +2531,7 @@ type TransactionSign struct {
 func (x *TransactionSign) Reset() {
 	*x = TransactionSign{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[20]
+		mi := &file_corev2_Tron_proto_msgTypes[20]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2544,7 +2544,7 @@ func (x *TransactionSign) String() string {
 func (*TransactionSign) ProtoMessage() {}
 
 func (x *TransactionSign) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[20]
+	mi := &file_corev2_Tron_proto_msgTypes[20]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2557,7 +2557,7 @@ func (x *TransactionSign) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionSign.ProtoReflect.Descriptor instead.
 func (*TransactionSign) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{20}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *TransactionSign) GetTransaction() *Transaction {
@@ -2586,7 +2586,7 @@ type BlockHeader struct {
 func (x *BlockHeader) Reset() {
 	*x = BlockHeader{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[21]
+		mi := &file_corev2_Tron_proto_msgTypes[21]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2599,7 +2599,7 @@ func (x *BlockHeader) String() string {
 func (*BlockHeader) ProtoMessage() {}
 
 func (x *BlockHeader) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[21]
+	mi := &file_corev2_Tron_proto_msgTypes[21]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2612,7 +2612,7 @@ func (x *BlockHeader) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockHeader.ProtoReflect.Descriptor instead.
 func (*BlockHeader) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{21}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *BlockHeader) GetRawData() *BlockHeaderRaw {
@@ -2642,7 +2642,7 @@ type Block struct {
 func (x *Block) Reset() {
 	*x = Block{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[22]
+		mi := &file_corev2_Tron_proto_msgTypes[22]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2655,7 +2655,7 @@ func (x *Block) String() string {
 func (*Block) ProtoMessage() {}
 
 func (x *Block) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[22]
+	mi := &file_corev2_Tron_proto_msgTypes[22]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2668,7 +2668,7 @@ func (x *Block) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Block.ProtoReflect.Descriptor instead.
 func (*Block) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{22}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *Block) GetTransactions() []*Transaction {
@@ -2697,7 +2697,7 @@ type ChainInventory struct {
 func (x *ChainInventory) Reset() {
 	*x = ChainInventory{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[23]
+		mi := &file_corev2_Tron_proto_msgTypes[23]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2710,7 +2710,7 @@ func (x *ChainInventory) String() string {
 func (*ChainInventory) ProtoMessage() {}
 
 func (x *ChainInventory) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[23]
+	mi := &file_corev2_Tron_proto_msgTypes[23]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2723,7 +2723,7 @@ func (x *ChainInventory) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChainInventory.ProtoReflect.Descriptor instead.
 func (*ChainInventory) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{23}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *ChainInventory) GetIds() []*ChainInventory_BlockId {
@@ -2753,7 +2753,7 @@ type BlockInventory struct {
 func (x *BlockInventory) Reset() {
 	*x = BlockInventory{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[24]
+		mi := &file_corev2_Tron_proto_msgTypes[24]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2766,7 +2766,7 @@ func (x *BlockInventory) String() string {
 func (*BlockInventory) ProtoMessage() {}
 
 func (x *BlockInventory) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[24]
+	mi := &file_corev2_Tron_proto_msgTypes[24]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2779,7 +2779,7 @@ func (x *BlockInventory) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockInventory.ProtoReflect.Descriptor instead.
 func (*BlockInventory) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{24}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *BlockInventory) GetIds() []*BlockInventory_BlockId {
@@ -2808,7 +2808,7 @@ type Inventory struct {
 func (x *Inventory) Reset() {
 	*x = Inventory{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[25]
+		mi := &file_corev2_Tron_proto_msgTypes[25]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2821,7 +2821,7 @@ func (x *Inventory) String() string {
 func (*Inventory) ProtoMessage() {}
 
 func (x *Inventory) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[25]
+	mi := &file_corev2_Tron_proto_msgTypes[25]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2834,7 +2834,7 @@ func (x *Inventory) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Inventory.ProtoReflect.Descriptor instead.
 func (*Inventory) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{25}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *Inventory) GetType() Inventory_InventoryType {
@@ -2865,7 +2865,7 @@ type Items struct {
 func (x *Items) Reset() {
 	*x = Items{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[26]
+		mi := &file_corev2_Tron_proto_msgTypes[26]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2878,7 +2878,7 @@ func (x *Items) String() string {
 func (*Items) ProtoMessage() {}
 
 func (x *Items) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[26]
+	mi := &file_corev2_Tron_proto_msgTypes[26]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2891,7 +2891,7 @@ func (x *Items) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Items.ProtoReflect.Descriptor instead.
 func (*Items) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{26}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *Items) GetType() Items_ItemType {
@@ -2934,7 +2934,7 @@ type DynamicProperties struct {
 func (x *DynamicProperties) Reset() {
 	*x = DynamicProperties{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[27]
+		mi := &file_corev2_Tron_proto_msgTypes[27]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2947,7 +2947,7 @@ func (x *DynamicProperties) String() string {
 func (*DynamicProperties) ProtoMessage() {}
 
 func (x *DynamicProperties) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[27]
+	mi := &file_corev2_Tron_proto_msgTypes[27]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2960,7 +2960,7 @@ func (x *DynamicProperties) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DynamicProperties.ProtoReflect.Descriptor instead.
 func (*DynamicProperties) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{27}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *DynamicProperties) GetLastSolidityBlockNum() int64 {
@@ -2981,7 +2981,7 @@ type DisconnectMessage struct {
 func (x *DisconnectMessage) Reset() {
 	*x = DisconnectMessage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[28]
+		mi := &file_corev2_Tron_proto_msgTypes[28]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2994,7 +2994,7 @@ func (x *DisconnectMessage) String() string {
 func (*DisconnectMessage) ProtoMessage() {}
 
 func (x *DisconnectMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[28]
+	mi := &file_corev2_Tron_proto_msgTypes[28]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3007,7 +3007,7 @@ func (x *DisconnectMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DisconnectMessage.ProtoReflect.Descriptor instead.
 func (*DisconnectMessage) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{28}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *DisconnectMessage) GetReason() ReasonCode {
@@ -3033,7 +3033,7 @@ type HelloMessage struct {
 func (x *HelloMessage) Reset() {
 	*x = HelloMessage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[29]
+		mi := &file_corev2_Tron_proto_msgTypes[29]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3046,7 +3046,7 @@ func (x *HelloMessage) String() string {
 func (*HelloMessage) ProtoMessage() {}
 
 func (x *HelloMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[29]
+	mi := &file_corev2_Tron_proto_msgTypes[29]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3059,7 +3059,7 @@ func (x *HelloMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HelloMessage.ProtoReflect.Descriptor instead.
 func (*HelloMessage) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{29}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *HelloMessage) GetFrom() *Endpoint {
@@ -3124,7 +3124,7 @@ type InternalTransaction struct {
 func (x *InternalTransaction) Reset() {
 	*x = InternalTransaction{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[30]
+		mi := &file_corev2_Tron_proto_msgTypes[30]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3137,7 +3137,7 @@ func (x *InternalTransaction) String() string {
 func (*InternalTransaction) ProtoMessage() {}
 
 func (x *InternalTransaction) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[30]
+	mi := &file_corev2_Tron_proto_msgTypes[30]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3150,7 +3150,7 @@ func (x *InternalTransaction) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InternalTransaction.ProtoReflect.Descriptor instead.
 func (*InternalTransaction) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{30}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *InternalTransaction) GetHash() []byte {
@@ -3208,7 +3208,7 @@ type DelegatedResourceAccountIndex struct {
 func (x *DelegatedResourceAccountIndex) Reset() {
 	*x = DelegatedResourceAccountIndex{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[31]
+		mi := &file_corev2_Tron_proto_msgTypes[31]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3221,7 +3221,7 @@ func (x *DelegatedResourceAccountIndex) String() string {
 func (*DelegatedResourceAccountIndex) ProtoMessage() {}
 
 func (x *DelegatedResourceAccountIndex) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[31]
+	mi := &file_corev2_Tron_proto_msgTypes[31]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3234,7 +3234,7 @@ func (x *DelegatedResourceAccountIndex) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DelegatedResourceAccountIndex.ProtoReflect.Descriptor instead.
 func (*DelegatedResourceAccountIndex) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{31}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *DelegatedResourceAccountIndex) GetAccount() []byte {
@@ -3280,7 +3280,7 @@ type NodeInfo struct {
 func (x *NodeInfo) Reset() {
 	*x = NodeInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[32]
+		mi := &file_corev2_Tron_proto_msgTypes[32]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3293,7 +3293,7 @@ func (x *NodeInfo) String() string {
 func (*NodeInfo) ProtoMessage() {}
 
 func (x *NodeInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[32]
+	mi := &file_corev2_Tron_proto_msgTypes[32]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3306,7 +3306,7 @@ func (x *NodeInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NodeInfo.ProtoReflect.Descriptor instead.
 func (*NodeInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{32}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *NodeInfo) GetBeginSyncNum() int64 {
@@ -3398,7 +3398,7 @@ type ChainParameters_ChainParameter struct {
 func (x *ChainParameters_ChainParameter) Reset() {
 	*x = ChainParameters_ChainParameter{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[34]
+		mi := &file_corev2_Tron_proto_msgTypes[34]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3411,7 +3411,7 @@ func (x *ChainParameters_ChainParameter) String() string {
 func (*ChainParameters_ChainParameter) ProtoMessage() {}
 
 func (x *ChainParameters_ChainParameter) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[34]
+	mi := &file_corev2_Tron_proto_msgTypes[34]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3424,7 +3424,7 @@ func (x *ChainParameters_ChainParameter) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChainParameters_ChainParameter.ProtoReflect.Descriptor instead.
 func (*ChainParameters_ChainParameter) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{4, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{4, 0}
 }
 
 func (x *ChainParameters_ChainParameter) GetKey() string {
@@ -3454,7 +3454,7 @@ type Account_Frozen struct {
 func (x *Account_Frozen) Reset() {
 	*x = Account_Frozen{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[35]
+		mi := &file_corev2_Tron_proto_msgTypes[35]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3467,7 +3467,7 @@ func (x *Account_Frozen) String() string {
 func (*Account_Frozen) ProtoMessage() {}
 
 func (x *Account_Frozen) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[35]
+	mi := &file_corev2_Tron_proto_msgTypes[35]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3480,7 +3480,7 @@ func (x *Account_Frozen) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Account_Frozen.ProtoReflect.Descriptor instead.
 func (*Account_Frozen) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{5, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{5, 0}
 }
 
 func (x *Account_Frozen) GetFrozenBalance() int64 {
@@ -3520,7 +3520,7 @@ type Account_AccountResource struct {
 func (x *Account_AccountResource) Reset() {
 	*x = Account_AccountResource{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[42]
+		mi := &file_corev2_Tron_proto_msgTypes[42]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3533,7 +3533,7 @@ func (x *Account_AccountResource) String() string {
 func (*Account_AccountResource) ProtoMessage() {}
 
 func (x *Account_AccountResource) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[42]
+	mi := &file_corev2_Tron_proto_msgTypes[42]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3546,7 +3546,7 @@ func (x *Account_AccountResource) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Account_AccountResource.ProtoReflect.Descriptor instead.
 func (*Account_AccountResource) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{5, 7}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{5, 7}
 }
 
 func (x *Account_AccountResource) GetEnergyUsage() int64 {
@@ -3618,7 +3618,7 @@ type TXInputRaw struct {
 func (x *TXInputRaw) Reset() {
 	*x = TXInputRaw{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[43]
+		mi := &file_corev2_Tron_proto_msgTypes[43]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3631,7 +3631,7 @@ func (x *TXInputRaw) String() string {
 func (*TXInputRaw) ProtoMessage() {}
 
 func (x *TXInputRaw) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[43]
+	mi := &file_corev2_Tron_proto_msgTypes[43]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3644,7 +3644,7 @@ func (x *TXInputRaw) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TXInputRaw.ProtoReflect.Descriptor instead.
 func (*TXInputRaw) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{13, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{13, 0}
 }
 
 func (x *TXInputRaw) GetTxID() []byte {
@@ -3683,7 +3683,7 @@ type Transaction_Contract struct {
 func (x *Transaction_Contract) Reset() {
 	*x = Transaction_Contract{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[44]
+		mi := &file_corev2_Tron_proto_msgTypes[44]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3696,7 +3696,7 @@ func (x *Transaction_Contract) String() string {
 func (*Transaction_Contract) ProtoMessage() {}
 
 func (x *Transaction_Contract) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[44]
+	mi := &file_corev2_Tron_proto_msgTypes[44]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3709,7 +3709,7 @@ func (x *Transaction_Contract) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Transaction_Contract.ProtoReflect.Descriptor instead.
 func (*Transaction_Contract) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16, 0}
 }
 
 func (x *Transaction_Contract) GetType() Transaction_Contract_ContractType {
@@ -3768,7 +3768,7 @@ type Transaction_Result struct {
 func (x *Transaction_Result) Reset() {
 	*x = Transaction_Result{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[45]
+		mi := &file_corev2_Tron_proto_msgTypes[45]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3781,7 +3781,7 @@ func (x *Transaction_Result) String() string {
 func (*Transaction_Result) ProtoMessage() {}
 
 func (x *Transaction_Result) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[45]
+	mi := &file_corev2_Tron_proto_msgTypes[45]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3794,7 +3794,7 @@ func (x *Transaction_Result) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Transaction_Result.ProtoReflect.Descriptor instead.
 func (*Transaction_Result) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16, 1}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16, 1}
 }
 
 func (x *Transaction_Result) GetFee() int64 {
@@ -3897,7 +3897,7 @@ type TransactionRaw struct {
 func (x *TransactionRaw) Reset() {
 	*x = TransactionRaw{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[46]
+		mi := &file_corev2_Tron_proto_msgTypes[46]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3910,7 +3910,7 @@ func (x *TransactionRaw) String() string {
 func (*TransactionRaw) ProtoMessage() {}
 
 func (x *TransactionRaw) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[46]
+	mi := &file_corev2_Tron_proto_msgTypes[46]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3923,7 +3923,7 @@ func (x *TransactionRaw) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionRaw.ProtoReflect.Descriptor instead.
 func (*TransactionRaw) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{16, 2}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{16, 2}
 }
 
 func (x *TransactionRaw) GetRefBlockBytes() []byte {
@@ -4009,7 +4009,7 @@ type TransactionInfo_Log struct {
 func (x *TransactionInfo_Log) Reset() {
 	*x = TransactionInfo_Log{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[47]
+		mi := &file_corev2_Tron_proto_msgTypes[47]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4022,7 +4022,7 @@ func (x *TransactionInfo_Log) String() string {
 func (*TransactionInfo_Log) ProtoMessage() {}
 
 func (x *TransactionInfo_Log) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[47]
+	mi := &file_corev2_Tron_proto_msgTypes[47]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4035,7 +4035,7 @@ func (x *TransactionInfo_Log) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TransactionInfo_Log.ProtoReflect.Descriptor instead.
 func (*TransactionInfo_Log) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{17, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{17, 0}
 }
 
 func (x *TransactionInfo_Log) GetAddress() []byte {
@@ -4079,7 +4079,7 @@ type BlockHeaderRaw struct {
 func (x *BlockHeaderRaw) Reset() {
 	*x = BlockHeaderRaw{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[48]
+		mi := &file_corev2_Tron_proto_msgTypes[48]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4092,7 +4092,7 @@ func (x *BlockHeaderRaw) String() string {
 func (*BlockHeaderRaw) ProtoMessage() {}
 
 func (x *BlockHeaderRaw) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[48]
+	mi := &file_corev2_Tron_proto_msgTypes[48]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4105,7 +4105,7 @@ func (x *BlockHeaderRaw) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockHeaderRaw.ProtoReflect.Descriptor instead.
 func (*BlockHeaderRaw) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{21, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{21, 0}
 }
 
 func (x *BlockHeaderRaw) GetTimestamp() int64 {
@@ -4176,7 +4176,7 @@ type ChainInventory_BlockId struct {
 func (x *ChainInventory_BlockId) Reset() {
 	*x = ChainInventory_BlockId{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[49]
+		mi := &file_corev2_Tron_proto_msgTypes[49]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4189,7 +4189,7 @@ func (x *ChainInventory_BlockId) String() string {
 func (*ChainInventory_BlockId) ProtoMessage() {}
 
 func (x *ChainInventory_BlockId) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[49]
+	mi := &file_corev2_Tron_proto_msgTypes[49]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4202,7 +4202,7 @@ func (x *ChainInventory_BlockId) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChainInventory_BlockId.ProtoReflect.Descriptor instead.
 func (*ChainInventory_BlockId) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{23, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{23, 0}
 }
 
 func (x *ChainInventory_BlockId) GetHash() []byte {
@@ -4231,7 +4231,7 @@ type BlockInventory_BlockId struct {
 func (x *BlockInventory_BlockId) Reset() {
 	*x = BlockInventory_BlockId{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[50]
+		mi := &file_corev2_Tron_proto_msgTypes[50]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4244,7 +4244,7 @@ func (x *BlockInventory_BlockId) String() string {
 func (*BlockInventory_BlockId) ProtoMessage() {}
 
 func (x *BlockInventory_BlockId) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[50]
+	mi := &file_corev2_Tron_proto_msgTypes[50]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4257,7 +4257,7 @@ func (x *BlockInventory_BlockId) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BlockInventory_BlockId.ProtoReflect.Descriptor instead.
 func (*BlockInventory_BlockId) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{24, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{24, 0}
 }
 
 func (x *BlockInventory_BlockId) GetHash() []byte {
@@ -4286,7 +4286,7 @@ type HelloMessage_BlockId struct {
 func (x *HelloMessage_BlockId) Reset() {
 	*x = HelloMessage_BlockId{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[51]
+		mi := &file_corev2_Tron_proto_msgTypes[51]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4299,7 +4299,7 @@ func (x *HelloMessage_BlockId) String() string {
 func (*HelloMessage_BlockId) ProtoMessage() {}
 
 func (x *HelloMessage_BlockId) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[51]
+	mi := &file_corev2_Tron_proto_msgTypes[51]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4312,7 +4312,7 @@ func (x *HelloMessage_BlockId) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use HelloMessage_BlockId.ProtoReflect.Descriptor instead.
 func (*HelloMessage_BlockId) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{29, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{29, 0}
 }
 
 func (x *HelloMessage_BlockId) GetHash() []byte {
@@ -4343,7 +4343,7 @@ type InternalTransaction_CallValueInfo struct {
 func (x *InternalTransaction_CallValueInfo) Reset() {
 	*x = InternalTransaction_CallValueInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[52]
+		mi := &file_corev2_Tron_proto_msgTypes[52]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4356,7 +4356,7 @@ func (x *InternalTransaction_CallValueInfo) String() string {
 func (*InternalTransaction_CallValueInfo) ProtoMessage() {}
 
 func (x *InternalTransaction_CallValueInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[52]
+	mi := &file_corev2_Tron_proto_msgTypes[52]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4369,7 +4369,7 @@ func (x *InternalTransaction_CallValueInfo) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use InternalTransaction_CallValueInfo.ProtoReflect.Descriptor instead.
 func (*InternalTransaction_CallValueInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{30, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{30, 0}
 }
 
 func (x *InternalTransaction_CallValueInfo) GetCallValue() int64 {
@@ -4410,7 +4410,7 @@ type NodeInfo_PeerInfo struct {
 	BlockInPorcSize         int32   `protobuf:"varint,17,opt,name=blockInPorcSize,proto3" json:"blockInPorcSize,omitempty"`
 	HeadBlockWeBothHave     string  `protobuf:"bytes,18,opt,name=headBlockWeBothHave,proto3" json:"headBlockWeBothHave,omitempty"`
 	IsActive                bool    `protobuf:"varint,19,opt,name=isActive,proto3" json:"isActive,omitempty"`
-	Score                   int32   `protobuf:"varint,20,opt,name=score,proto3" json:"score,omitempty"`
+	Scorev2                   int32   `protobuf:"varint,20,opt,name=scorev2,proto3" json:"scorev2,omitempty"`
 	NodeCount               int32   `protobuf:"varint,21,opt,name=nodeCount,proto3" json:"nodeCount,omitempty"`
 	InFlow                  int64   `protobuf:"varint,22,opt,name=inFlow,proto3" json:"inFlow,omitempty"`
 	DisconnectTimes         int32   `protobuf:"varint,23,opt,name=disconnectTimes,proto3" json:"disconnectTimes,omitempty"`
@@ -4421,7 +4421,7 @@ type NodeInfo_PeerInfo struct {
 func (x *NodeInfo_PeerInfo) Reset() {
 	*x = NodeInfo_PeerInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[54]
+		mi := &file_corev2_Tron_proto_msgTypes[54]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4434,7 +4434,7 @@ func (x *NodeInfo_PeerInfo) String() string {
 func (*NodeInfo_PeerInfo) ProtoMessage() {}
 
 func (x *NodeInfo_PeerInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[54]
+	mi := &file_corev2_Tron_proto_msgTypes[54]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4447,7 +4447,7 @@ func (x *NodeInfo_PeerInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NodeInfo_PeerInfo.ProtoReflect.Descriptor instead.
 func (*NodeInfo_PeerInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{32, 1}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{32, 1}
 }
 
 func (x *NodeInfo_PeerInfo) GetLastSyncBlock() string {
@@ -4583,9 +4583,9 @@ func (x *NodeInfo_PeerInfo) GetIsActive() bool {
 	return false
 }
 
-func (x *NodeInfo_PeerInfo) GetScore() int32 {
+func (x *NodeInfo_PeerInfo) GetScorev2() int32 {
 	if x != nil {
-		return x.Score
+		return x.Scorev2
 	}
 	return 0
 }
@@ -4654,7 +4654,7 @@ type NodeInfo_ConfigNodeInfo struct {
 func (x *NodeInfo_ConfigNodeInfo) Reset() {
 	*x = NodeInfo_ConfigNodeInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[55]
+		mi := &file_corev2_Tron_proto_msgTypes[55]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4667,7 +4667,7 @@ func (x *NodeInfo_ConfigNodeInfo) String() string {
 func (*NodeInfo_ConfigNodeInfo) ProtoMessage() {}
 
 func (x *NodeInfo_ConfigNodeInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[55]
+	mi := &file_corev2_Tron_proto_msgTypes[55]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4680,7 +4680,7 @@ func (x *NodeInfo_ConfigNodeInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NodeInfo_ConfigNodeInfo.ProtoReflect.Descriptor instead.
 func (*NodeInfo_ConfigNodeInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{32, 2}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{32, 2}
 }
 
 func (x *NodeInfo_ConfigNodeInfo) GetCodeVersion() string {
@@ -4839,7 +4839,7 @@ type NodeInfo_MachineInfo struct {
 func (x *NodeInfo_MachineInfo) Reset() {
 	*x = NodeInfo_MachineInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[56]
+		mi := &file_corev2_Tron_proto_msgTypes[56]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4852,7 +4852,7 @@ func (x *NodeInfo_MachineInfo) String() string {
 func (*NodeInfo_MachineInfo) ProtoMessage() {}
 
 func (x *NodeInfo_MachineInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[56]
+	mi := &file_corev2_Tron_proto_msgTypes[56]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4865,7 +4865,7 @@ func (x *NodeInfo_MachineInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use NodeInfo_MachineInfo.ProtoReflect.Descriptor instead.
 func (*NodeInfo_MachineInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{32, 3}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{32, 3}
 }
 
 func (x *NodeInfo_MachineInfo) GetThreadCount() int32 {
@@ -4974,7 +4974,7 @@ type NodeInfo_MachineInfo_MemoryDescInfo struct {
 func (x *NodeInfo_MachineInfo_MemoryDescInfo) Reset() {
 	*x = NodeInfo_MachineInfo_MemoryDescInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[57]
+		mi := &file_corev2_Tron_proto_msgTypes[57]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -4987,7 +4987,7 @@ func (x *NodeInfo_MachineInfo_MemoryDescInfo) String() string {
 func (*NodeInfo_MachineInfo_MemoryDescInfo) ProtoMessage() {}
 
 func (x *NodeInfo_MachineInfo_MemoryDescInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[57]
+	mi := &file_corev2_Tron_proto_msgTypes[57]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5000,7 +5000,7 @@ func (x *NodeInfo_MachineInfo_MemoryDescInfo) ProtoReflect() protoreflect.Messag
 
 // Deprecated: Use NodeInfo_MachineInfo_MemoryDescInfo.ProtoReflect.Descriptor instead.
 func (*NodeInfo_MachineInfo_MemoryDescInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{32, 3, 0}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{32, 3, 0}
 }
 
 func (x *NodeInfo_MachineInfo_MemoryDescInfo) GetName() string {
@@ -5055,7 +5055,7 @@ type NodeInfo_MachineInfo_DeadLockThreadInfo struct {
 func (x *NodeInfo_MachineInfo_DeadLockThreadInfo) Reset() {
 	*x = NodeInfo_MachineInfo_DeadLockThreadInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Tron_proto_msgTypes[58]
+		mi := &file_corev2_Tron_proto_msgTypes[58]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -5068,7 +5068,7 @@ func (x *NodeInfo_MachineInfo_DeadLockThreadInfo) String() string {
 func (*NodeInfo_MachineInfo_DeadLockThreadInfo) ProtoMessage() {}
 
 func (x *NodeInfo_MachineInfo_DeadLockThreadInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Tron_proto_msgTypes[58]
+	mi := &file_corev2_Tron_proto_msgTypes[58]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5081,7 +5081,7 @@ func (x *NodeInfo_MachineInfo_DeadLockThreadInfo) ProtoReflect() protoreflect.Me
 
 // Deprecated: Use NodeInfo_MachineInfo_DeadLockThreadInfo.ProtoReflect.Descriptor instead.
 func (*NodeInfo_MachineInfo_DeadLockThreadInfo) Descriptor() ([]byte, []int) {
-	return file_core_Tron_proto_rawDescGZIP(), []int{32, 3, 1}
+	return file_corev2_Tron_proto_rawDescGZIP(), []int{32, 3, 1}
 }
 
 func (x *NodeInfo_MachineInfo_DeadLockThreadInfo) GetName() string {
@@ -5133,9 +5133,9 @@ func (x *NodeInfo_MachineInfo_DeadLockThreadInfo) GetStackTrace() string {
 	return ""
 }
 
-var File_core_Tron_proto protoreflect.FileDescriptor
+var File_corev2_Tron_proto protoreflect.FileDescriptor
 
-var file_core_Tron_proto_rawDesc = []byte{
+var file_corev2_Tron_proto_rawDesc = []byte{
 	0x0a, 0x0f, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x54, 0x72, 0x6f, 0x6e, 0x2e, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x1a, 0x19, 0x67, 0x6f, 0x6f,
 	0x67, 0x6c, 0x65, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x2f, 0x61, 0x6e, 0x79,
@@ -6133,20 +6133,20 @@ var file_core_Tron_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_Tron_proto_rawDescOnce sync.Once
-	file_core_Tron_proto_rawDescData = file_core_Tron_proto_rawDesc
+	file_corev2_Tron_proto_rawDescOnce sync.Once
+	file_corev2_Tron_proto_rawDescData = file_corev2_Tron_proto_rawDesc
 )
 
-func file_core_Tron_proto_rawDescGZIP() []byte {
-	file_core_Tron_proto_rawDescOnce.Do(func() {
-		file_core_Tron_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_Tron_proto_rawDescData)
+func file_corev2_Tron_proto_rawDescGZIP() []byte {
+	file_corev2_Tron_proto_rawDescOnce.Do(func() {
+		file_corev2_Tron_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_Tron_proto_rawDescData)
 	})
-	return file_core_Tron_proto_rawDescData
+	return file_corev2_Tron_proto_rawDescData
 }
 
-var file_core_Tron_proto_enumTypes = make([]protoimpl.EnumInfo, 11)
-var file_core_Tron_proto_msgTypes = make([]protoimpl.MessageInfo, 59)
-var file_core_Tron_proto_goTypes = []interface{}{
+var file_corev2_Tron_proto_enumTypes = make([]protoimpl.EnumInfo, 11)
+var file_corev2_Tron_proto_msgTypes = make([]protoimpl.MessageInfo, 59)
+var file_corev2_Tron_proto_goTypes = []interface{}{
 	(AccountType)(0),                          // 0: protocol.AccountType
 	(ReasonCode)(0),                           // 1: protocol.ReasonCode
 	(Proposal_State)(0),                       // 2: protocol.Proposal.State
@@ -6220,7 +6220,7 @@ var file_core_Tron_proto_goTypes = []interface{}{
 	(*Endpoint)(nil), // 70: protocol.Endpoint
 	(*any.Any)(nil),  // 71: google.protobuf.Any
 }
-var file_core_Tron_proto_depIdxs = []int32{
+var file_corev2_Tron_proto_depIdxs = []int32{
 	44, // 0: protocol.Proposal.parameters:type_name -> protocol.Proposal.ParametersEntry
 	2,  // 1: protocol.Proposal.state:type_name -> protocol.Proposal.State
 	45, // 2: protocol.ChainParameters.chainParameter:type_name -> protocol.ChainParameters.ChainParameter
@@ -6292,14 +6292,14 @@ var file_core_Tron_proto_depIdxs = []int32{
 	0,  // [0:64] is the sub-list for field type_name
 }
 
-func init() { File_core_Tron_proto_init() }
-func File_core_Tron_proto_init() {
-	if File_core_Tron_proto != nil {
+func init() { File_corev2_Tron_proto_init() }
+func File_corev2_Tron_proto_init() {
+	if File_corev2_Tron_proto != nil {
 		return
 	}
-	file_core_Discover_proto_init()
+	file_corev2_Discover_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_core_Tron_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*AccountId); i {
 			case 0:
 				return &v.state
@@ -6311,7 +6311,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Vote); i {
 			case 0:
 				return &v.state
@@ -6323,7 +6323,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Proposal); i {
 			case 0:
 				return &v.state
@@ -6335,7 +6335,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Exchange); i {
 			case 0:
 				return &v.state
@@ -6347,7 +6347,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ChainParameters); i {
 			case 0:
 				return &v.state
@@ -6359,7 +6359,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Account); i {
 			case 0:
 				return &v.state
@@ -6371,7 +6371,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Key); i {
 			case 0:
 				return &v.state
@@ -6383,7 +6383,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DelegatedResource); i {
 			case 0:
 				return &v.state
@@ -6395,7 +6395,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Authority); i {
 			case 0:
 				return &v.state
@@ -6407,7 +6407,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Permission); i {
 			case 0:
 				return &v.state
@@ -6419,7 +6419,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Witness); i {
 			case 0:
 				return &v.state
@@ -6431,7 +6431,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Votes); i {
 			case 0:
 				return &v.state
@@ -6443,7 +6443,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TXOutput); i {
 			case 0:
 				return &v.state
@@ -6455,7 +6455,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TXInput); i {
 			case 0:
 				return &v.state
@@ -6467,7 +6467,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TXOutputs); i {
 			case 0:
 				return &v.state
@@ -6479,7 +6479,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ResourceReceipt); i {
 			case 0:
 				return &v.state
@@ -6491,7 +6491,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Transaction); i {
 			case 0:
 				return &v.state
@@ -6503,7 +6503,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TransactionInfo); i {
 			case 0:
 				return &v.state
@@ -6515,7 +6515,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TransactionRet); i {
 			case 0:
 				return &v.state
@@ -6527,7 +6527,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Transactions); i {
 			case 0:
 				return &v.state
@@ -6539,7 +6539,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TransactionSign); i {
 			case 0:
 				return &v.state
@@ -6551,7 +6551,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BlockHeader); i {
 			case 0:
 				return &v.state
@@ -6563,7 +6563,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Block); i {
 			case 0:
 				return &v.state
@@ -6575,7 +6575,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ChainInventory); i {
 			case 0:
 				return &v.state
@@ -6587,7 +6587,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BlockInventory); i {
 			case 0:
 				return &v.state
@@ -6599,7 +6599,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Inventory); i {
 			case 0:
 				return &v.state
@@ -6611,7 +6611,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Items); i {
 			case 0:
 				return &v.state
@@ -6623,7 +6623,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DynamicProperties); i {
 			case 0:
 				return &v.state
@@ -6635,7 +6635,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DisconnectMessage); i {
 			case 0:
 				return &v.state
@@ -6647,7 +6647,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*HelloMessage); i {
 			case 0:
 				return &v.state
@@ -6659,7 +6659,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*InternalTransaction); i {
 			case 0:
 				return &v.state
@@ -6671,7 +6671,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*DelegatedResourceAccountIndex); i {
 			case 0:
 				return &v.state
@@ -6683,7 +6683,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*NodeInfo); i {
 			case 0:
 				return &v.state
@@ -6695,7 +6695,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ChainParameters_ChainParameter); i {
 			case 0:
 				return &v.state
@@ -6707,7 +6707,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Account_Frozen); i {
 			case 0:
 				return &v.state
@@ -6719,7 +6719,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Account_AccountResource); i {
 			case 0:
 				return &v.state
@@ -6731,7 +6731,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TXInputRaw); i {
 			case 0:
 				return &v.state
@@ -6743,7 +6743,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Transaction_Contract); i {
 			case 0:
 				return &v.state
@@ -6755,7 +6755,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Transaction_Result); i {
 			case 0:
 				return &v.state
@@ -6767,7 +6767,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TransactionRaw); i {
 			case 0:
 				return &v.state
@@ -6779,7 +6779,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*TransactionInfo_Log); i {
 			case 0:
 				return &v.state
@@ -6791,7 +6791,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BlockHeaderRaw); i {
 			case 0:
 				return &v.state
@@ -6803,7 +6803,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ChainInventory_BlockId); i {
 			case 0:
 				return &v.state
@@ -6815,7 +6815,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BlockInventory_BlockId); i {
 			case 0:
 				return &v.state
@@ -6827,7 +6827,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*HelloMessage_BlockId); i {
 			case 0:
 				return &v.state
@@ -6839,7 +6839,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*InternalTransaction_CallValueInfo); i {
 			case 0:
 				return &v.state
@@ -6851,7 +6851,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*NodeInfo_PeerInfo); i {
 			case 0:
 				return &v.state
@@ -6863,7 +6863,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*NodeInfo_ConfigNodeInfo); i {
 			case 0:
 				return &v.state
@@ -6875,7 +6875,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*NodeInfo_MachineInfo); i {
 			case 0:
 				return &v.state
@@ -6887,7 +6887,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*NodeInfo_MachineInfo_MemoryDescInfo); i {
 			case 0:
 				return &v.state
@@ -6899,7 +6899,7 @@ func File_core_Tron_proto_init() {
 				return nil
 			}
 		}
-		file_core_Tron_proto_msgTypes[58].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Tron_proto_msgTypes[58].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*NodeInfo_MachineInfo_DeadLockThreadInfo); i {
 			case 0:
 				return &v.state
@@ -6916,19 +6916,19 @@ func File_core_Tron_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_Tron_proto_rawDesc,
+			RawDescriptor: file_corev2_Tron_proto_rawDesc,
 			NumEnums:      11,
 			NumMessages:   59,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_Tron_proto_goTypes,
-		DependencyIndexes: file_core_Tron_proto_depIdxs,
-		EnumInfos:         file_core_Tron_proto_enumTypes,
-		MessageInfos:      file_core_Tron_proto_msgTypes,
+		GoTypes:           file_corev2_Tron_proto_goTypes,
+		DependencyIndexes: file_corev2_Tron_proto_depIdxs,
+		EnumInfos:         file_corev2_Tron_proto_enumTypes,
+		MessageInfos:      file_corev2_Tron_proto_msgTypes,
 	}.Build()
-	File_core_Tron_proto = out.File
-	file_core_Tron_proto_rawDesc = nil
-	file_core_Tron_proto_goTypes = nil
-	file_core_Tron_proto_depIdxs = nil
+	File_corev2_Tron_proto = out.File
+	file_corev2_Tron_proto_rawDesc = nil
+	file_corev2_Tron_proto_goTypes = nil
+	file_corev2_Tron_proto_depIdxs = nil
 }

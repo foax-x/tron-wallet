@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.21.0-devel
 // 	protoc        v3.11.4
-// source: core/Discover.proto
+// source: corev2/Discover.proto
 
-package core
+package corev2
 
 import (
 	proto "github.com/golang/protobuf/proto"
@@ -38,7 +38,7 @@ type Endpoint struct {
 func (x *Endpoint) Reset() {
 	*x = Endpoint{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Discover_proto_msgTypes[0]
+		mi := &file_corev2_Discover_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -51,7 +51,7 @@ func (x *Endpoint) String() string {
 func (*Endpoint) ProtoMessage() {}
 
 func (x *Endpoint) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Discover_proto_msgTypes[0]
+	mi := &file_corev2_Discover_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -64,7 +64,7 @@ func (x *Endpoint) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Endpoint.ProtoReflect.Descriptor instead.
 func (*Endpoint) Descriptor() ([]byte, []int) {
-	return file_core_Discover_proto_rawDescGZIP(), []int{0}
+	return file_corev2_Discover_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Endpoint) GetAddress() []byte {
@@ -102,7 +102,7 @@ type PingMessage struct {
 func (x *PingMessage) Reset() {
 	*x = PingMessage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Discover_proto_msgTypes[1]
+		mi := &file_corev2_Discover_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -115,7 +115,7 @@ func (x *PingMessage) String() string {
 func (*PingMessage) ProtoMessage() {}
 
 func (x *PingMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Discover_proto_msgTypes[1]
+	mi := &file_corev2_Discover_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -128,7 +128,7 @@ func (x *PingMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PingMessage.ProtoReflect.Descriptor instead.
 func (*PingMessage) Descriptor() ([]byte, []int) {
-	return file_core_Discover_proto_rawDescGZIP(), []int{1}
+	return file_corev2_Discover_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *PingMessage) GetFrom() *Endpoint {
@@ -172,7 +172,7 @@ type PongMessage struct {
 func (x *PongMessage) Reset() {
 	*x = PongMessage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Discover_proto_msgTypes[2]
+		mi := &file_corev2_Discover_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -185,7 +185,7 @@ func (x *PongMessage) String() string {
 func (*PongMessage) ProtoMessage() {}
 
 func (x *PongMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Discover_proto_msgTypes[2]
+	mi := &file_corev2_Discover_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -198,7 +198,7 @@ func (x *PongMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PongMessage.ProtoReflect.Descriptor instead.
 func (*PongMessage) Descriptor() ([]byte, []int) {
-	return file_core_Discover_proto_rawDescGZIP(), []int{2}
+	return file_corev2_Discover_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *PongMessage) GetFrom() *Endpoint {
@@ -235,7 +235,7 @@ type FindNeighbours struct {
 func (x *FindNeighbours) Reset() {
 	*x = FindNeighbours{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Discover_proto_msgTypes[3]
+		mi := &file_corev2_Discover_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -248,7 +248,7 @@ func (x *FindNeighbours) String() string {
 func (*FindNeighbours) ProtoMessage() {}
 
 func (x *FindNeighbours) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Discover_proto_msgTypes[3]
+	mi := &file_corev2_Discover_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -261,7 +261,7 @@ func (x *FindNeighbours) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindNeighbours.ProtoReflect.Descriptor instead.
 func (*FindNeighbours) Descriptor() ([]byte, []int) {
-	return file_core_Discover_proto_rawDescGZIP(), []int{3}
+	return file_corev2_Discover_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *FindNeighbours) GetFrom() *Endpoint {
@@ -298,7 +298,7 @@ type Neighbours struct {
 func (x *Neighbours) Reset() {
 	*x = Neighbours{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Discover_proto_msgTypes[4]
+		mi := &file_corev2_Discover_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -311,7 +311,7 @@ func (x *Neighbours) String() string {
 func (*Neighbours) ProtoMessage() {}
 
 func (x *Neighbours) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Discover_proto_msgTypes[4]
+	mi := &file_corev2_Discover_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -324,7 +324,7 @@ func (x *Neighbours) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Neighbours.ProtoReflect.Descriptor instead.
 func (*Neighbours) Descriptor() ([]byte, []int) {
-	return file_core_Discover_proto_rawDescGZIP(), []int{4}
+	return file_corev2_Discover_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *Neighbours) GetFrom() *Endpoint {
@@ -360,7 +360,7 @@ type BackupMessage struct {
 func (x *BackupMessage) Reset() {
 	*x = BackupMessage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_core_Discover_proto_msgTypes[5]
+		mi := &file_corev2_Discover_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -373,7 +373,7 @@ func (x *BackupMessage) String() string {
 func (*BackupMessage) ProtoMessage() {}
 
 func (x *BackupMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_core_Discover_proto_msgTypes[5]
+	mi := &file_corev2_Discover_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -386,7 +386,7 @@ func (x *BackupMessage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BackupMessage.ProtoReflect.Descriptor instead.
 func (*BackupMessage) Descriptor() ([]byte, []int) {
-	return file_core_Discover_proto_rawDescGZIP(), []int{5}
+	return file_corev2_Discover_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *BackupMessage) GetFlag() bool {
@@ -403,9 +403,9 @@ func (x *BackupMessage) GetPriority() int32 {
 	return 0
 }
 
-var File_core_Discover_proto protoreflect.FileDescriptor
+var File_corev2_Discover_proto protoreflect.FileDescriptor
 
-var file_core_Discover_proto_rawDesc = []byte{
+var file_corev2_Discover_proto_rawDesc = []byte{
 	0x0a, 0x13, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x44, 0x69, 0x73, 0x63, 0x6f, 0x76, 0x65, 0x72, 0x2e,
 	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x08, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x22,
 	0x50, 0x0a, 0x08, 0x45, 0x6e, 0x64, 0x70, 0x6f, 0x69, 0x6e, 0x74, 0x12, 0x18, 0x0a, 0x07, 0x61,
@@ -458,19 +458,19 @@ var file_core_Discover_proto_rawDesc = []byte{
 }
 
 var (
-	file_core_Discover_proto_rawDescOnce sync.Once
-	file_core_Discover_proto_rawDescData = file_core_Discover_proto_rawDesc
+	file_corev2_Discover_proto_rawDescOnce sync.Once
+	file_corev2_Discover_proto_rawDescData = file_corev2_Discover_proto_rawDesc
 )
 
-func file_core_Discover_proto_rawDescGZIP() []byte {
-	file_core_Discover_proto_rawDescOnce.Do(func() {
-		file_core_Discover_proto_rawDescData = protoimpl.X.CompressGZIP(file_core_Discover_proto_rawDescData)
+func file_corev2_Discover_proto_rawDescGZIP() []byte {
+	file_corev2_Discover_proto_rawDescOnce.Do(func() {
+		file_corev2_Discover_proto_rawDescData = protoimpl.X.CompressGZIP(file_corev2_Discover_proto_rawDescData)
 	})
-	return file_core_Discover_proto_rawDescData
+	return file_corev2_Discover_proto_rawDescData
 }
 
-var file_core_Discover_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_core_Discover_proto_goTypes = []interface{}{
+var file_corev2_Discover_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_corev2_Discover_proto_goTypes = []interface{}{
 	(*Endpoint)(nil),       // 0: protocol.Endpoint
 	(*PingMessage)(nil),    // 1: protocol.PingMessage
 	(*PongMessage)(nil),    // 2: protocol.PongMessage
@@ -478,7 +478,7 @@ var file_core_Discover_proto_goTypes = []interface{}{
 	(*Neighbours)(nil),     // 4: protocol.Neighbours
 	(*BackupMessage)(nil),  // 5: protocol.BackupMessage
 }
-var file_core_Discover_proto_depIdxs = []int32{
+var file_corev2_Discover_proto_depIdxs = []int32{
 	0, // 0: protocol.PingMessage.from:type_name -> protocol.Endpoint
 	0, // 1: protocol.PingMessage.to:type_name -> protocol.Endpoint
 	0, // 2: protocol.PongMessage.from:type_name -> protocol.Endpoint
@@ -492,13 +492,13 @@ var file_core_Discover_proto_depIdxs = []int32{
 	0, // [0:6] is the sub-list for field type_name
 }
 
-func init() { file_core_Discover_proto_init() }
-func file_core_Discover_proto_init() {
-	if File_core_Discover_proto != nil {
+func init() { file_corev2_Discover_proto_init() }
+func file_corev2_Discover_proto_init() {
+	if File_corev2_Discover_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_core_Discover_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Discover_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Endpoint); i {
 			case 0:
 				return &v.state
@@ -510,7 +510,7 @@ func file_core_Discover_proto_init() {
 				return nil
 			}
 		}
-		file_core_Discover_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Discover_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*PingMessage); i {
 			case 0:
 				return &v.state
@@ -522,7 +522,7 @@ func file_core_Discover_proto_init() {
 				return nil
 			}
 		}
-		file_core_Discover_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Discover_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*PongMessage); i {
 			case 0:
 				return &v.state
@@ -534,7 +534,7 @@ func file_core_Discover_proto_init() {
 				return nil
 			}
 		}
-		file_core_Discover_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Discover_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindNeighbours); i {
 			case 0:
 				return &v.state
@@ -546,7 +546,7 @@ func file_core_Discover_proto_init() {
 				return nil
 			}
 		}
-		file_core_Discover_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Discover_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Neighbours); i {
 			case 0:
 				return &v.state
@@ -558,7 +558,7 @@ func file_core_Discover_proto_init() {
 				return nil
 			}
 		}
-		file_core_Discover_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_corev2_Discover_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BackupMessage); i {
 			case 0:
 				return &v.state
@@ -575,18 +575,18 @@ func file_core_Discover_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_core_Discover_proto_rawDesc,
+			RawDescriptor: file_corev2_Discover_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_core_Discover_proto_goTypes,
-		DependencyIndexes: file_core_Discover_proto_depIdxs,
-		MessageInfos:      file_core_Discover_proto_msgTypes,
+		GoTypes:           file_corev2_Discover_proto_goTypes,
+		DependencyIndexes: file_corev2_Discover_proto_depIdxs,
+		MessageInfos:      file_corev2_Discover_proto_msgTypes,
 	}.Build()
-	File_core_Discover_proto = out.File
-	file_core_Discover_proto_rawDesc = nil
-	file_core_Discover_proto_goTypes = nil
-	file_core_Discover_proto_depIdxs = nil
+	File_corev2_Discover_proto = out.File
+	file_corev2_Discover_proto_rawDesc = nil
+	file_corev2_Discover_proto_goTypes = nil
+	file_corev2_Discover_proto_depIdxs = nil
 }

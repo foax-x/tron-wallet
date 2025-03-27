@@ -12,19 +12,19 @@ import (
 func TestGenerateWallet(t *testing.T) {
 	w := tronWallet.GenerateTronWallet(node)
 	if w == nil {
-		t.Errorf("GenerateTronWallet res was incorect, got: %q, want: %q.", w, "*tronWallet")
+		t.Errorf("GenerateTronWallet res was incorev2ct, got: %q, want: %q.", w, "*tronWallet")
 	}
 	if len(w.PrivateKey) == 0 {
-		t.Errorf("GenerateTronWallet PrivateKey was incorect, got: %q, want: %q.", w.PrivateKey, "valid PrivateKey")
+		t.Errorf("GenerateTronWallet PrivateKey was incorev2ct, got: %q, want: %q.", w.PrivateKey, "valid PrivateKey")
 	}
 	if len(w.PublicKey) == 0 {
-		t.Errorf("GenerateTronWallet PublicKey was incorect, got: %q, want: %q.", w.PublicKey, "valid PublicKey")
+		t.Errorf("GenerateTronWallet PublicKey was incorev2ct, got: %q, want: %q.", w.PublicKey, "valid PublicKey")
 	}
 	if len(w.Address) == 0 {
-		t.Errorf("GenerateTronWallet Address was incorect, got: %q, want: %q.", w.Address, "valid Address")
+		t.Errorf("GenerateTronWallet Address was incorev2ct, got: %q, want: %q.", w.Address, "valid Address")
 	}
 	if len(w.AddressBase58) == 0 {
-		t.Errorf("GenerateTronWallet AddressBase58 was incorect, got: %q, want: %q.", w.AddressBase58, "valid AddressBase58")
+		t.Errorf("GenerateTronWallet AddressBase58 was incorev2ct, got: %q, want: %q.", w.AddressBase58, "valid AddressBase58")
 	}
 }
 
@@ -32,24 +32,24 @@ func TestGenerateWallet(t *testing.T) {
 func TestCreateWallet(t *testing.T) {
 	_, err := tronWallet.CreateTronWallet(node, invalidPrivateKey)
 	if err == nil {
-		t.Errorf("CreateTronWallet error was incorect, got: %q, want: %q.", err, "not nil")
+		t.Errorf("CreateTronWallet error was incorev2ct, got: %q, want: %q.", err, "not nil")
 	}
 
 	w, err := tronWallet.CreateTronWallet(node, validPrivateKey)
 	if err != nil {
-		t.Errorf("CreateTronWallet error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("CreateTronWallet error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 	if len(w.PrivateKey) == 0 {
-		t.Errorf("CreateTronWallet PrivateKey was incorect, got: %q, want: %q.", w.PrivateKey, "valid PrivateKey")
+		t.Errorf("CreateTronWallet PrivateKey was incorev2ct, got: %q, want: %q.", w.PrivateKey, "valid PrivateKey")
 	}
 	if len(w.PublicKey) == 0 {
-		t.Errorf("CreateTronWallet PublicKey was incorect, got: %q, want: %q.", w.PublicKey, "valid PublicKey")
+		t.Errorf("CreateTronWallet PublicKey was incorev2ct, got: %q, want: %q.", w.PublicKey, "valid PublicKey")
 	}
 	if len(w.Address) == 0 {
-		t.Errorf("CreateTronWallet Address was incorect, got: %q, want: %q.", w.Address, "valid Address")
+		t.Errorf("CreateTronWallet Address was incorev2ct, got: %q, want: %q.", w.Address, "valid Address")
 	}
 	if len(w.AddressBase58) == 0 {
-		t.Errorf("CreateTronWallet AddressBase58 was incorect, got: %q, want: %q.", w.AddressBase58, "valid AddressBase58")
+		t.Errorf("CreateTronWallet AddressBase58 was incorev2ct, got: %q, want: %q.", w.AddressBase58, "valid AddressBase58")
 	}
 }
 
@@ -91,7 +91,7 @@ func TestPrivateKeyRCDSA(t *testing.T) {
 
 	_, err := w.PrivateKeyRCDSA()
 	if err != nil {
-		t.Errorf("PrivateKeyRCDSA error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("PrivateKeyRCDSA error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 }
 
@@ -101,10 +101,10 @@ func TestPrivateKeyBytes(t *testing.T) {
 
 	bytes, err := w.PrivateKeyBytes()
 	if err != nil {
-		t.Errorf("PrivateKeyBytes error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("PrivateKeyBytes error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 	if len(bytes) == 0 {
-		t.Errorf("PrivateKeyBytes bytes len was incorect, got: %q, want: %q.", len(bytes), "more than 0")
+		t.Errorf("PrivateKeyBytes bytes len was incorev2ct, got: %q, want: %q.", len(bytes), "more than 0")
 	}
 }
 
@@ -114,7 +114,7 @@ func TestBalance(t *testing.T) {
 
 	_, err := w.Balance()
 	if err != nil {
-		t.Errorf("Balance error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("Balance error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 }
 
@@ -124,7 +124,7 @@ func TestBalanceTRC20(t *testing.T) {
 
 	_, err := w.BalanceTRC20(token())
 	if err != nil {
-		t.Errorf("BalanceTRC20 error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("BalanceTRC20 error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 }
 
@@ -134,15 +134,15 @@ func TestTransfer(t *testing.T) {
 
 	_, err := w.Transfer(invalidToAddress, trxAmount)
 	if err == nil {
-		t.Errorf("Transfer error was incorect, got: %q, want: %q.", err, "not nil becuase to address is invalid")
+		t.Errorf("Transfer error was incorev2ct, got: %q, want: %q.", err, "not nil becuase to address is invalid")
 	}
 
 	txId, err := w.Transfer(validToAddress, trxAmount)
 	if err != nil {
-		t.Errorf("Transfer error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("Transfer error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 	if len(txId) == 0 {
-		t.Errorf("Transfer txId was incorect, got: %q, want: %q.", txId, "not nil")
+		t.Errorf("Transfer txId was incorev2ct, got: %q, want: %q.", txId, "not nil")
 	}
 }
 
@@ -153,14 +153,14 @@ func TestTransferTRC20(t *testing.T) {
 
 	_, err := w.TransferTRC20(_t, invalidToAddress, trc20Amount, 0)
 	if err == nil {
-		t.Errorf("TestTransferTRC20 error was incorect, got: %q, want: %q.", err, "not nil becuase to address is invalid")
+		t.Errorf("TestTransferTRC20 error was incorev2ct, got: %q, want: %q.", err, "not nil becuase to address is invalid")
 	}
 
 	txId, err := w.TransferTRC20(_t, validToAddress, trc20Amount, 0)
 	if err != nil {
-		t.Errorf("Transfer error was incorect, got: %q, want: %q.", err, "nil")
+		t.Errorf("Transfer error was incorev2ct, got: %q, want: %q.", err, "nil")
 	}
 	if len(txId) == 0 {
-		t.Errorf("Transfer txId was incorect, got: %q, want: %q.", txId, "not nil")
+		t.Errorf("Transfer txId was incorev2ct, got: %q, want: %q.", txId, "not nil")
 	}
 }

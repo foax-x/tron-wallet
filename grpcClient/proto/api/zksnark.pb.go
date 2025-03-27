@@ -8,7 +8,7 @@ package api
 
 import (
 	context "context"
-	core "github.com/foax-x/tron-wallet/grpcClient/proto/core"
+	corev2 "github.com/foax-x/tron-wallet/grpcClient/proto/core"
 	proto "github.com/golang/protobuf/proto"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -81,7 +81,7 @@ type ZksnarkRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction  *core.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
+	Transaction  *corev2.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
 	Sighash      []byte            `protobuf:"bytes,2,opt,name=sighash,proto3" json:"sighash,omitempty"`
 	ValueBalance int64             `protobuf:"varint,3,opt,name=valueBalance,proto3" json:"valueBalance,omitempty"`
 	TxId         string            `protobuf:"bytes,4,opt,name=txId,proto3" json:"txId,omitempty"`
@@ -119,7 +119,7 @@ func (*ZksnarkRequest) Descriptor() ([]byte, []int) {
 	return file_api_zksnark_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *ZksnarkRequest) GetTransaction() *core.Transaction {
+func (x *ZksnarkRequest) GetTransaction() *corev2.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -248,7 +248,7 @@ var file_api_zksnark_proto_goTypes = []interface{}{
 	(ZksnarkResponse_Code)(0), // 0: protocol.ZksnarkResponse.Code
 	(*ZksnarkRequest)(nil),    // 1: protocol.ZksnarkRequest
 	(*ZksnarkResponse)(nil),   // 2: protocol.ZksnarkResponse
-	(*core.Transaction)(nil),  // 3: protocol.Transaction
+	(*corev2.Transaction)(nil),  // 3: protocol.Transaction
 }
 var file_api_zksnark_proto_depIdxs = []int32{
 	3, // 0: protocol.ZksnarkRequest.transaction:type_name -> protocol.Transaction
